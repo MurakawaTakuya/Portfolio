@@ -3,40 +3,51 @@ export const portfolioData = {
   icon: "/icon.png", // TODO: Add icon
   catchphrase: "Fullstack Developer & Computer Vision Researcher",
   strengths: ["キャッチアップ力", "好奇心", "挑戦心", "Grid力"],
-  links: {
-    github: {
+  links: [
+    {
       url: "https://github.com/MurakawaTakuya",
       name: "GitHub",
+      iconLink:
+        "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark-Light-120px-plus.png",
     },
-    x: {
+    {
       url: "https://x.com/PerhapsTakuya",
       name: "X (Twitter)",
+      iconLink:
+        "https://upload.wikimedia.org/wikipedia/commons/5/5a/X_logo_2023_%28white%29.png",
     },
-    qiita: {
+    {
       url: "https://qiita.com/Murakawa_Takuya",
       name: "Qiita",
+      iconLink:
+        "https://cdn.qiita.com/assets/public/qiita-ogp-3b6fcfdd65d50363bea7574616ddfa80.png",
     },
-    connpass: {
+    {
       url: "https://connpass.com/dashboard/",
       name: "Connpass",
+      iconLink: "https://connpass.com/static/img/icon/connpass_icon_144.png",
     },
-    speakerDeck: {
+    {
       url: "https://speakerdeck.com/murakawatakuya",
       name: "SpeakerDeck",
+      iconLink: "https://speakerdeck.com/favicon.ico",
     },
-    atcoder: {
+    {
       url: "https://atcoder.jp/users/RarabyBye",
       name: "AtCoder",
+      iconLink: "https://img.atcoder.jp/assets/top/img/logo_bk.svg", // 黒背景だと見にくい可能性があります
     },
-    lapras: {
+    {
       url: "https://lapras.com/person",
       name: "LAPRAS",
+      iconLink: "https://assets.lapras.com/g/logos/logo_color.png",
     },
-    note: {
-      url: "#", // Add Note URL if available
-      name: "Note",
-    },
-  },
+    // {
+    //   url: "#",
+    //   name: "Note",
+    //   iconLink: "https://assets.st-note.com/production/uploads/images/82958428/picture_pc_ccb0c7924771239535de98c92a95aa5c.png",
+    // },
+  ],
   skills: {
     frontend: ["Next.js", "React", "JavaScript", "TypeScript"],
     backend: ["Node.js", "PHP", "Laravel", "MySQL", "PostgreSQL"],
