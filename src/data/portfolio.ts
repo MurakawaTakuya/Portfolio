@@ -7,44 +7,50 @@ export const portfolioData = {
     {
       url: "https://github.com/MurakawaTakuya",
       name: "GitHub",
-      iconLink:
-        "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark-Light-120px-plus.png",
+      iconLink: "/link_icons/github.svg",
       width: 2,
       height: 2,
+      iconBackgroundColor: "#181717",
     },
     {
       url: "https://x.com/PerhapsTakuya",
       name: "X (Twitter)",
-      iconLink:
-        "https://upload.wikimedia.org/wikipedia/commons/5/5a/X_logo_2023_%28white%29.png",
+      iconLink: "/link_icons/x.svg",
       width: 2,
       height: 1,
+      iconBackgroundColor: "#000000",
     },
     {
       url: "https://qiita.com/Murakawa_Takuya",
       name: "Qiita",
-      iconLink:
-        "https://cdn.qiita.com/assets/public/qiita-ogp-3b6fcfdd65d50363bea7574616ddfa80.png",
+      iconLink: "/link_icons/qiita.png",
+      iconBackgroundColor: "#55C500",
     },
     {
       url: "https://connpass.com/dashboard/",
       name: "Connpass",
-      iconLink: "https://connpass.com/static/img/icon/connpass_icon_144.png",
+      iconLink: "/link_icons/connpass.png",
+      iconBackgroundColor: "#ffffffff",
+      backgroundColor: "#ca3e4737",
     },
     {
       url: "https://speakerdeck.com/murakawatakuya",
       name: "SpeakerDeck",
       iconLink: "https://speakerdeck.com/favicon.ico",
+      iconBackgroundColor: "#ffffffff",
+      backgroundColor: "#48b6ab3a",
     },
     {
       url: "https://atcoder.jp/users/RarabyBye",
       name: "AtCoder",
-      iconLink: "https://img.atcoder.jp/assets/top/img/logo_bk.svg", // 黒背景だと見にくい可能性があります
+      iconLink: "/link_icons/atcoder.png",
+      iconBackgroundColor: "#ffffffff",
     },
     {
       url: "https://lapras.com/person",
       name: "LAPRAS",
-      iconLink: "https://assets.lapras.com/g/logos/logo_color.png",
+      iconLink: "/link_icons/lapras.png",
+      iconBackgroundColor: "#56C1B6",
     },
     // {
     //   url: "#",

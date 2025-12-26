@@ -16,6 +16,8 @@ export interface BentoCardProps {
   onClick?: () => void;
   width?: number;
   height?: number;
+  textColor?: string;
+  borderColor?: string;
 }
 
 export interface BentoProps {
@@ -32,6 +34,7 @@ export interface BentoProps {
   enableMagnetism?: boolean;
   cards?: BentoCardProps[];
   children?: React.ReactNode;
+  borderColor?: string;
 }
 
 const createParticleElement = (
@@ -535,7 +538,7 @@ const MagicBento: React.FC<BentoProps> = ({
   clickEffect = true,
   enableMagnetism = true,
   cards = [],
-  children,
+  borderColor = "#392e4e",
 }) => {
   const gridRef = useRef<HTMLDivElement>(null);
   const isMobile = useMobileDetection();
@@ -551,7 +554,7 @@ const MagicBento: React.FC<BentoProps> = ({
             --glow-intensity: 0;
             --glow-radius: 200px;
             --glow-color: ${glowColor};
-            --border-color: #392e4e;
+            --border-color: ${borderColor};
             --background-dark: #060010;
             --white: hsl(0, 0%, 100%);
             --purple-primary: rgba(132, 0, 255, 1);
@@ -670,7 +673,7 @@ const MagicBento: React.FC<BentoProps> = ({
       )}
 
       <BentoCardGrid gridRef={gridRef}>
-        <div className="card-responsive grid gap-2">
+        <div className="card-responsive grid gap-3">
           {cards.map((card, index) => {
             const baseClassName = `card flex flex-col justify-between relative w-full h-full max-w-full p-5 rounded-[20px] border border-solid font-light overflow-hidden transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:shadow-[0_8px_25px_rgba(0,0,0,0.15)] ${
               enableBorderGlow ? "card--border-glow" : ""
@@ -683,8 +686,8 @@ const MagicBento: React.FC<BentoProps> = ({
 
             const visualStyle = {
               backgroundColor: card.color || "var(--background-dark)",
-              borderColor: "var(--border-color)",
-              color: "var(--white)",
+              borderColor: card.borderColor || "var(--border-color)",
+              color: card.textColor || "var(--white)",
               "--glow-x": "50%",
               "--glow-y": "50%",
               "--glow-intensity": "0",
