@@ -1,9 +1,10 @@
 export const portfolioData = {
   name: "Murakawa Takuya",
   icon: "/icon.png", // TODO: Add icon
-  catchphrase: "Fullstack Developer & Computer Vision Researcher",
+  catchphrase: "Fullstack Development × Computer Vision Research", // TODO: full stack developmentの中身をrotateしてもいいかも: https://reactbits.dev/text-animations/rotating-text
   strengths: ["キャッチアップ力", "好奇心", "挑戦心", "Grid力"],
   links: [
+    // TODO: 数値系はcount upを使う: https://reactbits.dev/text-animations/count-up
     {
       url: "https://github.com/MurakawaTakuya",
       name: "GitHub",
@@ -13,7 +14,7 @@ export const portfolioData = {
       iconBackgroundColor: "#181717",
     },
     {
-      url: "https://x.com/PerhapsTakuya",
+      url: "https://x.com/MosiTaku",
       name: "X (Twitter)",
       iconLink: "/link_icons/x.svg",
       width: 2,
@@ -27,7 +28,7 @@ export const portfolioData = {
       iconBackgroundColor: "#55C500",
     },
     {
-      url: "https://connpass.com/dashboard/",
+      url: "https://connpass.com/user/MurakawaTakuya/",
       name: "Connpass",
       iconLink: "/link_icons/connpass.png",
       iconBackgroundColor: "#ffffffff",
