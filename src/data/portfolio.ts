@@ -1,10 +1,7 @@
 export const portfolioData = {
   name: "Murakawa Takuya",
   icon: "/icon.png", // TODO: Add icon
-  catchphrase: {
-    main: "フルスタック開発 × Computer Vision研究",
-    sub: "Fullstack Developer & Computer Vision Researcher", // Added English translation
-  },
+  catchphrase: "Fullstack Developer & Computer Vision Researcher",
   strengths: ["キャッチアップ力", "好奇心", "挑戦心", "Grid力"],
   links: {
     github: {
@@ -93,6 +90,7 @@ export const portfolioData = {
       },
     ],
     activities: [
+      // link追加
       {
         date: "2026",
         title: "名古屋CVPR・ML勉強会",
@@ -111,7 +109,7 @@ export const portfolioData = {
     ],
     qualifications: [
       {
-        date: "2025-05", // Future date noted in prompt? Kept as is.
+        date: "2025-05",
         title: "TOEIC 895点",
       },
       {
