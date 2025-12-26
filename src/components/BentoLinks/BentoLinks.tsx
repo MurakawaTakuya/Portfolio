@@ -3,27 +3,41 @@
 import MagicBento, { BentoCardProps } from "@/components/MagicBento";
 import { portfolioData } from "@/data/portfolio";
 
+// Define the shape of the link object from portfolioData
+interface PortfolioLink {
+  url: string;
+  name: string;
+  iconLink: string;
+  width?: number;
+  height?: number;
+}
+
 // Convert portfolio links to BentoCardProps
 const createLinkCards = (): BentoCardProps[] => {
-  return portfolioData.links.map((link) => ({
-    icon: (
-      // eslint-disable-next-line @next/next/no-img-element
-      <img
-        src={link.iconLink}
-        alt={link.name}
-        className="size-8 object-contain"
-      />
-    ),
-    title: link.name,
-    href: link.url,
-  }));
+  return portfolioData.links.map((link) => {
+    const pLink = link as PortfolioLink;
+    return {
+      icon: (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={pLink.iconLink}
+          alt={pLink.name}
+          className="size-8 object-contain"
+        />
+      ),
+      title: pLink.name,
+      href: pLink.url,
+      width: pLink.width,
+      height: pLink.height,
+    };
+  });
 };
 
 export default function BentoLinks() {
   const linkCards = createLinkCards();
 
   return (
-    <section className="w-full flex justify-center py-8">
+    <section className="w-full flex justify-center py-1">
       <MagicBento
         cards={linkCards}
         enableStars={false}

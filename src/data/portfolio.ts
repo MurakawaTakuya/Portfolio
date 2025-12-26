@@ -9,12 +9,16 @@ export const portfolioData = {
       name: "GitHub",
       iconLink:
         "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark-Light-120px-plus.png",
+      width: 2,
+      height: 2,
     },
     {
       url: "https://x.com/PerhapsTakuya",
       name: "X (Twitter)",
       iconLink:
         "https://upload.wikimedia.org/wikipedia/commons/5/5a/X_logo_2023_%28white%29.png",
+      width: 2,
+      height: 1,
     },
     {
       url: "https://qiita.com/Murakawa_Takuya",
