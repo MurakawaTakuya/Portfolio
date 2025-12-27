@@ -56,7 +56,7 @@ export default function BentoLinks() {
     <section className="w-full flex justify-center py-1">
       <MagicBento
         cards={linkCards}
-        enableStars={false}
+        enableStars={true}
         enableSpotlight={false}
         spotlightRadius={50}
         enableBorderGlow={true}

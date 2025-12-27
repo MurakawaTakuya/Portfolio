@@ -10,7 +10,7 @@ const Hero = () => {
         <img
           src={portfolioData.icon}
           alt={portfolioData.name}
-          className="object-cover w-full h-full rounded-full border-4 border-white/10 shadow-lg"
+          className="object-cover w-full h-full rounded-full border-2 border-white/10 shadow-lg"
         />
       </div>
 

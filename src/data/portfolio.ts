@@ -1,6 +1,6 @@
 export const portfolioData = {
   name: "Murakawa Takuya",
-  icon: "/icon.png", // TODO: Add icon
+  icon: "/icon.jpg",
   catchphrase: "Fullstack Development × Computer Vision Research", // TODO: full stack developmentの中身をrotateしてもいいかも: https://reactbits.dev/text-animations/rotating-text
   strengths: ["キャッチアップ力", "好奇心", "挑戦心", "Grid力"],
   links: [

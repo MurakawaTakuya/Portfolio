@@ -911,8 +911,8 @@ const StyledBentoSection = styled.div<{
 
   .card--border-glow:hover {
     box-shadow:
-      0 4px 20px rgba(46, 24, 78, 0.4),
-      0 0 30px rgba(${(props) => props.$glowColor}, 0.2);
+      0 0px 20px rgba(255, 255, 255, 0),
+      0 0 15px rgba(${(props) => props.$glowColor}, 0.2);
   }
 
   .particle::before {
