@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import type { TimelineColor } from "@/types";
+import type { TimelineColor } from "@/types/timeline";
 import { cva, type VariantProps } from "class-variance-authority";
 import { HTMLMotionProps, motion } from "framer-motion";
 import { AlertCircle, Loader2 } from "lucide-react";
@@ -133,7 +133,7 @@ const TimelineItem = React.forwardRef<HTMLLIElement, TimelineItemProps>(
     },
     ref
   ) => {
-    const commonClassName = cn("relative w-full mb-8 last:mb-0", className);
+    const commonClassName = cn("relative w-full mb-4 last:mb-0", className);
 
     // Loading State
     if (loading) {
@@ -234,7 +234,7 @@ const TimelineItem = React.forwardRef<HTMLLIElement, TimelineItemProps>(
               iconSize={iconsize}
             />
           </div>
-          {showConnector && <div className="h-16 w-0.5 bg-border mt-2" />}
+          {showConnector && <div className="h-10 w-0.5 bg-border mt-2" />}
         </div>
 
         {/* Content */}

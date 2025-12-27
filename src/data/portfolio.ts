@@ -1,4 +1,6 @@
-export const portfolioData = {
+import type { PortfolioData } from "@/types/portfolio";
+
+export const portfolioData: PortfolioData = {
   name: "Murakawa Takuya",
   icon: "/icon.jpg",
   // TODO: bio追加

@@ -1,6 +1,6 @@
 import BentoLinks from "@/components/BentoLinks/BentoLinks";
-import CareerTimeline from "@/components/CareerTimeline/CareerTimeline";
 import Hero from "@/components/Hero/Hero";
+import CareerTimeline from "@/components/Timeline/CareerTimeline";
 import styles from "./page.module.scss";
 
 export default function Home() {

@@ -1,0 +1,67 @@
+"use client";
+
+import { TimelineLayout } from "@/components/Timeline/timeline-layout";
+import { portfolioData } from "@/data/portfolio";
+import type { TimelineElement } from "@/types/timeline";
+
+const CareerTimeline = () => {
+  // Transform portfolio timeline data to TimelineElement format
+  const careerEvents: TimelineElement[] = portfolioData.timeline.career.map(
+    (item, index) => ({
+      id: index,
+      date: item.date,
+      title: item.title,
+      description: item.description || "",
+    })
+  );
+
+  const internshipEvents: TimelineElement[] =
+    portfolioData.timeline.internship.map((item, index) => ({
+      id: 100 + index,
+      date: item.date,
+      title: item.title,
+      description: item.description || "",
+    }));
+
+  const parttimeEvents: TimelineElement[] = portfolioData.timeline.parttime.map(
+    (item, index) => ({
+      id: 200 + index,
+      date: item.date,
+      title: item.title,
+      description: item.description || "",
+    })
+  );
+
+  const activitiesEvents: TimelineElement[] =
+    portfolioData.timeline.activities.map((item, index) => ({
+      id: 300 + index,
+      date: item.date,
+      title: item.title,
+      description: item.description || "",
+    }));
+
+  // Combine all events and sort by date
+  const timelineEvents = [
+    ...careerEvents,
+    ...internshipEvents,
+    ...parttimeEvents,
+    ...activitiesEvents,
+  ]
+    .sort((a, b) => {
+      return a.date.localeCompare(b.date);
+    })
+    .reverse();
+
+  return (
+    <TimelineLayout
+      animate
+      className="min-h-[600px] w-full max-w-2xl mx-auto p-8"
+      connectorColor="primary"
+      iconColor="primary"
+      items={timelineEvents}
+      size="md"
+    />
+  );
+};
+
+export default CareerTimeline;
