@@ -10,7 +10,7 @@ export interface TimelineEvent {
   year: string;
   title: string;
   subtitle?: string;
-  description: string;
+  description?: string;
   icon?: React.ReactNode;
   color?: string;
 }

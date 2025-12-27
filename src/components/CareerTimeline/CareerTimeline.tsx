@@ -8,27 +8,55 @@ import { portfolioData } from "@/data/portfolio";
 
 const CareerTimeline = () => {
   // Transform portfolio timeline data to ScrollTimeline format
-  const timelineEvents: TimelineEvent[] = portfolioData.timeline.career.map(
+  const careerEvents: TimelineEvent[] = portfolioData.timeline.career.map(
     (item, index) => ({
       id: `career-${index}`,
       year: item.date,
       title: item.title,
-      subtitle:
-        item.type === "education"
-          ? "学業"
-          : item.type === "internship"
-            ? "インターン"
-            : "活動",
+    })
+  );
+
+  const internshipEvents: TimelineEvent[] =
+    portfolioData.timeline.internship.map((item, index) => ({
+      id: `internship-${index}`,
+      year: item.date,
+      title: item.title,
+      description: item.description,
+    }));
+
+  const parttimeEvents: TimelineEvent[] = portfolioData.timeline.parttime.map(
+    (item, index) => ({
+      id: `parttime-${index}`,
+      year: item.date,
+      title: item.title,
       description: item.description,
     })
   );
+
+  const activitiesEvents: TimelineEvent[] =
+    portfolioData.timeline.activities.map((item, index) => ({
+      id: `activities-${index}`,
+      year: item.date,
+      title: item.title,
+      description: item.description,
+    }));
+
+  // Combine all events and sort by date
+  const timelineEvents = [
+    ...careerEvents,
+    ...internshipEvents,
+    ...parttimeEvents,
+    ...activitiesEvents,
+  ].sort((a, b) => {
+    return a.year.localeCompare(b.year);
+  });
 
   return (
     <ScrollTimeline
       events={timelineEvents}
       title="Timeline"
       subtitle="経歴と活動の軌跡"
-      cardAlignment="alternating"
+      cardAlignment="right"
       cardVariant="filled"
       cardEffect="shadow"
       revealAnimation="none"

@@ -1,6 +1,7 @@
 export const portfolioData = {
   name: "Murakawa Takuya",
   icon: "/icon.jpg",
+  // TODO: bio追加
   catchphrase: "Fullstack Development × Computer Vision Research", // TODO: full stack developmentの中身をrotateしてもいいかも: https://reactbits.dev/text-animations/rotating-text
   strengths: ["キャッチアップ力", "好奇心", "挑戦心", "Grid力"],
   links: [
@@ -72,76 +73,91 @@ export const portfolioData = {
     other: ["Java", "C", "C++"],
   },
   timeline: {
+    // TODO: 並び替えの比較用のdate型のデータを追加する
     career: [
       {
         date: "2022-04",
-        title: "名古屋工業大学",
-        description: "入学",
-        type: "education",
-      },
-      {
-        date: "2024-06",
-        title: "Qiita株式会社 / 株式会社エイチームホールディングス",
-        description:
-          "インターン: フロントエンド (React, TypeScript)・バックエンド (Ruby on Rails) (2024/6 ~ 2024/7)",
-        type: "internship",
-      },
-      {
-        date: "2024-07",
-        title: "株式会社イノベーション",
-        description: "インターン (2024/7 ~ now)",
-        type: "internship",
-      },
-      {
-        date: "2024-09",
-        title: "株式会社アイスタイル",
-        description: "インターン: バックエンド (Java, Spring Boot)",
-        type: "internship",
+        title: "名古屋工業大学 入学",
       },
       {
         date: "2026-03",
-        title: "名古屋工業大学",
-        description: "卒業予定",
-        type: "education",
+        title: "名古屋工業大学 卒業予定",
       },
       {
         date: "2026-04",
-        title: "名古屋工業大学大学院",
-        description: "入学予定",
-        type: "education",
+        title: "名古屋工業大学大学院 入学予定",
+      },
+    ],
+    internship: [
+      {
+        date: "2024/6 ~ 2024/7",
+        title: "Qiita株式会社 / 株式会社エイチームホールディングス",
+        description:
+          "インターン: フロントエンド (React, TypeScript)・バックエンド (Ruby on Rails) ",
+      },
+      {
+        date: "2024/9",
+        title: "株式会社アイスタイル",
+        description: "バックエンド(PHP, Java, SpringBoot)",
+      },
+      {
+        date: "2024/7 ~ now",
+        title: "株式会社イノベーション",
+        description: "フロントエンド(React)・バックエンド(PHP, Laravel)",
+      },
+    ],
+    parttime: [
+      {
+        date: "2022/4 ~ 2024/3",
+        title: "学習塾アルバイト",
+      },
+      {
+        date: "2022/10 ~ 2023/2",
+        title: "学習塾アルバイト",
+      },
+      {
+        date: "2023/12 ~ 2025/7",
+        title: "大学技術補佐員",
+        description: "熱中症搬送者数予測サイトの開発",
       },
     ],
     activities: [
+      // TODO: タイトルは所属・活動
       // link追加
       {
-        date: "2022",
-        title: "工大祭実行委員会",
-        description: "Web開発担当 (2022~2024)",
+        date: "2022 ~ 2023(2024)",
+        title: "工大祭実行委員会 所属",
+        description: "広報局所属 Web開発担当",
+      },
+      // {
+      //   date: "2022",
+      //   title: "熱中症搬送者数予測サイト開発",
+      //   description: "技術補佐員",
+      // },
+      {
+        date: "2025/2 ~ 2025/3",
+        title: "Efrei Paris フランス留学",
+        description: "TBW",
       },
       {
-        date: "2022",
-        title: "熱中症搬送者数予測サイト開発",
-        description: "技術補佐員 (https://heatstroke.jp/)",
-      },
-      {
-        date: "2026",
-        title: "名古屋CVPR・ML勉強会",
+        date: "2026 ~ now",
+        title: "名古屋CVPR・ML勉強会 運営",
         description: "2026~now",
       },
     ],
   },
   qualifications: [
     {
-      date: "2025-05",
-      title: "TOEIC 895点",
+      date: "2020-11",
+      title: "実用英語技能検定 準一級",
     },
     {
       date: "2024-04",
       title: "応用情報技術者試験",
     },
     {
-      date: "2020-11",
-      title: "実用英語技能検定 準一級",
+      date: "2025-05",
+      title: "TOEIC 895点",
     },
   ],
   publications: {
