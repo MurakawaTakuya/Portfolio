@@ -40,12 +40,21 @@ const CareerTimeline = () => {
       description: item.description || "",
     }));
 
+  const researchConferencesEvents: TimelineElement[] =
+    portfolioData.researchConferences.map((item, index) => ({
+      id: 400 + index,
+      date: item.date,
+      title: item.title,
+      description: item.description || "",
+    }));
+
   // Combine all events and sort by date
   const timelineEvents = [
     ...careerEvents,
     ...internshipEvents,
     ...parttimeEvents,
     ...activitiesEvents,
+    ...researchConferencesEvents,
   ]
     .sort((a, b) => {
       return a.date.localeCompare(b.date);

@@ -34,6 +34,7 @@ export interface PortfolioData {
     date: string;
     title: string;
   }>;
+  researchConferences: TimelineItem[];
   publications: {
     papers: unknown[];
     articles: unknown[];

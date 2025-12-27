@@ -103,7 +103,7 @@ export const portfolioData: PortfolioData = {
         description: "バックエンド(PHP, Java, SpringBoot)",
       },
       {
-        date: "2024/7 ~ now",
+        date: "2024/7 ~ Present",
         title: "株式会社イノベーション",
         description: "フロントエンド(React)・バックエンド(PHP, Laravel)",
       },
@@ -142,9 +142,9 @@ export const portfolioData: PortfolioData = {
         description: "TBW",
       },
       {
-        date: "2026 ~ now",
+        date: "2026 ~ Present",
         title: "名古屋CVPR・ML勉強会 運営",
-        description: "2026~now",
+        description: "TBW",
       },
     ],
   },
@@ -160,6 +160,21 @@ export const portfolioData: PortfolioData = {
     {
       date: "2025-05",
       title: "TOEIC 895点",
+    },
+  ],
+  researchConferences: [
+    // 出した論文名も書いて、ボタンクリックでpublicationsにスクロール
+    // posterかoralかもわかるように
+    {
+      date: "2025/7",
+      title: "国内学会: 画像の認識・理解シンポジウム MIRU 2025",
+      description: "TBW",
+    },
+    {
+      date: "2026/1",
+      title:
+        "国際学会: IWAIT 2026 (The International Workshop on Advanced Image Technology)",
+      description: "TBW",
     },
   ],
   publications: {
