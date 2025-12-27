@@ -1,5 +1,6 @@
 import BentoLinks from "@/components/BentoLinks/BentoLinks";
 import Hero from "@/components/Hero/Hero";
+import Publications from "@/components/Publications/Publications";
 import CareerTimeline from "@/components/Timeline/CareerTimeline";
 import styles from "./page.module.scss";
 
@@ -17,6 +18,7 @@ export default function Home() {
         {/* Timeline */}
         <CareerTimeline />
         {/* Projects / Publications */}
+        <Publications />
         {/* Status */}
       </main>
       {/* TODO: copyright書く(コメントアウトも) */}

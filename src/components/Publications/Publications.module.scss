@@ -1,0 +1,71 @@
+.publications {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient(135deg, #8b5cf6, #10b981);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.category {
+  margin-bottom: 3rem;
+}
+
+.categoryTitle {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e0e0e0;
+}
+
+.card {
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.date {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #888;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.authors {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.description {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #999;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}

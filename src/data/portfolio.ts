@@ -76,6 +76,8 @@ export const portfolioData: PortfolioData = {
   },
   timeline: {
     // TODO: 並び替えの比較用のdate型のデータを追加する
+    // TODO: これからの目標をどこかに書く(timeline上か、twitter風か)
+    // TODO: 日付の形式(-, /を合わせる)
     career: [
       {
         date: "2022-04",
@@ -104,12 +106,12 @@ export const portfolioData: PortfolioData = {
       {
         date: "2024/9",
         title: "株式会社アイスタイル",
-        description: "バックエンド(PHP, Java, SpringBoot)",
+        description: "バックエンド (PHP, Java, SpringBoot)",
       },
       {
-        date: "2024/7 ~ Present",
+        date: "2025/7 ~ Present",
         title: "株式会社イノベーション",
-        description: "フロントエンド(React)・バックエンド(PHP, Laravel)",
+        description: "フロントエンド (React)・バックエンド (PHP, Laravel)",
       },
     ],
     parttime: [
@@ -192,7 +194,7 @@ export const portfolioData: PortfolioData = {
         links: [
           {
             title: "Poster",
-            url: "TBW",
+            url: "https://sites.google.com/nitech.jp/tamaki-lab/poster",
           },
         ],
       },
@@ -201,10 +203,14 @@ export const portfolioData: PortfolioData = {
         title:
           "M3DDM+: an improved video outpainging by a modified masking strategy",
         authors: "Takuya Murakawa, Takumi Fukuzawa, Ding Ning, Toru Tamaki",
-        description: "TBW",
+        description: "IWAIT TBW",
         abstract:
           "M3DDM provides a computationally efficient framework for video outpainting via latent diffusion modeling. However, it exhibits significant quality degradation --- manifested as spatial blur and temporal inconsistency --- under challenging scenarios characterized by limited camera motion or large outpainting regions, where inter-frame information is limited. We identify the cause as a training-inference mismatch in the masking strategy: M3DDM's training applies random mask directions and widths across frames, whereas inference requires consistent directional outpainting throughout the video. To address this, we propose M3DDM+, which applies uniform mask direction and width across all frames during training, followed by fine-tuning of the pretrained M3DDM model. Experiments demonstrate that M3DDM+ substantially improves visual fidelity and temporal coherence in information-limited scenarios while maintaining computational efficiency. The code is available at https://github.com/tamaki-lab/M3DDM-Plus.", // TODO: 一部だけ見えるようにして、展開で全部表示
         links: [
+          {
+            title: "Project Page",
+            url: "https://github.com/tamaki-lab/M3DDM-Plus",
+          },
           {
             title: "GitHub",
             url: "https://github.com/tamaki-lab/M3DDM-Plus",
@@ -229,13 +235,13 @@ export const portfolioData: PortfolioData = {
     slides: [
       {
         title:
-          "MotionMatcher: Cinematic Motion Customizationof Text-to-Video Diffusion Models via Motion Feature Matching",
-        url: "https://www.slideshare.net/slideshow/motionmatcher-cinematic-motion-customizationof-text-to-video-diffusion-models-via-motion-feature-matching/284341530",
+          "What, when, and where? Self-Supervised Spatio-Temporal Grounding in Untrimmed Multi-Action Videos from Narrated Instructions",
+        url: "https://www.slideshare.net/slideshow/what-when-and-where-self-supervised-spatio-temporal-grounding-in-untrimmed-multi-action-videos-from-narrated-instructions/279146670",
       },
       {
         title:
-          "What, when, and where? Self-Supervised Spatio-Temporal Grounding in Untrimmed Multi-Action Videos from Narrated Instructions",
-        url: "https://www.slideshare.net/slideshow/what-when-and-where-self-supervised-spatio-temporal-grounding-in-untrimmed-multi-action-videos-from-narrated-instructions/279146670",
+          "MotionMatcher: Cinematic Motion Customizationof Text-to-Video Diffusion Models via Motion Feature Matching",
+        url: "https://www.slideshare.net/slideshow/motionmatcher-cinematic-motion-customizationof-text-to-video-diffusion-models-via-motion-feature-matching/284341530",
       },
     ], // TODO: speakerdeckと一緒に表示する
     projects: [], // GitHub repositories etc.
