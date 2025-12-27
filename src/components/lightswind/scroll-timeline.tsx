@@ -1,15 +1,9 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
-import {
-  motion,
-  useScroll,
-  useTransform,
-  useSpring,
-  MotionValue,
-} from "framer-motion";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { Calendar } from "lucide-react";
+import React, { useEffect, useRef, useState } from "react";
 import { cn } from "../../lib/utils";
 import { Card, CardContent } from "./card";
-import { Calendar } from "lucide-react";
 
 export interface TimelineEvent {
   id?: string;
@@ -38,6 +32,8 @@ export interface ScrollTimelineProps {
   dateFormat?: "text" | "badge";
   className?: string;
   revealAnimation?: "fade" | "slide" | "scale" | "flip" | "none";
+  revealAnimationDelay?: number;
+  revealAnimationDuration?: number;
   connectorStyle?: "dots" | "line" | "dashed";
   perspective?: boolean;
   darkMode?: boolean;
@@ -82,6 +78,8 @@ export const ScrollTimeline = ({
   progressLineCap = "round",
   dateFormat = "badge",
   revealAnimation = "fade",
+  revealAnimationDelay,
+  revealAnimationDuration = 0.7,
   className = "",
   connectorStyle = "line",
   perspective = false,
@@ -121,11 +119,13 @@ export const ScrollTimeline = ({
 
   const getCardVariants = (index: number) => {
     const baseDelay =
-      animationOrder === "simultaneous"
-        ? 0
-        : animationOrder === "staggered"
-        ? index * 0.2
-        : index * 0.3;
+      revealAnimationDelay !== undefined
+        ? revealAnimationDelay
+        : animationOrder === "simultaneous"
+          ? 0
+          : animationOrder === "staggered"
+            ? index * 0.2
+            : index * 0.3;
 
     const initialStates = {
       fade: { opacity: 0, y: 20 },
@@ -134,10 +134,10 @@ export const ScrollTimeline = ({
           cardAlignment === "left"
             ? -100
             : cardAlignment === "right"
-            ? 100
-            : index % 2 === 0
-            ? -100
-            : 100,
+              ? 100
+              : index % 2 === 0
+                ? -100
+                : 100,
         opacity: 0,
       },
       scale: { scale: 0.8, opacity: 0 },
@@ -154,7 +154,7 @@ export const ScrollTimeline = ({
         scale: 1,
         rotateY: 0,
         transition: {
-          duration: 0.7,
+          duration: revealAnimationDuration,
           delay: baseDelay,
           ease: [0.25, 0.1, 0.25, 1.0] as [number, number, number, number],
         },
@@ -204,8 +204,8 @@ export const ScrollTimeline = ({
           ? "lg:mr-[calc(50%+20px)]"
           : "lg:ml-[calc(50%+20px)]"
         : cardAlignment === "left"
-        ? "lg:mr-auto lg:ml-0"
-        : "lg:ml-auto lg:mr-0";
+          ? "lg:mr-auto lg:ml-0"
+          : "lg:ml-auto lg:mr-0";
     const perspectiveClass = perspective
       ? "transform transition-transform hover:rotate-y-1 hover:rotate-x-1"
       : "";
@@ -253,8 +253,7 @@ export const ScrollTimeline = ({
                   width: progressLineWidth,
                   left: "50%",
                   transform: "translateX(-50%)",
-                  borderRadius:
-                    progressLineCap === "round" ? "9999px" : "0px",
+                  borderRadius: progressLineCap === "round" ? "9999px" : "0px",
                   background: `linear-gradient(to bottom, #22d3ee, #6366f1, #a855f7)`,
                   // Enhanced shadow for a constant glow effect along the path
                   boxShadow: `
@@ -320,8 +319,8 @@ export const ScrollTimeline = ({
                         ? "lg:justify-start"
                         : "lg:flex-row-reverse lg:justify-start"
                       : cardAlignment === "left"
-                      ? "lg:justify-start"
-                      : "lg:flex-row-reverse lg:justify-start"
+                        ? "lg:justify-start"
+                        : "lg:flex-row-reverse lg:justify-start"
                   )}
                 >
                   <div
@@ -358,10 +357,7 @@ export const ScrollTimeline = ({
                     />
                   </div>
                   <motion.div
-                    className={cn(
-                      getCardClasses(index),
-                      "mt-12 lg:mt-0"
-                    )}
+                    className={cn(getCardClasses(index), "mt-12 lg:mt-0")}
                     variants={getCardVariants(index)}
                     initial="initial"
                     whileInView="whileInView"

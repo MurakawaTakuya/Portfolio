@@ -74,28 +74,10 @@ export const portfolioData = {
   timeline: {
     career: [
       {
-        date: "2026-04",
-        title: "名古屋工業大学大学院",
-        description: "入学予定",
-        type: "education",
-      },
-      {
-        date: "2026-03",
+        date: "2022-04",
         title: "名古屋工業大学",
-        description: "卒業予定",
+        description: "入学",
         type: "education",
-      },
-      {
-        date: "2024-09",
-        title: "株式会社アイスタイル",
-        description: "インターン: バックエンド (Java, Spring Boot)",
-        type: "internship",
-      },
-      {
-        date: "2024-07",
-        title: "株式会社イノベーション",
-        description: "インターン (2024/7 ~ now)",
-        type: "internship",
       },
       {
         date: "2024-06",
@@ -105,19 +87,32 @@ export const portfolioData = {
         type: "internship",
       },
       {
-        date: "2022-04",
+        date: "2024-07",
+        title: "株式会社イノベーション",
+        description: "インターン (2024/7 ~ now)",
+        type: "internship",
+      },
+      {
+        date: "2024-09",
+        title: "株式会社アイスタイル",
+        description: "インターン: バックエンド (Java, Spring Boot)",
+        type: "internship",
+      },
+      {
+        date: "2026-03",
         title: "名古屋工業大学",
-        description: "入学",
+        description: "卒業予定",
+        type: "education",
+      },
+      {
+        date: "2026-04",
+        title: "名古屋工業大学大学院",
+        description: "入学予定",
         type: "education",
       },
     ],
     activities: [
       // link追加
-      {
-        date: "2026",
-        title: "名古屋CVPR・ML勉強会",
-        description: "2026~now",
-      },
       {
         date: "2022",
         title: "工大祭実行委員会",
@@ -128,22 +123,27 @@ export const portfolioData = {
         title: "熱中症搬送者数予測サイト開発",
         description: "技術補佐員 (https://heatstroke.jp/)",
       },
-    ],
-    qualifications: [
       {
-        date: "2025-05",
-        title: "TOEIC 895点",
-      },
-      {
-        date: "2024-04",
-        title: "応用情報技術者試験",
-      },
-      {
-        date: "2020-11",
-        title: "実用英語技能検定 準一級",
+        date: "2026",
+        title: "名古屋CVPR・ML勉強会",
+        description: "2026~now",
       },
     ],
   },
+  qualifications: [
+    {
+      date: "2025-05",
+      title: "TOEIC 895点",
+    },
+    {
+      date: "2024-04",
+      title: "応用情報技術者試験",
+    },
+    {
+      date: "2020-11",
+      title: "実用英語技能検定 準一級",
+    },
+  ],
   publications: {
     papers: [], // To be added later
     articles: [], // To be added later (e.g. from Qiita)
