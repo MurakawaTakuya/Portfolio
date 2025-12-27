@@ -1,3 +1,4 @@
+// https://www.shadcn.io/template/timdehof-shadcn-timeline
 "use client";
 
 import type { TimelineElement } from "@/types/timeline";

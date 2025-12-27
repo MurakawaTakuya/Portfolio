@@ -1,6 +1,6 @@
 "use client";
 
-import { TimelineLayout } from "@/components/Timeline/timeline-layout";
+import { TimelineLayout } from "@/components/timeline-layout";
 import { portfolioData } from "@/data/portfolio";
 import type { TimelineElement } from "@/types/timeline";
 

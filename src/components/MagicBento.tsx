@@ -1,3 +1,4 @@
+// https://reactbits.dev/components/magic-bento
 "use client";
 
 import { MOBILE_BREAKPOINT } from "@/constants/const";
