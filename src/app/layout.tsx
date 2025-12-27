@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja">
+    <html lang="ja" className="dark">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <main className="min-h-screen bg-black text-white selection:bg-neutral-700 selection:text-white">
           {children}
