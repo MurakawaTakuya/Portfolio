@@ -32,5 +32,15 @@ export async function getStatsForLink(name: string): Promise<StatItem[]> {
     ];
   }
 
+  if (name === "SpeakerDeck") {
+    const slideCount = laprasData.speaker_deck_slides?.length || 0;
+    return [
+      {
+        icon: <DescriptionIcon fontSize="small" />,
+        value: `${slideCount}`,
+      },
+    ];
+  }
+
   return [];
 }
