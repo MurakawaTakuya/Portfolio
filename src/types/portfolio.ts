@@ -31,6 +31,7 @@ export interface PortfolioData {
     machineLearning: SkillItem[];
     editor: SkillItem[];
     os: SkillItem[];
+    tool: SkillItem[];
     other: SkillItem[];
   };
   timeline: {

@@ -69,6 +69,9 @@ export const portfolioData: PortfolioData = {
       { name: "JavaScript", level: 5, iconName: "js" },
       { name: "TypeScript", level: 5, iconName: "ts" },
       { name: "Vue.js", level: 3, iconName: "vue" },
+      { name: "HTML", level: 5, iconName: "html" },
+      { name: "CSS", level: 5, iconName: "css" },
+      { name: "Tailwind CSS", level: 4, iconName: "tailwind" },
     ],
     backend: [
       { name: "Node.js", level: 5, iconName: "nodejs" },
@@ -76,9 +79,6 @@ export const portfolioData: PortfolioData = {
       { name: "Laravel", level: 4, iconName: "laravel" },
       { name: "MySQL", level: 4, iconName: "mysql" },
       { name: "PostgreSQL", level: 4, iconName: "postgres" },
-      { name: "HTML", level: 5, iconName: "html" },
-      { name: "CSS", level: 5, iconName: "css" },
-      { name: "Tailwind CSS", level: 4, iconName: "tailwind" },
     ],
     infrastructure: [
       { name: "GitHub Actions", level: 4, iconName: "githubactions" },
@@ -87,7 +87,6 @@ export const portfolioData: PortfolioData = {
       { name: "Firebase", level: 5, iconName: "firebase" },
       { name: "Google Cloud", level: 2, iconName: "gcp" },
       { name: "AWS", level: 1, iconName: "aws" },
-      { name: "Docker", level: 2, iconName: "docker" },
     ],
     machineLearning: [
       { name: "Python", level: 4, iconName: "py" },
@@ -107,18 +106,23 @@ export const portfolioData: PortfolioData = {
       { name: "macOS", level: 5, iconName: null },
       { name: "Linux", level: 4, iconName: "linux" },
     ],
+    tool: [
+      { name: "Git", level: 5, iconName: "git" },
+      { name: "GitHub", level: 5, iconName: "github" },
+      { name: "Docker", level: 2, iconName: "docker" },
+    ],
     other: [
       { name: "Java", level: 4, iconName: "java" },
       { name: "C", level: 3, iconName: "c" },
       { name: "C++", level: 3, iconName: "cpp" },
       { name: "Bash", level: 5, iconName: "bash" },
-      { name: "Git", level: 5, iconName: "git" },
     ],
   },
   timeline: {
     // TODO: 並び替えの比較用のdate型のデータを追加する
     // TODO: これからの目標をどこかに書く(timeline上か、twitter風か)
     // TODO: 日付の形式(-, /を合わせる)
+    // TODO: カテゴリを付けて、タイムラインにアイコンを表示する
     career: [
       {
         date: "2022-04",

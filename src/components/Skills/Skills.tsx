@@ -17,6 +17,7 @@ const categoryDisplayNames: Record<string, string> = {
   machineLearning: "Machine Learning",
   editor: "Editor",
   os: "OS",
+  tool: "Tool",
   other: "Other",
 };
 
@@ -28,6 +29,7 @@ const categoryOrder = [
   "machineLearning",
   "editor",
   "os",
+  "tool",
   "other",
 ];
 
