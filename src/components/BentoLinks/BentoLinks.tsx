@@ -1,9 +1,10 @@
 "use client";
 
 import MagicBento, { BentoCardProps } from "@/components/MagicBento";
-import { BENTO_BG_INTENSITY } from "@/constants/const";
+import { BENTO_BG_INTENSITY, BENTO_ICON_SIZE } from "@/constants/const";
 import { portfolioData } from "@/data/portfolio";
 import { mixWithBlack } from "@/lib/colorUtils";
+import styles from "./BentoLinks.module.scss";
 
 // Define the shape of the link object from portfolioData
 interface PortfolioLink {
@@ -28,7 +29,7 @@ const createLinkCards = (): BentoCardProps[] => {
       color: backgroundColor,
       icon: (
         <div
-          className="rounded-xl !p-2 flex items-center justify-center"
+          className={styles.iconContainer}
           style={{
             backgroundColor: pLink.iconBackgroundColor || "#d1d5db", // Fallback to gray-300
           }}
@@ -37,7 +38,11 @@ const createLinkCards = (): BentoCardProps[] => {
           <img
             src={pLink.iconLink}
             alt={pLink.name}
-            className="size-10 object-contain"
+            className={styles.icon}
+            style={{
+              width: `${BENTO_ICON_SIZE}rem`,
+              height: `${BENTO_ICON_SIZE}rem`,
+            }}
           />
         </div>
       ),
@@ -53,7 +58,7 @@ export default function BentoLinks() {
   const linkCards = createLinkCards();
 
   return (
-    <section className="w-full flex justify-center py-1">
+    <section className={styles.bentoLinks}>
       <MagicBento
         cards={linkCards}
         enableStars={true}

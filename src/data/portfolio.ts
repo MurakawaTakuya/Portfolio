@@ -35,20 +35,21 @@ export const portfolioData: PortfolioData = {
       name: "Connpass",
       iconLink: "/link_icons/connpass.png",
       iconBackgroundColor: "#ffffffff",
-      backgroundColor: "#ca3e4737",
+      backgroundColor: "#200000ff",
     },
     {
       url: "https://speakerdeck.com/murakawatakuya",
       name: "SpeakerDeck",
       iconLink: "https://speakerdeck.com/favicon.ico",
       iconBackgroundColor: "#ffffffff",
-      backgroundColor: "#48b6ab3a",
+      backgroundColor: "#0d1e1cff",
     },
     {
       url: "https://atcoder.jp/users/RarabyBye",
       name: "AtCoder",
       iconLink: "/link_icons/atcoder.png",
       iconBackgroundColor: "#ffffffff",
+      backgroundColor: "#151515ff",
     },
     {
       url: "https://lapras.com/person",

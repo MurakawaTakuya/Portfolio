@@ -1,7 +1,7 @@
 // https://reactbits.dev/components/magic-bento
 "use client";
 
-import { MOBILE_BREAKPOINT } from "@/constants/const";
+import { BENTO_GRID_ROW_HEIGHT, MOBILE_BREAKPOINT } from "@/constants/const";
 import styled from "@emotion/styled";
 import { gsap } from "gsap";
 import React, { useCallback, useEffect, useRef, useState } from "react";
@@ -289,7 +289,7 @@ const ParticleCard: React.FC<{
         width: ${maxDistance * 2}px;
         height: ${maxDistance * 2}px;
         border-radius: 50%;
-        background: radial-gradient(circle, rgba(${glowColor}, 0.4) 0%, rgba(${glowColor}, 0.2) 30%, transparent 70%);
+        background: radial-gradient(circle, rgba(${glowColor}, 0.4) 0%, rgba(${glowColor}, 0.1) 30%, transparent 70%);
         left: ${x - maxDistance}px;
         top: ${y - maxDistance}px;
         pointer-events: none;
@@ -504,13 +504,15 @@ const BentoCardGrid: React.FC<{
   gridRef?: React.RefObject<HTMLDivElement | null>;
   glowColor: string;
   borderColor: string;
-}> = ({ children, gridRef, glowColor, borderColor }) => (
+  gridRowHeight: number;
+}> = ({ children, gridRef, glowColor, borderColor, gridRowHeight }) => (
   <StyledBentoSection
     className="bento-section grid gap-2 p-0 w-full max-w-[80rem] select-none relative"
     style={{ fontSize: "clamp(1rem, 0.9rem + 0.5vw, 1.5rem)" }}
     ref={gridRef}
     $glowColor={glowColor}
     $borderColor={borderColor}
+    $gridRowHeight={gridRowHeight}
   >
     {children}
   </StyledBentoSection>
@@ -568,6 +570,7 @@ const MagicBento: React.FC<BentoProps> = ({
         gridRef={gridRef}
         glowColor={glowColor}
         borderColor={borderColor}
+        gridRowHeight={BENTO_GRID_ROW_HEIGHT}
       >
         <div className={`card-responsive grid gap-3`}>
           {cards.map((card, index) => {
@@ -594,7 +597,7 @@ const MagicBento: React.FC<BentoProps> = ({
               const cardContent = (
                 <ParticleCard
                   key={index}
-                  className={`${baseClassName} ${card.className || ""}`}
+                  className={`${baseClassName} !flex-row !items-center gap-4 ${card.className || ""}`}
                   style={
                     card.href ? visualStyle : { ...gridStyle, ...visualStyle }
                   }
@@ -605,27 +608,22 @@ const MagicBento: React.FC<BentoProps> = ({
                   clickEffect={clickEffect}
                   enableMagnetism={enableMagnetism}
                 >
-                  <div className="card__header flex justify-between items-start gap-3 relative text-white">
-                    {card.icon && (
-                      <div className="card__icon text-3xl">{card.icon}</div>
-                    )}
-                    {card.label && (
-                      <span className="card__label text-sm opacity-70">
-                        {card.label}
-                      </span>
-                    )}
-                  </div>
-                  <div className="card__content flex flex-col relative text-white mt-auto">
+                  {card.icon && (
+                    <div className="card__icon flex-shrink-0 text-6xl text-white">
+                      {card.icon}
+                    </div>
+                  )}
+                  <div className="card__content flex flex-col flex-1 relative text-white">
                     {card.title && (
                       <h3
-                        className={`card__title font-medium text-base m-0 mb-1 ${textAutoHide ? "text-clamp-1" : ""}`}
+                        className={`card__title font-semibold text-xl m-0 mb-2 ${textAutoHide ? "text-clamp-1" : ""}`}
                       >
                         {card.title}
                       </h3>
                     )}
                     {card.description && (
                       <p
-                        className={`card__description text-xs leading-5 opacity-70 ${textAutoHide ? "text-clamp-2" : ""}`}
+                        className={`card__description text-sm leading-5 opacity-70 ${textAutoHide ? "text-clamp-2" : ""}`}
                       >
                         {card.description}
                       </p>
@@ -633,6 +631,11 @@ const MagicBento: React.FC<BentoProps> = ({
                     {card.stats && (
                       <span className="card__stats text-lg font-semibold mt-2 opacity-90">
                         {card.stats}
+                      </span>
+                    )}
+                    {card.label && (
+                      <span className="card__label text-xs opacity-50 mt-1">
+                        {card.label}
                       </span>
                     )}
                   </div>
@@ -847,6 +850,7 @@ const MagicBento: React.FC<BentoProps> = ({
 const StyledBentoSection = styled.div<{
   $glowColor: string;
   $borderColor: string;
+  $gridRowHeight: number;
 }>`
   --glow-x: 50%;
   --glow-y: 50%;
@@ -862,7 +866,7 @@ const StyledBentoSection = styled.div<{
 
   .card-responsive {
     grid-template-columns: 1fr;
-    grid-auto-rows: 200px;
+    grid-auto-rows: ${(props) => props.$gridRowHeight}px;
     width: 100%;
     margin: 0 auto;
   }
