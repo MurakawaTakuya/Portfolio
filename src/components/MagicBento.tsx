@@ -5,17 +5,17 @@ import { BENTO_GRID_ROW_HEIGHT, MOBILE_BREAKPOINT } from "@/constants/const";
 import styled from "@emotion/styled";
 import { gsap } from "gsap";
 import React, { useCallback, useEffect, useRef, useState } from "react";
+import StatsChips from "./StatsChips";
 
 export interface BentoCardProps {
   color?: string;
   title?: string;
-  description?: string;
   label?: string;
   textAutoHide?: boolean;
   disableAnimations?: boolean;
   icon?: React.ReactNode;
   href?: string;
-  stats?: string;
+  stats?: string[];
   className?: string;
   onClick?: () => void;
   width?: number;
@@ -621,17 +621,8 @@ const MagicBento: React.FC<BentoProps> = ({
                         {card.title}
                       </h3>
                     )}
-                    {card.description && (
-                      <p
-                        className={`card__description text-sm leading-5 opacity-70 ${textAutoHide ? "text-clamp-2" : ""}`}
-                      >
-                        {card.description}
-                      </p>
-                    )}
-                    {card.stats && (
-                      <span className="card__stats text-lg font-semibold mt-2 opacity-90">
-                        {card.stats}
-                      </span>
+                    {card.stats && card.stats.length > 0 && (
+                      <StatsChips stats={card.stats} className="card__stats" />
                     )}
                     {card.label && (
                       <span className="card__label text-xs opacity-50 mt-1">
@@ -811,14 +802,11 @@ const MagicBento: React.FC<BentoProps> = ({
                   >
                     {card.title}
                   </h3>
-                  {card.description && (
-                    <p
-                      className={`card__description text-xs leading-5 opacity-90 ${
-                        textAutoHide ? "text-clamp-2" : ""
-                      }`}
-                    >
-                      {card.description}
-                    </p>
+                  {card.stats && card.stats.length > 0 && (
+                    <StatsChips
+                      stats={card.stats}
+                      className="card__stats mt-1"
+                    />
                   )}
                 </div>
               </div>

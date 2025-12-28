@@ -5,6 +5,7 @@ import { BENTO_BG_INTENSITY, BENTO_ICON_SIZE } from "@/constants/const";
 import { portfolioData } from "@/data/portfolio";
 import { mixWithBlack } from "@/lib/colorUtils";
 import styles from "./BentoLinks.module.scss";
+import { getStatsForLink } from "./linkStats";
 
 // Define the shape of the link object from portfolioData
 interface PortfolioLink {
@@ -31,7 +32,7 @@ const createLinkCards = (): BentoCardProps[] => {
         <div
           className={styles.iconContainer}
           style={{
-            backgroundColor: pLink.iconBackgroundColor || "#d1d5db", // Fallback to gray-300
+            backgroundColor: pLink.iconBackgroundColor || "#d1d5db",
           }}
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -47,6 +48,7 @@ const createLinkCards = (): BentoCardProps[] => {
         </div>
       ),
       title: pLink.name,
+      stats: getStatsForLink(pLink.name),
       href: pLink.url,
       width: pLink.width,
       height: pLink.height,

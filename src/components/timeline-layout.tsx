@@ -26,6 +26,7 @@ export const TimelineLayout = ({
   className,
 }: TimelineLayoutProps) => {
   return (
+    // TODO: 画面に入る前で、ページ読み込んだ瞬間からアニメーションが始まってしまう
     <Timeline size={size} className={className}>
       {[...items].reverse().map((item, index) => (
         <motion.div

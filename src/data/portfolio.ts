@@ -20,8 +20,6 @@ export const portfolioData: PortfolioData = {
       url: "https://x.com/MosiTaku",
       name: "X (Twitter)",
       iconLink: "/link_icons/x.svg",
-      width: 2,
-      height: 1,
       iconBackgroundColor: "#000000",
     },
     {
