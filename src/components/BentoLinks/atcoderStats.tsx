@@ -47,11 +47,11 @@ export async function fetchAtCoderStats(): Promise<StatItem[]> {
       },
       {
         icon: null,
-        value: `Highest rating: ${highestRating}`,
+        value: `Current rating: ${currentRating}`,
       },
       {
         icon: null,
-        value: `Current rating: ${currentRating}`,
+        value: `Highest rating: ${highestRating}`,
       },
     ];
 
