@@ -8,6 +8,7 @@ export interface SkillItem {
   name: string;
   level: 1 | 2 | 3 | 4 | 5;
   iconName: string | null;
+  link?: string;
 }
 
 export interface PortfolioData {

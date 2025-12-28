@@ -56,6 +56,8 @@ export default function Skills() {
             return null;
           }
 
+          // TODO: どこかにクリックしたら公式ページに飛べるって書く
+          // TODO: レベルの指標を書く
           return (
             <GlowingCard
               key={categoryKey}
@@ -75,26 +77,38 @@ export default function Skills() {
                     const isCustomIcon = skill.iconName === null;
 
                     return (
-                      <Stack
+                      <a
                         key={skill.name}
-                        direction="row"
-                        spacing={1}
-                        sx={{
-                          alignItems: "center",
-                          backgroundColor: "rgba(20, 20, 20, 1)",
-                          border: "1px solid rgba(255, 255, 255, 0.11)",
-                          borderRadius: "8px",
-                          padding: "8px 12px",
-                        }}
+                        href={skill.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.skillLink}
                       >
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
-                          src={iconSrc}
-                          alt={skill.name}
-                          className={`${styles.skillIcon} ${isCustomIcon ? styles.customIcon : ""}`}
-                        />
-                        <span className={styles.skillName}>{skill.name}</span>
-                      </Stack>
+                        <Stack
+                          direction="row"
+                          spacing={1}
+                          sx={{
+                            alignItems: "center",
+                            backgroundColor: "rgba(20, 20, 20, 1)",
+                            border: "1px solid rgba(255, 255, 255, 0.11)",
+                            borderRadius: "8px",
+                            padding: "8px 12px",
+                            transition: "all 0.2s ease",
+                            "&:hover": {
+                              backgroundColor: "rgba(40, 40, 40, 1)",
+                              borderColor: "rgba(255, 255, 255, 0.25)",
+                            },
+                          }}
+                        >
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            src={iconSrc}
+                            alt={skill.name}
+                            className={`${styles.skillIcon} ${isCustomIcon ? styles.customIcon : ""}`}
+                          />
+                          <span className={styles.skillName}>{skill.name}</span>
+                        </Stack>
+                      </a>
                     );
                   })}
                 </div>
