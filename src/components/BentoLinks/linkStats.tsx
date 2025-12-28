@@ -3,6 +3,7 @@ import DescriptionIcon from "@mui/icons-material/Description";
 import FestivalIcon from "@mui/icons-material/Festival";
 import HearingIcon from "@mui/icons-material/Hearing";
 import RecordVoiceOverIcon from "@mui/icons-material/RecordVoiceOver";
+import { fetchAtCoderStats } from "./atcoderStats";
 import { fetchQiitaStats } from "./qiitaStats";
 
 export interface StatItem {
@@ -16,8 +17,8 @@ export async function getStatsForLink(name: string): Promise<StatItem[]> {
     const repoCount = laprasData.github_repositories?.length || 0;
     return [
       {
-        icon: <DescriptionIcon fontSize="small" />,
-        value: `${repoCount}`,
+        icon: null,
+        value: `Public Repos: ${repoCount}`,
       },
     ];
   }
@@ -69,6 +70,10 @@ export async function getStatsForLink(name: string): Promise<StatItem[]> {
         value: `${attendedCount}`,
       },
     ];
+  }
+
+  if (name === "AtCoder") {
+    return await fetchAtCoderStats();
   }
 
   return [];
