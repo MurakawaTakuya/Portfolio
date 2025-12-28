@@ -1,3 +1,4 @@
+import { CssVarsProvider } from "@mui/joy";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.scss";
@@ -26,15 +27,17 @@ export default function RootLayout({
   return (
     <html lang="ja" className="dark">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <main className="min-h-screen bg-black text-white selection:bg-neutral-700 selection:text-white">
-          {children}
-        </main>
-        <footer className="w-full px-4 py-8 mt-16 border-t border-white/10">
-          <p className="text-center text-sm text-gray-500 m-0">
-            © 2025~{new Date().getFullYear()} Murakawa Takuya. All rights
-            reserved.
-          </p>
-        </footer>
+        <CssVarsProvider defaultMode="dark">
+          <main className="min-h-screen bg-black text-white selection:bg-neutral-700 selection:text-white">
+            {children}
+          </main>
+          <footer className="w-full px-4 py-8 mt-16 border-t border-white/10">
+            <p className="text-center text-sm text-gray-500 m-0">
+              © 2025~{new Date().getFullYear()} Murakawa Takuya. All rights
+              reserved.
+            </p>
+          </footer>
+        </CssVarsProvider>
       </body>
     </html>
   );
