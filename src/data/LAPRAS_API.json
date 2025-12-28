@@ -1,0 +1,1491 @@
+{
+  "name": "Murakawa_Takuya",
+  "description": "NITech CSc B4\n\u5de5\u5927\u796dweb\u62c5 61&62\nWeb\u30d5\u30eb\u30b9\u30bf\u30c3\u30af \u2192 \u52d5\u753b\u751f\u6210\u7cfb\n\u30e2\u30c1\u30d9\u99c6\u52d5\n\u5fdc\u7528\u60c5\u5831, TOEIC 895",
+  "e_score": 3.56,
+  "b_score": 3.48,
+  "i_score": 3.16,
+  "iconimage_url": "https://www.gravatar.com/avatar/634504d55b176ea989d9ac6232312970?s=200&d=mp",
+  "qiita_articles": [
+    {
+      "title": "Next.js - `npx tailwindcss init` fails with `npm error could not determine executable to run`",
+      "url": "https://qiita.com/Murakawa_Takuya/items/f1d7d925651545547997",
+      "tags": ["npm", "Next.js", "tailwindcss"],
+      "headlines": [],
+      "stockers_count": 0,
+      "updated_at": "2025-02-09T23:51:00"
+    },
+    {
+      "title": "\u521d\u5fc3\u8005\u307b\u3069\u8aad\u3093\u3067\u307b\u3057\u3044\u30012\u5e74\u9023\u7d9a\u3067\u5927\u5b66\u796d\u306e\u30db\u30fc\u30e0\u30da\u30fc\u30b8\u30921\u304b\u3089\u4f5c\u308a\u76f4\u3057\u305f\u6642\u306e\u53cd\u7701\u70b9\u3068\u6539\u5584\u70b9",
+      "url": "https://qiita.com/Murakawa_Takuya/items/6bc0cf3dcf4d36b58a08",
+      "tags": [
+        "\u521d\u5fc3\u8005",
+        "\u30ec\u30ac\u30b7\u30fc\u30b3\u30fc\u30c9",
+        "\u5927\u5b66\u751f",
+        "\u4fdd\u5b88"
+      ],
+      "headlines": [
+        "\n\u524d\u5e74\u307e\u3067\u306e\u554f\u984c\u70b9",
+        "\n\u5909\u66f4\u70b9",
+        "\n\u53cd\u7701\u70b9",
+        "\n\u62c5\u5f53\u8005\u304c\u5909\u308f\u3063\u3066\u304b\u3089\u308f\u304b\u3063\u305f\u53cd\u7701\u70b9",
+        "\n\u5909\u66f4\u70b9",
+        "\n\u30c1\u30fc\u30e0\u3067\u30ea\u30cb\u30e5\u30fc\u30a2\u30eb\u3057\u305f\u6642\u306e\u53cd\u7701\u70b9"
+      ],
+      "stockers_count": 0,
+      "updated_at": "2025-02-09T11:45:24"
+    },
+    {
+      "title": "Qiita\u3063\u3066\u3069\u3093\u306a\u4f1a\u793e?Qiita\u306e\u30a4\u30f3\u30bf\u30fc\u30f3\u306b\u884c\u3063\u3066\u304d\u305f\u8a71",
+      "url": "https://qiita.com/Murakawa_Takuya/items/399c8bd656cf6c2bbd23",
+      "tags": [
+        "Qiita",
+        "\u30a4\u30f3\u30bf\u30fc\u30f3",
+        "\u5927\u5b66\u751f",
+        "\u5c31\u6d3b"
+      ],
+      "headlines": [
+        "\nQiita\u3068\u306f",
+        "\nQiita\u306e\u30aa\u30d5\u30a3\u30b9\u3063\u3066\u3069\u3053\u306b\u3042\u308b\u306e?\u3069\u3093\u306a\u74b0\u5883?",
+        "\nQiita\u3067\u5c0e\u5165\u3057\u3066\u3044\u308b\u958b\u767a\u74b0\u5883\u30fb\u624b\u6cd5",
+        "\nQiita\u306e\u793e\u98a8\u30fb\u3044\u3044\u3068\u3053\u308d",
+        "\n\u30a8\u30a4\u30c1\u30fc\u30e0\u306e\u793e\u98a8\u30fb\u3044\u3044\u3068\u3053\u308d",
+        "\nQiita\u306e\u30a4\u30f3\u30bf\u30fc\u30f3\u306e\u3053\u3053\u304c\u3059\u3054\u3044!",
+        "\n\u30a4\u30f3\u30bf\u30fc\u30f3\u3067\u306f\u3069\u3093\u306a\u696d\u52d9\u3092\u3057\u305f\u306e?",
+        "\n\u82e6\u6226\u3057\u305f\u3053\u3068",
+        "\n\u30a4\u30f3\u30bf\u30fc\u30f3\u3092\u901a\u3057\u3066\u4f55\u304c\u3067\u304d\u308b\u3088\u3046\u306b\u306a\u3063\u305f?\u3069\u3093\u306a\u3053\u3068\u3092\u5b66\u3093\u3060?",
+        "\n\u30a4\u30f3\u30bf\u30fc\u30f3\u3092\u901a\u3057\u3066\u6c17\u304c\u3064\u3044\u305f\u81ea\u5206\u306e\u5f37\u307f\u30fb\u3053\u308c\u304b\u3089\u306e\u8ab2\u984c",
+        "\n\u30a4\u30f3\u30bf\u30fc\u30f3\u3092\u901a\u3057\u3066\u5909\u308f\u3063\u305f\u30ad\u30e3\u30ea\u30a2\u30d1\u30b9",
+        "\n\u5927\u5b66\u3067\u306f\u6559\u3048\u3066\u304f\u308c\u306a\u3044\u3001\u30a4\u30f3\u30bf\u30fc\u30f3\u3067\u3057\u304b\u5f97\u3089\u308c\u306a\u3044\u7d4c\u9a13"
+      ],
+      "stockers_count": 39,
+      "updated_at": "2024-08-05T12:12:17"
+    },
+    {
+      "title": "\u5fdc\u7528\u60c5\u5831\u6280\u8853\u8005\u8a66\u9a13\u3092\u305f\u3063\u305f\u306e1\u30f6\u6708(100\u6642\u9593)\u3067\u5408\u683c\u3059\u308b\u52c9\u5f37\u6cd5",
+      "url": "https://qiita.com/Murakawa_Takuya/items/7940956d88e13d348610",
+      "tags": [
+        "\u8cc7\u683c",
+        "\u5fdc\u7528\u60c5\u5831\u6280\u8853\u8005\u8a66\u9a13"
+      ],
+      "headlines": [
+        "\n\u8aad\u3093\u3067\u307b\u3057\u3044\u4eba",
+        "\n\u5fdc\u7528\u60c5\u5831\u3063\u3066\u4f55?\u3069\u3093\u306a\u611f\u3058?",
+        "\n\u30b9\u30bf\u30fc\u30c8\u30e9\u30a4\u30f3"
+      ],
+      "stockers_count": 262,
+      "updated_at": "2024-07-30T00:26:24"
+    }
+  ],
+  "zenn_articles": [],
+  "blog_articles": [],
+  "note_articles": [],
+  "hatena_articles": [],
+  "speaker_deck_slides": [
+    {
+      "title": "CVPR2025\u8ad6\u6587\u7d39\u4ecb\uff1aUnboxed",
+      "url": "https://speakerdeck.com/murakawatakuya/cvpr2025lun-wen-shao-jie-unboxed",
+      "star_count": 0,
+      "view_count": 229,
+      "description": "",
+      "presentation_date": "2025-08-09T00:00:00"
+    }
+  ],
+  "github_repositories": [
+    {
+      "id": 884015781,
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": true,
+      "description": "TODO REAL\u306f\u3001TODO\u30ea\u30b9\u30c8\u3092SNS\u306e\u3088\u3046\u306b\u5171\u6709\u3067\u304d\u308b\u3088\u3046\u306b\u3059\u308b\u3053\u3068\u3067\u3001\u76ee\u6a19\u3084\u30bf\u30b9\u30af\u306e\u9054\u6210\u3092\u52b9\u679c\u7684\u304b\u3064\u7d99\u7d9a\u7684\u306b\u30b5\u30dd\u30fc\u30c8\u3059\u308bWeb\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3\u3067\u3059\u3002",
+      "stargazers_count": 2,
+      "stargazers_url": "https://github.com/MurakawaTakuya/todo-real/stargazers",
+      "forks": 0,
+      "contributors_count": 5,
+      "contributors_url": "https://github.com/MurakawaTakuya/todo-real/graphs/contributors",
+      "contributions": 318,
+      "contributions_url": "https://github.com/MurakawaTakuya/todo-real/commits?author=MurakawaTakuya",
+      "language": "TypeScript",
+      "languages": [
+        { "name": "TypeScript", "bytes": 212792 },
+        { "name": "HTML", "bytes": 6744 },
+        { "name": "SCSS", "bytes": 1694 },
+        { "name": "JavaScript", "bytes": 2578 }
+      ]
+    },
+    {
+      "id": 934004023,
+      "title": "Nitech-Festival-Executive-Committee/62nd",
+      "url": "https://github.com/Nitech-Festival-Executive-Committee/62nd",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": false,
+      "description": "\u7b2c62\u56de\u306e\u516c\u958b\u7528\u30a2\u30fc\u30ab\u30a4\u30d6",
+      "stargazers_count": 1,
+      "stargazers_url": "https://github.com/Nitech-Festival-Executive-Committee/62nd/stargazers",
+      "forks": 0,
+      "contributors_count": 6,
+      "contributors_url": "https://github.com/Nitech-Festival-Executive-Committee/62nd/graphs/contributors",
+      "contributions": 357,
+      "contributions_url": "https://github.com/Nitech-Festival-Executive-Committee/62nd/commits?author=MurakawaTakuya",
+      "language": "HTML",
+      "languages": [
+        { "name": "TypeScript", "bytes": 263663 },
+        { "name": "HTML", "bytes": 711515 },
+        { "name": "CSS", "bytes": 101288 },
+        { "name": "SCSS", "bytes": 24277 },
+        { "name": "JavaScript", "bytes": 85241 }
+      ]
+    },
+    {
+      "id": 938707949,
+      "title": "MurakawaTakuya/Global-Recipe-Sharing-Platform",
+      "url": "https://github.com/MurakawaTakuya/Global-Recipe-Sharing-Platform",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": true,
+      "description": "Fully functional global recipe sharing platform, developed in a class of Efrei Paris",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/Global-Recipe-Sharing-Platform/stargazers",
+      "forks": 0,
+      "contributors_count": 3,
+      "contributors_url": "https://github.com/MurakawaTakuya/Global-Recipe-Sharing-Platform/graphs/contributors",
+      "contributions": 94,
+      "contributions_url": "https://github.com/MurakawaTakuya/Global-Recipe-Sharing-Platform/commits?author=MurakawaTakuya",
+      "language": "Vue",
+      "languages": [
+        { "name": "CSS", "bytes": 2025 },
+        { "name": "HTML", "bytes": 943 },
+        { "name": "Vue", "bytes": 38785 },
+        { "name": "JavaScript", "bytes": 5231 }
+      ]
+    },
+    {
+      "id": 758423452,
+      "title": "MurakawaTakuya/MurakawaTakuya",
+      "url": "https://github.com/MurakawaTakuya/MurakawaTakuya",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": true,
+      "description": "",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/MurakawaTakuya/stargazers",
+      "forks": 0,
+      "contributors_count": 2,
+      "contributors_url": "https://github.com/MurakawaTakuya/MurakawaTakuya/graphs/contributors",
+      "contributions": 46,
+      "contributions_url": "https://github.com/MurakawaTakuya/MurakawaTakuya/commits?author=MurakawaTakuya",
+      "language": "",
+      "languages": []
+    },
+    {
+      "id": 926414835,
+      "title": "MurakawaTakuya/Visualize-GeoJSON-with-Three-js",
+      "url": "https://github.com/MurakawaTakuya/Visualize-GeoJSON-with-Three-js",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": true,
+      "description": "Visualize famous places in Japan using Three.js",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/Visualize-GeoJSON-with-Three-js/stargazers",
+      "forks": 0,
+      "contributors_count": 1,
+      "contributors_url": "https://github.com/MurakawaTakuya/Visualize-GeoJSON-with-Three-js/graphs/contributors",
+      "contributions": 68,
+      "contributions_url": "https://github.com/MurakawaTakuya/Visualize-GeoJSON-with-Three-js/commits?author=MurakawaTakuya",
+      "language": "TypeScript",
+      "languages": [
+        { "name": "TypeScript", "bytes": 92526 },
+        { "name": "SCSS", "bytes": 1529 },
+        { "name": "JavaScript", "bytes": 1078 }
+      ]
+    },
+    {
+      "id": 1066350377,
+      "title": "MurakawaTakuya/MotionDirector",
+      "url": "https://github.com/MurakawaTakuya/MotionDirector",
+      "is_oss": false,
+      "is_fork": true,
+      "is_owner": false,
+      "description": "[ECCV 2024 Oral] MotionDirector: Motion Customization of Text-to-Video Diffusion Models.",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/MotionDirector/stargazers",
+      "forks": 0,
+      "contributors_count": 3,
+      "contributors_url": "https://github.com/MurakawaTakuya/MotionDirector/graphs/contributors",
+      "contributions": 9,
+      "contributions_url": "https://github.com/MurakawaTakuya/MotionDirector/commits?author=MurakawaTakuya",
+      "language": "Python",
+      "languages": [
+        { "name": "Shell", "bytes": 487 },
+        { "name": "Python", "bytes": 216040 }
+      ]
+    },
+    {
+      "id": 1109835983,
+      "title": "MurakawaTakuya/T2V-CompBench",
+      "url": "https://github.com/MurakawaTakuya/T2V-CompBench",
+      "is_oss": false,
+      "is_fork": true,
+      "is_owner": false,
+      "description": "[CVPR 2025] T2V-CompBench: A Comprehensive Benchmark for Compositional Text-to-video Generation",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/T2V-CompBench/stargazers",
+      "forks": 0,
+      "contributors_count": 3,
+      "contributors_url": "https://github.com/MurakawaTakuya/T2V-CompBench/graphs/contributors",
+      "contributions": 8,
+      "contributions_url": "https://github.com/MurakawaTakuya/T2V-CompBench/commits?author=MurakawaTakuya",
+      "language": "Jupyter Notebook",
+      "languages": [
+        { "name": "Dockerfile", "bytes": 1140 },
+        { "name": "C++", "bytes": 51417 },
+        { "name": "Shell", "bytes": 30259 },
+        { "name": "CSS", "bytes": 1822 },
+        { "name": "C", "bytes": 4190 },
+        { "name": "Makefile", "bytes": 1469 },
+        { "name": "JavaScript", "bytes": 9991 },
+        { "name": "HTML", "bytes": 7669 },
+        { "name": "Jupyter Notebook", "bytes": 19971894 },
+        { "name": "Python", "bytes": 2394323 },
+        { "name": "Cuda", "bytes": 148500 }
+      ]
+    },
+    {
+      "id": 867527117,
+      "title": "MurakawaTakuya/sentence-prediction",
+      "url": "https://github.com/MurakawaTakuya/sentence-prediction",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": true,
+      "description": "",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/sentence-prediction/stargazers",
+      "forks": 0,
+      "contributors_count": 1,
+      "contributors_url": "https://github.com/MurakawaTakuya/sentence-prediction/graphs/contributors",
+      "contributions": 16,
+      "contributions_url": "https://github.com/MurakawaTakuya/sentence-prediction/commits?author=MurakawaTakuya",
+      "language": "TypeScript",
+      "languages": [
+        { "name": "TypeScript", "bytes": 6506 },
+        { "name": "CSS", "bytes": 3343 },
+        { "name": "SCSS", "bytes": 1273 },
+        { "name": "Python", "bytes": 987 },
+        { "name": "JavaScript", "bytes": 92 }
+      ]
+    },
+    {
+      "id": 849809604,
+      "title": "MurakawaTakuya/weighted-roulette",
+      "url": "https://github.com/MurakawaTakuya/weighted-roulette",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": true,
+      "description": "",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/weighted-roulette/stargazers",
+      "forks": 0,
+      "contributors_count": 1,
+      "contributors_url": "https://github.com/MurakawaTakuya/weighted-roulette/graphs/contributors",
+      "contributions": 15,
+      "contributions_url": "https://github.com/MurakawaTakuya/weighted-roulette/commits?author=MurakawaTakuya",
+      "language": "TypeScript",
+      "languages": [
+        { "name": "TypeScript", "bytes": 13224 },
+        { "name": "HTML", "bytes": 1726 },
+        { "name": "CSS", "bytes": 366 },
+        { "name": "SCSS", "bytes": 1911 }
+      ]
+    },
+    {
+      "id": 898788177,
+      "title": "MurakawaTakuya/git-alias",
+      "url": "https://github.com/MurakawaTakuya/git-alias",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": true,
+      "description": "",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/git-alias/stargazers",
+      "forks": 0,
+      "contributors_count": 1,
+      "contributors_url": "https://github.com/MurakawaTakuya/git-alias/graphs/contributors",
+      "contributions": 14,
+      "contributions_url": "https://github.com/MurakawaTakuya/git-alias/commits?author=MurakawaTakuya",
+      "language": "",
+      "languages": []
+    },
+    {
+      "id": 842464652,
+      "title": "MurakawaTakuya/docker-for-opencv-in-cpp-and-python",
+      "url": "https://github.com/MurakawaTakuya/docker-for-opencv-in-cpp-and-python",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": true,
+      "description": "Docker image for OpenCV in C++ and Python",
+      "stargazers_count": 1,
+      "stargazers_url": "https://github.com/MurakawaTakuya/docker-for-opencv-in-cpp-and-python/stargazers",
+      "forks": 0,
+      "contributors_count": 1,
+      "contributors_url": "https://github.com/MurakawaTakuya/docker-for-opencv-in-cpp-and-python/graphs/contributors",
+      "contributions": 10,
+      "contributions_url": "https://github.com/MurakawaTakuya/docker-for-opencv-in-cpp-and-python/commits?author=MurakawaTakuya",
+      "language": "Makefile",
+      "languages": [
+        { "name": "Dockerfile", "bytes": 743 },
+        { "name": "C++", "bytes": 1178 },
+        { "name": "Makefile", "bytes": 3654 },
+        { "name": "Python", "bytes": 990 }
+      ]
+    },
+    {
+      "id": 926970988,
+      "title": "MurakawaTakuya/convert-shp-to-geojson",
+      "url": "https://github.com/MurakawaTakuya/convert-shp-to-geojson",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": true,
+      "description": ".shp\u30d5\u30a1\u30a4\u30eb\u3092.geojson\u30d5\u30a1\u30a4\u30eb\u306b\u5909\u63db\u3059\u308b\u30d7\u30ed\u30b0\u30e9\u30e0",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/convert-shp-to-geojson/stargazers",
+      "forks": 0,
+      "contributors_count": 1,
+      "contributors_url": "https://github.com/MurakawaTakuya/convert-shp-to-geojson/graphs/contributors",
+      "contributions": 11,
+      "contributions_url": "https://github.com/MurakawaTakuya/convert-shp-to-geojson/commits?author=MurakawaTakuya",
+      "language": "Python",
+      "languages": [{ "name": "Python", "bytes": 1440 }]
+    },
+    {
+      "id": 1021293505,
+      "title": "MurakawaTakuya/nextjs-supabase-template",
+      "url": "https://github.com/MurakawaTakuya/nextjs-supabase-template",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": true,
+      "description": "",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/nextjs-supabase-template/stargazers",
+      "forks": 0,
+      "contributors_count": 1,
+      "contributors_url": "https://github.com/MurakawaTakuya/nextjs-supabase-template/graphs/contributors",
+      "contributions": 11,
+      "contributions_url": "https://github.com/MurakawaTakuya/nextjs-supabase-template/commits?author=MurakawaTakuya",
+      "language": "TypeScript",
+      "languages": [
+        { "name": "TypeScript", "bytes": 75176 },
+        { "name": "SCSS", "bytes": 1656 },
+        { "name": "JavaScript", "bytes": 550 }
+      ]
+    },
+    {
+      "id": 1119872948,
+      "title": "MurakawaTakuya/academic-project-page-template-vue",
+      "url": "https://github.com/MurakawaTakuya/academic-project-page-template-vue",
+      "is_oss": false,
+      "is_fork": true,
+      "is_owner": false,
+      "description": "A vue-based project page template for academic papers. (in development) https://junyaohu.github.io/academic-project-page-template-vue",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/academic-project-page-template-vue/stargazers",
+      "forks": 0,
+      "contributors_count": 2,
+      "contributors_url": "https://github.com/MurakawaTakuya/academic-project-page-template-vue/graphs/contributors",
+      "contributions": 6,
+      "contributions_url": "https://github.com/MurakawaTakuya/academic-project-page-template-vue/commits?author=MurakawaTakuya",
+      "language": "JavaScript",
+      "languages": [
+        { "name": "MDX", "bytes": 1749 },
+        { "name": "HTML", "bytes": 539 },
+        { "name": "CSS", "bytes": 120 },
+        { "name": "JavaScript", "bytes": 1432341 },
+        { "name": "Vue", "bytes": 49630 }
+      ]
+    },
+    {
+      "id": 780511831,
+      "title": "MurakawaTakuya/conflict_practice",
+      "url": "https://github.com/MurakawaTakuya/conflict_practice",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": true,
+      "description": "",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/conflict_practice/stargazers",
+      "forks": 0,
+      "contributors_count": 1,
+      "contributors_url": "https://github.com/MurakawaTakuya/conflict_practice/graphs/contributors",
+      "contributions": 10,
+      "contributions_url": "https://github.com/MurakawaTakuya/conflict_practice/commits?author=MurakawaTakuya",
+      "language": "Shell",
+      "languages": [{ "name": "Shell", "bytes": 388 }]
+    },
+    {
+      "id": 833577535,
+      "title": "MurakawaTakuya/pwa_install",
+      "url": "https://github.com/MurakawaTakuya/pwa_install",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": true,
+      "description": "",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/pwa_install/stargazers",
+      "forks": 0,
+      "contributors_count": 1,
+      "contributors_url": "https://github.com/MurakawaTakuya/pwa_install/graphs/contributors",
+      "contributions": 9,
+      "contributions_url": "https://github.com/MurakawaTakuya/pwa_install/commits?author=MurakawaTakuya",
+      "language": "JavaScript",
+      "languages": [
+        { "name": "HTML", "bytes": 1721 },
+        { "name": "SCSS", "bytes": 1115 },
+        { "name": "JavaScript", "bytes": 8300 }
+      ]
+    },
+    {
+      "id": 1119904242,
+      "title": "MurakawaTakuya/Academic-project-page-template",
+      "url": "https://github.com/MurakawaTakuya/Academic-project-page-template",
+      "is_oss": false,
+      "is_fork": true,
+      "is_owner": false,
+      "description": "A project page template for academic papers. Demo at https://eliahuhorwitz.github.io/Academic-project-page-template/",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/Academic-project-page-template/stargazers",
+      "forks": 0,
+      "contributors_count": 3,
+      "contributors_url": "https://github.com/MurakawaTakuya/Academic-project-page-template/graphs/contributors",
+      "contributions": 3,
+      "contributions_url": "https://github.com/MurakawaTakuya/Academic-project-page-template/commits?author=MurakawaTakuya",
+      "language": "JavaScript",
+      "languages": [
+        { "name": "HTML", "bytes": 25780 },
+        { "name": "CSS", "bytes": 14848 },
+        { "name": "JavaScript", "bytes": 103654 }
+      ]
+    },
+    {
+      "id": 870235335,
+      "title": "MurakawaTakuya/food-image-identification",
+      "url": "https://github.com/MurakawaTakuya/food-image-identification",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": true,
+      "description": "",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/food-image-identification/stargazers",
+      "forks": 0,
+      "contributors_count": 1,
+      "contributors_url": "https://github.com/MurakawaTakuya/food-image-identification/graphs/contributors",
+      "contributions": 8,
+      "contributions_url": "https://github.com/MurakawaTakuya/food-image-identification/commits?author=MurakawaTakuya",
+      "language": "Python",
+      "languages": [{ "name": "Python", "bytes": 4220 }]
+    },
+    {
+      "id": 979336531,
+      "title": "MurakawaTakuya/TimeFlow",
+      "url": "https://github.com/MurakawaTakuya/TimeFlow",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": true,
+      "description": "",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/TimeFlow/stargazers",
+      "forks": 0,
+      "contributors_count": 1,
+      "contributors_url": "https://github.com/MurakawaTakuya/TimeFlow/graphs/contributors",
+      "contributions": 7,
+      "contributions_url": "https://github.com/MurakawaTakuya/TimeFlow/commits?author=MurakawaTakuya",
+      "language": "TypeScript",
+      "languages": [
+        { "name": "TypeScript", "bytes": 176985 },
+        { "name": "CSS", "bytes": 2852 },
+        { "name": "Nix", "bytes": 936 },
+        { "name": "JavaScript", "bytes": 135 }
+      ]
+    },
+    {
+      "id": 934611926,
+      "title": "MurakawaTakuya/Be-Your-Outpainter-Test",
+      "url": "https://github.com/MurakawaTakuya/Be-Your-Outpainter-Test",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": true,
+      "description": "[ECCV 2024] Be-Your-Outpainter https://arxiv.org/abs/2403.13745",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/Be-Your-Outpainter-Test/stargazers",
+      "forks": 0,
+      "contributors_count": 2,
+      "contributors_url": "https://github.com/MurakawaTakuya/Be-Your-Outpainter-Test/graphs/contributors",
+      "contributions": 2,
+      "contributions_url": "https://github.com/MurakawaTakuya/Be-Your-Outpainter-Test/commits?author=MurakawaTakuya",
+      "language": "Python",
+      "languages": [
+        { "name": "Shell", "bytes": 210 },
+        { "name": "Python", "bytes": 436031 }
+      ]
+    },
+    {
+      "id": 1002302953,
+      "title": "MurakawaTakuya/VSCode-Extension-WebView-using-React",
+      "url": "https://github.com/MurakawaTakuya/VSCode-Extension-WebView-using-React",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": true,
+      "description": "",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/VSCode-Extension-WebView-using-React/stargazers",
+      "forks": 0,
+      "contributors_count": 1,
+      "contributors_url": "https://github.com/MurakawaTakuya/VSCode-Extension-WebView-using-React/graphs/contributors",
+      "contributions": 4,
+      "contributions_url": "https://github.com/MurakawaTakuya/VSCode-Extension-WebView-using-React/commits?author=MurakawaTakuya",
+      "language": "TypeScript",
+      "languages": [
+        { "name": "TypeScript", "bytes": 6840 },
+        { "name": "CSS", "bytes": 1801 },
+        { "name": "HTML", "bytes": 366 },
+        { "name": "JavaScript", "bytes": 956 }
+      ]
+    },
+    {
+      "id": 925174178,
+      "title": "MurakawaTakuya/react-nextjs-environment-setting-template",
+      "url": "https://github.com/MurakawaTakuya/react-nextjs-environment-setting-template",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": true,
+      "description": "React/Next.js, TypeScript, Scss, GitHub, VSCode\u306e\u74b0\u5883\u7528\u306e\u30c6\u30f3\u30d7\u30ec\u30fc\u30c8",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/react-nextjs-environment-setting-template/stargazers",
+      "forks": 0,
+      "contributors_count": 1,
+      "contributors_url": "https://github.com/MurakawaTakuya/react-nextjs-environment-setting-template/graphs/contributors",
+      "contributions": 4,
+      "contributions_url": "https://github.com/MurakawaTakuya/react-nextjs-environment-setting-template/commits?author=MurakawaTakuya",
+      "language": "TypeScript",
+      "languages": [
+        { "name": "TypeScript", "bytes": 3491 },
+        { "name": "SCSS", "bytes": 3359 },
+        { "name": "JavaScript", "bytes": 393 }
+      ]
+    },
+    {
+      "id": 934569193,
+      "title": "hirata-lab-nit/.github",
+      "url": "https://github.com/hirata-lab-nit/.github",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": false,
+      "description": "",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/hirata-lab-nit/.github/stargazers",
+      "forks": 0,
+      "contributors_count": 2,
+      "contributors_url": "https://github.com/hirata-lab-nit/.github/graphs/contributors",
+      "contributions": 1,
+      "contributions_url": "https://github.com/hirata-lab-nit/.github/commits?author=MurakawaTakuya",
+      "language": "",
+      "languages": []
+    },
+    {
+      "id": 1021165198,
+      "title": "MurakawaTakuya/next-shadcn-supabase-starter",
+      "url": "https://github.com/MurakawaTakuya/next-shadcn-supabase-starter",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": true,
+      "description": "",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/next-shadcn-supabase-starter/stargazers",
+      "forks": 0,
+      "contributors_count": 2,
+      "contributors_url": "https://github.com/MurakawaTakuya/next-shadcn-supabase-starter/graphs/contributors",
+      "contributions": 1,
+      "contributions_url": "https://github.com/MurakawaTakuya/next-shadcn-supabase-starter/commits?author=MurakawaTakuya",
+      "language": "TypeScript",
+      "languages": [
+        { "name": "TypeScript", "bytes": 205279 },
+        { "name": "CSS", "bytes": 4403 },
+        { "name": "JavaScript", "bytes": 716 }
+      ]
+    },
+    {
+      "id": 782350897,
+      "title": "MurakawaTakuya/apexcharts_bug_report",
+      "url": "https://github.com/MurakawaTakuya/apexcharts_bug_report",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": true,
+      "description": "For reporting bugs in Apexcharts(https://github.com/apexcharts/apexcharts.js)",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/apexcharts_bug_report/stargazers",
+      "forks": 0,
+      "contributors_count": 1,
+      "contributors_url": "https://github.com/MurakawaTakuya/apexcharts_bug_report/graphs/contributors",
+      "contributions": 3,
+      "contributions_url": "https://github.com/MurakawaTakuya/apexcharts_bug_report/commits?author=MurakawaTakuya",
+      "language": "JavaScript",
+      "languages": [
+        { "name": "HTML", "bytes": 684 },
+        { "name": "CSS", "bytes": 102 },
+        { "name": "JavaScript", "bytes": 1420 }
+      ]
+    },
+    {
+      "id": 788509192,
+      "title": "MurakawaTakuya/geolocationAPI",
+      "url": "https://github.com/MurakawaTakuya/geolocationAPI",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": true,
+      "description": "",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/geolocationAPI/stargazers",
+      "forks": 0,
+      "contributors_count": 1,
+      "contributors_url": "https://github.com/MurakawaTakuya/geolocationAPI/graphs/contributors",
+      "contributions": 3,
+      "contributions_url": "https://github.com/MurakawaTakuya/geolocationAPI/commits?author=MurakawaTakuya",
+      "language": "JavaScript",
+      "languages": [
+        { "name": "HTML", "bytes": 362 },
+        { "name": "CSS", "bytes": 176 },
+        { "name": "SCSS", "bytes": 175 },
+        { "name": "JavaScript", "bytes": 1632 }
+      ]
+    },
+    {
+      "id": 780502033,
+      "title": "MurakawaTakuya/pull_request_practice",
+      "url": "https://github.com/MurakawaTakuya/pull_request_practice",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": true,
+      "description": "",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/pull_request_practice/stargazers",
+      "forks": 0,
+      "contributors_count": 1,
+      "contributors_url": "https://github.com/MurakawaTakuya/pull_request_practice/graphs/contributors",
+      "contributions": 3,
+      "contributions_url": "https://github.com/MurakawaTakuya/pull_request_practice/commits?author=MurakawaTakuya",
+      "language": "Shell",
+      "languages": [{ "name": "Shell", "bytes": 645 }]
+    },
+    {
+      "id": 780497960,
+      "title": "MurakawaTakuya/push_practice",
+      "url": "https://github.com/MurakawaTakuya/push_practice",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": true,
+      "description": "",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/push_practice/stargazers",
+      "forks": 0,
+      "contributors_count": 1,
+      "contributors_url": "https://github.com/MurakawaTakuya/push_practice/graphs/contributors",
+      "contributions": 1,
+      "contributions_url": "https://github.com/MurakawaTakuya/push_practice/commits?author=MurakawaTakuya",
+      "language": "Shell",
+      "languages": [{ "name": "Shell", "bytes": 329 }]
+    }
+  ],
+  "teratail_replies": [],
+  "events": [
+    {
+      "title": "Qiita AI Summit AI\u6642\u4ee3\u304c\u8a2a\u308c\u305f\u4eca\u3001\u958b\u767a\u7d44\u7e54\u306e\u3042\u308a\u65b9\u3092\u8003\u3048\u308b",
+      "url": "https://increments.connpass.com/event/378403/",
+      "status": 1,
+      "date": "2026-01-29T00:00:00",
+      "is_presenter": false,
+      "is_organizer": false
+    },
+    {
+      "title": "Qiita Advent Calendar 2025 Online Meetup",
+      "url": "https://increments.connpass.com/event/370142/",
+      "status": 1,
+      "date": "2026-01-16T00:00:00",
+      "is_presenter": false,
+      "is_organizer": false
+    },
+    {
+      "title": "\u7b2c63\u56de \u540d\u53e4\u5c4bCV\u30fbPRML\u52c9\u5f37\u4f1a",
+      "url": "https://nagoyacv.connpass.com/event/372526/",
+      "status": 1,
+      "date": "2025-12-13T00:00:00",
+      "is_presenter": false,
+      "is_organizer": false
+    },
+    {
+      "title": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30d3\u30b8\u30e7\u30f3\u8ad6\u6587\u8aad\u307f\u4f1a2025-14",
+      "url": "https://tamaki-lab.connpass.com/event/372932/",
+      "status": 0,
+      "date": "2025-11-25T00:00:00",
+      "is_presenter": false,
+      "is_organizer": true
+    },
+    {
+      "title": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30d3\u30b8\u30e7\u30f3\u8ad6\u6587\u8aad\u307f\u4f1a2025-13",
+      "url": "https://tamaki-lab.connpass.com/event/372931/",
+      "status": 0,
+      "date": "2025-11-11T00:00:00",
+      "is_presenter": false,
+      "is_organizer": true
+    },
+    {
+      "title": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30d3\u30b8\u30e7\u30f3\u8ad6\u6587\u8aad\u307f\u4f1a2025-12",
+      "url": "https://tamaki-lab.connpass.com/event/367479/",
+      "status": 0,
+      "date": "2025-10-31T00:00:00",
+      "is_presenter": false,
+      "is_organizer": true
+    },
+    {
+      "title": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30d3\u30b8\u30e7\u30f3\u8ad6\u6587\u8aad\u307f\u4f1a2025-11",
+      "url": "https://tamaki-lab.connpass.com/event/367478/",
+      "status": 0,
+      "date": "2025-10-09T00:00:00",
+      "is_presenter": false,
+      "is_organizer": true
+    },
+    {
+      "title": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30d3\u30b8\u30e7\u30f3\u8ad6\u6587\u8aad\u307f\u4f1a2025-10",
+      "url": "https://tamaki-lab.connpass.com/event/367477/",
+      "status": 0,
+      "date": "2025-09-25T00:00:00",
+      "is_presenter": false,
+      "is_organizer": true
+    },
+    {
+      "title": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30d3\u30b8\u30e7\u30f3\u8ad6\u6587\u8aad\u307f\u4f1a2025-9",
+      "url": "https://tamaki-lab.connpass.com/event/367476/",
+      "status": 0,
+      "date": "2025-09-11T00:00:00",
+      "is_presenter": false,
+      "is_organizer": true
+    },
+    {
+      "title": "\u7b2c62\u56de \u540d\u53e4\u5c4bCV\u30fbPRML\u52c9\u5f37\u4f1a",
+      "url": "https://nagoyacv.connpass.com/event/362317/",
+      "status": 1,
+      "date": "2025-08-09T00:00:00",
+      "is_presenter": true,
+      "is_organizer": false
+    },
+    {
+      "title": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30d3\u30b8\u30e7\u30f3\u8ad6\u6587\u8aad\u307f\u4f1a2025-8",
+      "url": "https://tamaki-lab.connpass.com/event/355771/",
+      "status": 0,
+      "date": "2025-07-24T00:00:00",
+      "is_presenter": false,
+      "is_organizer": true
+    },
+    {
+      "title": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30d3\u30b8\u30e7\u30f3\u8ad6\u6587\u8aad\u307f\u4f1a2025-7",
+      "url": "https://tamaki-lab.connpass.com/event/355770/",
+      "status": 0,
+      "date": "2025-07-10T00:00:00",
+      "is_presenter": false,
+      "is_organizer": true
+    },
+    {
+      "title": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30d3\u30b8\u30e7\u30f3\u8ad6\u6587\u8aad\u307f\u4f1a2025-6",
+      "url": "https://tamaki-lab.connpass.com/event/355769/",
+      "status": 0,
+      "date": "2025-06-26T00:00:00",
+      "is_presenter": false,
+      "is_organizer": true
+    },
+    {
+      "title": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30d3\u30b8\u30e7\u30f3\u8ad6\u6587\u8aad\u307f\u4f1a2025-5",
+      "url": "https://tamaki-lab.connpass.com/event/355768/",
+      "status": 0,
+      "date": "2025-06-12T00:00:00",
+      "is_presenter": false,
+      "is_organizer": true
+    },
+    {
+      "title": "Qiita Advent Calendar 2024 Online Meetup",
+      "url": "https://increments.connpass.com/event/336093/",
+      "status": 1,
+      "date": "2025-01-17T00:00:00",
+      "is_presenter": false,
+      "is_organizer": false
+    },
+    {
+      "title": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30d3\u30b8\u30e7\u30f3\u8ad6\u6587\u8aad\u307f\u4f1a2024-16",
+      "url": "https://tamaki-lab.connpass.com/event/331490/",
+      "status": 1,
+      "date": "2024-11-19T00:00:00",
+      "is_presenter": false,
+      "is_organizer": false
+    },
+    {
+      "title": "\u3010\u30a4\u30ce\u30d9\u30fc\u30bf\u3092\u76ee\u6307\u3059\u5b66\u751f\u306e\u305f\u3081\u306e\u65e5\u672c\u6700\u5927\u306e\u30cf\u30c3\u30af\u30a4\u30d9\u30f3\u30c8\u3011JPHACKS\u30aa\u30f3\u30e9\u30a4\u30f3\u8aac\u660e\u4f1a",
+      "url": "https://giveryengineersupport.connpass.com/event/329666/",
+      "status": 1,
+      "date": "2024-09-17T00:00:00",
+      "is_presenter": false,
+      "is_organizer": false
+    },
+    {
+      "title": "\u3010\u30aa\u30f3\u30e9\u30a4\u30f3\u3011Qiita Summit \uff5e\u30ea\u30a2\u30eb\u30bf\u30a4\u30e0\u30b3\u30df\u30e5\u30cb\u30b1\u30fc\u30b7\u30e7\u30f3\uff5e",
+      "url": "https://increments.connpass.com/event/326712/",
+      "status": 1,
+      "date": "2024-09-13T00:00:00",
+      "is_presenter": false,
+      "is_organizer": false
+    },
+    {
+      "title": "Qiita Engineer Festa 2024 \u5f8c\u591c\u796d \uff5e\u30a2\u30a6\u30c8\u30d7\u30c3\u30c8\u306e\u796d\u5178\uff01\uff5e",
+      "url": "https://increments.connpass.com/event/317334/",
+      "status": 1,
+      "date": "2024-07-25T00:00:00",
+      "is_presenter": false,
+      "is_organizer": false
+    }
+  ],
+  "activities": [
+    {
+      "title": "Qiita AI Summit AI\u6642\u4ee3\u304c\u8a2a\u308c\u305f\u4eca\u3001\u958b\u767a\u7d44\u7e54\u306e\u3042\u308a\u65b9\u3092\u8003\u3048\u308b",
+      "url": "https://increments.connpass.com/event/378403/",
+      "date": "2026-01-29T00:00:00",
+      "type": "connpass"
+    },
+    {
+      "title": "Qiita Advent Calendar 2025 Online Meetup",
+      "url": "https://increments.connpass.com/event/370142/",
+      "date": "2026-01-16T00:00:00",
+      "type": "connpass"
+    },
+    {
+      "title": "MurakawaTakuya/Academic-project-page-template",
+      "url": "https://github.com/MurakawaTakuya/Academic-project-page-template",
+      "date": "2025-12-20T13:31:39",
+      "type": "github"
+    },
+    {
+      "title": "MurakawaTakuya/academic-project-page-template-vue",
+      "url": "https://github.com/MurakawaTakuya/academic-project-page-template-vue",
+      "date": "2025-12-20T11:33:47",
+      "type": "github"
+    },
+    {
+      "title": "\u7b2c63\u56de \u540d\u53e4\u5c4bCV\u30fbPRML\u52c9\u5f37\u4f1a",
+      "url": "https://nagoyacv.connpass.com/event/372526/",
+      "date": "2025-12-13T00:00:00",
+      "type": "connpass"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-12-07T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/T2V-CompBench",
+      "url": "https://github.com/MurakawaTakuya/T2V-CompBench",
+      "date": "2025-12-04T19:53:35",
+      "type": "github"
+    },
+    {
+      "title": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30d3\u30b8\u30e7\u30f3\u8ad6\u6587\u8aad\u307f\u4f1a2025-14",
+      "url": "https://tamaki-lab.connpass.com/event/372932/",
+      "date": "2025-11-25T00:00:00",
+      "type": "connpass"
+    },
+    {
+      "title": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30d3\u30b8\u30e7\u30f3\u8ad6\u6587\u8aad\u307f\u4f1a2025-13",
+      "url": "https://tamaki-lab.connpass.com/event/372931/",
+      "date": "2025-11-11T00:00:00",
+      "type": "connpass"
+    },
+    {
+      "title": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30d3\u30b8\u30e7\u30f3\u8ad6\u6587\u8aad\u307f\u4f1a2025-12",
+      "url": "https://tamaki-lab.connpass.com/event/367479/",
+      "date": "2025-10-31T00:00:00",
+      "type": "connpass"
+    },
+    {
+      "title": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30d3\u30b8\u30e7\u30f3\u8ad6\u6587\u8aad\u307f\u4f1a2025-11",
+      "url": "https://tamaki-lab.connpass.com/event/367478/",
+      "date": "2025-10-09T00:00:00",
+      "type": "connpass"
+    },
+    {
+      "title": "MurakawaTakuya/MotionDirector",
+      "url": "https://github.com/MurakawaTakuya/MotionDirector",
+      "date": "2025-09-29T20:13:41",
+      "type": "github"
+    },
+    {
+      "title": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30d3\u30b8\u30e7\u30f3\u8ad6\u6587\u8aad\u307f\u4f1a2025-10",
+      "url": "https://tamaki-lab.connpass.com/event/367477/",
+      "date": "2025-09-25T00:00:00",
+      "type": "connpass"
+    },
+    {
+      "title": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30d3\u30b8\u30e7\u30f3\u8ad6\u6587\u8aad\u307f\u4f1a2025-9",
+      "url": "https://tamaki-lab.connpass.com/event/367476/",
+      "date": "2025-09-11T00:00:00",
+      "type": "connpass"
+    },
+    {
+      "title": "\u7b2c62\u56de \u540d\u53e4\u5c4bCV\u30fbPRML\u52c9\u5f37\u4f1a",
+      "url": "https://nagoyacv.connpass.com/event/362317/",
+      "date": "2025-08-09T00:00:00",
+      "type": "connpass"
+    },
+    {
+      "title": "CVPR2025\u8ad6\u6587\u7d39\u4ecb\uff1aUnboxed",
+      "url": "https://speakerdeck.com/murakawatakuya/cvpr2025lun-wen-shao-jie-unboxed",
+      "date": "2025-08-09T00:00:00",
+      "type": "speaker_deck"
+    },
+    {
+      "title": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30d3\u30b8\u30e7\u30f3\u8ad6\u6587\u8aad\u307f\u4f1a2025-8",
+      "url": "https://tamaki-lab.connpass.com/event/355771/",
+      "date": "2025-07-24T00:00:00",
+      "type": "connpass"
+    },
+    {
+      "title": "MurakawaTakuya/nextjs-supabase-template",
+      "url": "https://github.com/MurakawaTakuya/nextjs-supabase-template",
+      "date": "2025-07-17T16:24:15",
+      "type": "github"
+    },
+    {
+      "title": "MurakawaTakuya/next-shadcn-supabase-starter",
+      "url": "https://github.com/MurakawaTakuya/next-shadcn-supabase-starter",
+      "date": "2025-07-17T11:02:17",
+      "type": "github"
+    },
+    {
+      "title": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30d3\u30b8\u30e7\u30f3\u8ad6\u6587\u8aad\u307f\u4f1a2025-7",
+      "url": "https://tamaki-lab.connpass.com/event/355770/",
+      "date": "2025-07-10T00:00:00",
+      "type": "connpass"
+    },
+    {
+      "title": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30d3\u30b8\u30e7\u30f3\u8ad6\u6587\u8aad\u307f\u4f1a2025-6",
+      "url": "https://tamaki-lab.connpass.com/event/355769/",
+      "date": "2025-06-26T00:00:00",
+      "type": "connpass"
+    },
+    {
+      "title": "MurakawaTakuya/VSCode-Extension-WebView-using-React",
+      "url": "https://github.com/MurakawaTakuya/VSCode-Extension-WebView-using-React",
+      "date": "2025-06-15T15:58:11",
+      "type": "github"
+    },
+    {
+      "title": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30d3\u30b8\u30e7\u30f3\u8ad6\u6587\u8aad\u307f\u4f1a2025-5",
+      "url": "https://tamaki-lab.connpass.com/event/355768/",
+      "date": "2025-06-12T00:00:00",
+      "type": "connpass"
+    },
+    {
+      "title": "MurakawaTakuya/Visualize-GeoJSON-with-Three-js",
+      "url": "https://github.com/MurakawaTakuya/Visualize-GeoJSON-with-Three-js/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-06-10T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/TimeFlow",
+      "url": "https://github.com/MurakawaTakuya/TimeFlow",
+      "date": "2025-05-07T20:06:16",
+      "type": "github"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-04-30T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/Global-Recipe-Sharing-Platform",
+      "url": "https://github.com/MurakawaTakuya/Global-Recipe-Sharing-Platform/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-03-17T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/Global-Recipe-Sharing-Platform",
+      "url": "https://github.com/MurakawaTakuya/Global-Recipe-Sharing-Platform/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-03-12T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/Global-Recipe-Sharing-Platform",
+      "url": "https://github.com/MurakawaTakuya/Global-Recipe-Sharing-Platform/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-03-11T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/Global-Recipe-Sharing-Platform",
+      "url": "https://github.com/MurakawaTakuya/Global-Recipe-Sharing-Platform/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-03-10T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/Global-Recipe-Sharing-Platform",
+      "url": "https://github.com/MurakawaTakuya/Global-Recipe-Sharing-Platform/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-03-07T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/Global-Recipe-Sharing-Platform",
+      "url": "https://github.com/MurakawaTakuya/Global-Recipe-Sharing-Platform/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-03-06T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/Global-Recipe-Sharing-Platform",
+      "url": "https://github.com/MurakawaTakuya/Global-Recipe-Sharing-Platform/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-03-05T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/Global-Recipe-Sharing-Platform",
+      "url": "https://github.com/MurakawaTakuya/Global-Recipe-Sharing-Platform/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-03-03T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/Global-Recipe-Sharing-Platform",
+      "url": "https://github.com/MurakawaTakuya/Global-Recipe-Sharing-Platform",
+      "date": "2025-02-25T20:29:32",
+      "type": "github"
+    },
+    {
+      "title": "Nitech-Festival-Executive-Committee/62nd",
+      "url": "https://github.com/Nitech-Festival-Executive-Committee/62nd/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-02-19T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/Be-Your-Outpainter-Test",
+      "url": "https://github.com/MurakawaTakuya/Be-Your-Outpainter-Test",
+      "date": "2025-02-18T14:49:30",
+      "type": "github"
+    },
+    {
+      "title": "MurakawaTakuya/Visualize-GeoJSON-with-Three-js",
+      "url": "https://github.com/MurakawaTakuya/Visualize-GeoJSON-with-Three-js/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-02-14T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/Visualize-GeoJSON-with-Three-js",
+      "url": "https://github.com/MurakawaTakuya/Visualize-GeoJSON-with-Three-js/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-02-11T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/Visualize-GeoJSON-with-Three-js",
+      "url": "https://github.com/MurakawaTakuya/Visualize-GeoJSON-with-Three-js/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-02-10T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "Next.js - `npx tailwindcss init` fails with `npm error could not determine executable to run`",
+      "url": "https://qiita.com/Murakawa_Takuya/items/f1d7d925651545547997",
+      "date": "2025-02-09T01:04:48",
+      "type": "qiita"
+    },
+    {
+      "title": "MurakawaTakuya/Visualize-GeoJSON-with-Three-js",
+      "url": "https://github.com/MurakawaTakuya/Visualize-GeoJSON-with-Three-js/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-02-08T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/Visualize-GeoJSON-with-Three-js",
+      "url": "https://github.com/MurakawaTakuya/Visualize-GeoJSON-with-Three-js/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-02-06T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/Visualize-GeoJSON-with-Three-js",
+      "url": "https://github.com/MurakawaTakuya/Visualize-GeoJSON-with-Three-js/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-02-05T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/convert-shp-to-geojson",
+      "url": "https://github.com/MurakawaTakuya/convert-shp-to-geojson",
+      "date": "2025-02-04T16:13:37",
+      "type": "github"
+    },
+    {
+      "title": "MurakawaTakuya/Visualize-GeoJSON-with-Three-js",
+      "url": "https://github.com/MurakawaTakuya/Visualize-GeoJSON-with-Three-js/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-02-04T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/Visualize-GeoJSON-with-Three-js",
+      "url": "https://github.com/MurakawaTakuya/Visualize-GeoJSON-with-Three-js",
+      "date": "2025-02-03T17:00:40",
+      "type": "github"
+    },
+    {
+      "title": "MurakawaTakuya/react-nextjs-environment-setting-template",
+      "url": "https://github.com/MurakawaTakuya/react-nextjs-environment-setting-template",
+      "date": "2025-01-31T20:25:32",
+      "type": "github"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-01-28T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-01-27T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-01-25T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-01-22T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-01-19T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "Qiita Advent Calendar 2024 Online Meetup",
+      "url": "https://increments.connpass.com/event/336093/",
+      "date": "2025-01-17T00:00:00",
+      "type": "connpass"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-01-17T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-01-14T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-01-12T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-01-11T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-01-10T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-01-09T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-01-08T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-01-07T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2025-01-06T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2024-12-29T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2024-12-27T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "\u521d\u5fc3\u8005\u307b\u3069\u8aad\u3093\u3067\u307b\u3057\u3044\u30012\u5e74\u9023\u7d9a\u3067\u5927\u5b66\u796d\u306e\u30db\u30fc\u30e0\u30da\u30fc\u30b8\u30921\u304b\u3089\u4f5c\u308a\u76f4\u3057\u305f\u6642\u306e\u53cd\u7701\u70b9\u3068\u6539\u5584\u70b9",
+      "url": "https://qiita.com/Murakawa_Takuya/items/6bc0cf3dcf4d36b58a08",
+      "date": "2024-12-25T00:00:45",
+      "type": "qiita"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2024-12-23T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2024-12-19T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2024-12-18T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2024-12-16T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2024-12-13T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2024-12-12T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2024-12-11T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2024-12-10T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2024-12-08T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2024-12-06T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/git-alias",
+      "url": "https://github.com/MurakawaTakuya/git-alias",
+      "date": "2024-12-05T12:16:49",
+      "type": "github"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2024-12-05T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2024-12-03T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2024-12-01T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2024-11-29T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2024-11-28T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2024-11-26T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2024-11-24T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2024-11-21T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30d3\u30b8\u30e7\u30f3\u8ad6\u6587\u8aad\u307f\u4f1a2024-16",
+      "url": "https://tamaki-lab.connpass.com/event/331490/",
+      "date": "2024-11-19T00:00:00",
+      "type": "connpass"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2024-11-14T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2024-11-08T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/todo-real",
+      "url": "https://github.com/MurakawaTakuya/todo-real",
+      "date": "2024-11-06T10:30:45",
+      "type": "github"
+    },
+    {
+      "title": "jphacks/ng_2408",
+      "url": "https://github.com/jphacks/ng_2408/pulls?q=is:pr+author:MurakawaTakuya",
+      "date": "2024-10-27T00:00:00",
+      "type": "github_pr"
+    },
+    {
+      "title": "MurakawaTakuya/food-image-identification",
+      "url": "https://github.com/MurakawaTakuya/food-image-identification",
+      "date": "2024-10-10T02:16:03",
+      "type": "github"
+    },
+    {
+      "title": "MurakawaTakuya/sentence-prediction",
+      "url": "https://github.com/MurakawaTakuya/sentence-prediction",
+      "date": "2024-10-04T17:30:08",
+      "type": "github"
+    },
+    {
+      "title": "\u3010\u30a4\u30ce\u30d9\u30fc\u30bf\u3092\u76ee\u6307\u3059\u5b66\u751f\u306e\u305f\u3081\u306e\u65e5\u672c\u6700\u5927\u306e\u30cf\u30c3\u30af\u30a4\u30d9\u30f3\u30c8\u3011JPHACKS\u30aa\u30f3\u30e9\u30a4\u30f3\u8aac\u660e\u4f1a",
+      "url": "https://giveryengineersupport.connpass.com/event/329666/",
+      "date": "2024-09-17T00:00:00",
+      "type": "connpass"
+    },
+    {
+      "title": "\u3010\u30aa\u30f3\u30e9\u30a4\u30f3\u3011Qiita Summit \uff5e\u30ea\u30a2\u30eb\u30bf\u30a4\u30e0\u30b3\u30df\u30e5\u30cb\u30b1\u30fc\u30b7\u30e7\u30f3\uff5e",
+      "url": "https://increments.connpass.com/event/326712/",
+      "date": "2024-09-13T00:00:00",
+      "type": "connpass"
+    },
+    {
+      "title": "MurakawaTakuya/weighted-roulette",
+      "url": "https://github.com/MurakawaTakuya/weighted-roulette",
+      "date": "2024-08-30T18:40:58",
+      "type": "github"
+    },
+    {
+      "title": "MurakawaTakuya/docker-for-opencv-in-cpp-and-python",
+      "url": "https://github.com/MurakawaTakuya/docker-for-opencv-in-cpp-and-python",
+      "date": "2024-08-14T21:06:16",
+      "type": "github"
+    },
+    {
+      "title": "Qiita\u3063\u3066\u3069\u3093\u306a\u4f1a\u793e?Qiita\u306e\u30a4\u30f3\u30bf\u30fc\u30f3\u306b\u884c\u3063\u3066\u304d\u305f\u8a71",
+      "url": "https://qiita.com/Murakawa_Takuya/items/399c8bd656cf6c2bbd23",
+      "date": "2024-08-02T19:24:46",
+      "type": "qiita"
+    },
+    {
+      "title": "MurakawaTakuya/pwa_install",
+      "url": "https://github.com/MurakawaTakuya/pwa_install",
+      "date": "2024-07-25T19:26:29",
+      "type": "github"
+    },
+    {
+      "title": "Qiita Engineer Festa 2024 \u5f8c\u591c\u796d \uff5e\u30a2\u30a6\u30c8\u30d7\u30c3\u30c8\u306e\u796d\u5178\uff01\uff5e",
+      "url": "https://increments.connpass.com/event/317334/",
+      "date": "2024-07-25T00:00:00",
+      "type": "connpass"
+    },
+    {
+      "title": "\u5fdc\u7528\u60c5\u5831\u6280\u8853\u8005\u8a66\u9a13\u3092\u305f\u3063\u305f\u306e1\u30f6\u6708(100\u6642\u9593)\u3067\u5408\u683c\u3059\u308b\u52c9\u5f37\u6cd5",
+      "url": "https://qiita.com/Murakawa_Takuya/items/7940956d88e13d348610",
+      "date": "2024-07-17T23:52:20",
+      "type": "qiita"
+    },
+    {
+      "title": "MurakawaTakuya/geolocationAPI",
+      "url": "https://github.com/MurakawaTakuya/geolocationAPI",
+      "date": "2024-04-18T23:55:04",
+      "type": "github"
+    },
+    {
+      "title": "MurakawaTakuya/apexcharts_bug_report",
+      "url": "https://github.com/MurakawaTakuya/apexcharts_bug_report",
+      "date": "2024-04-05T15:04:42",
+      "type": "github"
+    },
+    {
+      "title": "MurakawaTakuya/conflict_practice",
+      "url": "https://github.com/MurakawaTakuya/conflict_practice",
+      "date": "2024-04-02T01:29:07",
+      "type": "github"
+    },
+    {
+      "title": "MurakawaTakuya/pull_request_practice",
+      "url": "https://github.com/MurakawaTakuya/pull_request_practice",
+      "date": "2024-04-02T01:06:00",
+      "type": "github"
+    },
+    {
+      "title": "MurakawaTakuya/push_practice",
+      "url": "https://github.com/MurakawaTakuya/push_practice",
+      "date": "2024-04-02T00:56:06",
+      "type": "github"
+    },
+    {
+      "title": "MurakawaTakuya/MurakawaTakuya",
+      "url": "https://github.com/MurakawaTakuya/MurakawaTakuya",
+      "date": "2024-02-16T18:40:14",
+      "type": "github"
+    }
+  ]
+}
