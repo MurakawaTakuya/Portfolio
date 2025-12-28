@@ -3,6 +3,7 @@
 import { TimelineLayout } from "@/components/timeline-layout";
 import { portfolioData } from "@/data/portfolio";
 import type { TimelineElement } from "@/types/timeline";
+import styles from "./CareerTimeline.module.scss";
 
 const CareerTimeline = () => {
   // Transform portfolio timeline data to TimelineElement format
@@ -62,14 +63,17 @@ const CareerTimeline = () => {
     .reverse();
 
   return (
-    <TimelineLayout
-      animate
-      className="min-h-[600px] w-full max-w-2xl mx-auto p-8"
-      connectorColor="primary"
-      iconColor="primary"
-      items={timelineEvents}
-      size="md"
-    />
+    <section className={styles.timeline}>
+      <h1 className={styles.sectionTitle}>Timeline</h1>
+      <TimelineLayout
+        animate
+        className="min-h-[600px] w-full max-w-2xl mx-auto p-8"
+        connectorColor="primary"
+        iconColor="primary"
+        items={timelineEvents}
+        size="md"
+      />
+    </section>
   );
 };
 

@@ -43,7 +43,7 @@ export default function Skills() {
         gap="1.5rem"
         padding="1rem 0"
         responsive={true}
-        glowRadius={20}
+        glowRadius={25}
       >
         {categoryOrder.map((categoryKey) => {
           const categorySkills = skills[

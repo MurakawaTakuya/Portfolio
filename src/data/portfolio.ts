@@ -328,11 +328,16 @@ export const portfolioData: PortfolioData = {
         title: "工大祭実行委員会 所属",
         description: "広報局所属 Web開発担当",
       },
-      // {
-      //   date: "2022",
-      //   title: "熱中症搬送者数予測サイト開発",
-      //   description: "技術補佐員",
-      // },
+      {
+        date: "2024/11",
+        title: "ICPC(国際大学対抗プログラミングコンテスト) 2024 国内予選",
+        description: "TBW",
+      },
+      {
+        date: "2024/7",
+        title: "JPHACKS 2024",
+        description: "TBW",
+      },
       {
         date: "2025/2 ~ 2025/3",
         title: "Efrei Paris フランス留学",
@@ -424,6 +429,7 @@ export const portfolioData: PortfolioData = {
     qiitaArticles: [], // TODO: これはいらないかも
     noteArticles: [], // TODO: これはいらないかも
     slides: [
+      // TODO: サムネだけにしてタイトル名消していいかも
       {
         title:
           "What, when, and where? Self-Supervised Spatio-Temporal Grounding in Untrimmed Multi-Action Videos from Narrated Instructions",
