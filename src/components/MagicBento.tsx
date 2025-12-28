@@ -617,7 +617,7 @@ const MagicBento: React.FC<BentoProps> = ({
                   <div className="card__content flex flex-col flex-1 relative text-white">
                     {card.title && (
                       <h3
-                        className={`card__title font-semibold text-xl m-0 mb-2 ${textAutoHide ? "text-clamp-1" : ""}`}
+                        className={`card__title font-semibold text-xl m-0 mb-2 pb-[3px] ${textAutoHide ? "text-clamp-1" : ""}`}
                       >
                         {card.title}
                       </h3>
@@ -797,7 +797,7 @@ const MagicBento: React.FC<BentoProps> = ({
                     </span>
                   )}
                   <h3
-                    className={`card__title font-normal text-base m-0 ${
+                    className={`card__title font-normal text-base m-0 pb-[3px] ${
                       textAutoHide ? "text-clamp-1" : ""
                     }`}
                   >
