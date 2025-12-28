@@ -58,6 +58,7 @@ export default function Papers() {
                   <div className={styles.links}>
                     {paper.links.map((link, linkIndex) => (
                       // TODO: chipにアイコンを追加
+                      // TODO: ボタンっぽくないので、丸角に変更する
                       <Chip
                         key={linkIndex}
                         color="neutral"

@@ -12,15 +12,9 @@ export const portfolioData: PortfolioData = {
       url: "https://github.com/MurakawaTakuya",
       name: "GitHub",
       iconLink: "/link_icons/github.svg",
-      width: 2,
+      width: 1,
       height: 1,
       iconBackgroundColor: "#181717",
-    },
-    {
-      url: "https://x.com/MosiTaku",
-      name: "X (Twitter)",
-      iconLink: "/link_icons/x.svg",
-      iconBackgroundColor: "#000000",
     },
     {
       url: "https://qiita.com/Murakawa_Takuya",
@@ -28,6 +22,12 @@ export const portfolioData: PortfolioData = {
       iconLink: "/link_icons/qiita.png",
       iconBackgroundColor: "#ffffffff",
       backgroundColor: "#091b00ff",
+    },
+    {
+      url: "https://x.com/MosiTaku",
+      name: "X (Twitter)",
+      iconLink: "/link_icons/x.svg",
+      iconBackgroundColor: "#000000",
     },
     {
       url: "https://connpass.com/user/MurakawaTakuya/",

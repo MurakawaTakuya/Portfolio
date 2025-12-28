@@ -58,6 +58,7 @@ export default function Skills() {
 
           // TODO: どこかにクリックしたら公式ページに飛べるって書く
           // TODO: レベルの指標を書く
+          // TODO: コードが読みにくい
           return (
             <GlowingCard
               key={categoryKey}

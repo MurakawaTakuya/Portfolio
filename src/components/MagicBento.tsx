@@ -1,6 +1,7 @@
 // https://reactbits.dev/components/magic-bento
 "use client";
 
+import type { StatItem } from "@/components/BentoLinks/linkStats";
 import { BENTO_GRID_ROW_HEIGHT, MOBILE_BREAKPOINT } from "@/constants/const";
 import styled from "@emotion/styled";
 import { gsap } from "gsap";
@@ -15,7 +16,7 @@ export interface BentoCardProps {
   disableAnimations?: boolean;
   icon?: React.ReactNode;
   href?: string;
-  stats?: string[];
+  stats?: StatItem[];
   className?: string;
   onClick?: () => void;
   width?: number;

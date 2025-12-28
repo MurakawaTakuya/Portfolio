@@ -1,9 +1,10 @@
 "use client";
 
+import type { StatItem } from "@/components/BentoLinks/linkStats";
 import Chip from "@mui/joy/Chip";
 
 interface StatsChipsProps {
-  stats: string[];
+  stats: StatItem[];
   className?: string;
 }
 
@@ -18,9 +19,12 @@ export default function StatsChips({ stats, className = "" }: StatsChipsProps) {
           size="sm"
           variant="soft"
           color="neutral"
-          sx={{ fontSize: "0.75rem" }}
+          startDecorator={stat.icon}
+          sx={{
+            padding: "2px 8px",
+          }}
         >
-          {stat}
+          {stat.value}
         </Chip>
       ))}
     </div>
