@@ -44,11 +44,18 @@
 }
 
 .skillIcon {
-  width: 48px;
-  height: 48px;
+  width: 30px;
+  height: 30px;
   object-fit: contain;
 }
 
 .customIcon {
   border-radius: 8px;
+}
+
+.skillName {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #e0e0e0;
+  white-space: nowrap;
 }

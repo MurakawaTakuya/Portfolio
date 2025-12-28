@@ -74,7 +74,6 @@ export const portfolioData: PortfolioData = {
       { name: "Node.js", level: 5, iconName: "nodejs" },
       { name: "PHP", level: 4, iconName: "php" },
       { name: "Laravel", level: 4, iconName: "laravel" },
-      { name: "Go", level: 1, iconName: "go" },
       { name: "MySQL", level: 4, iconName: "mysql" },
       { name: "PostgreSQL", level: 4, iconName: "postgres" },
       { name: "HTML", level: 5, iconName: "html" },

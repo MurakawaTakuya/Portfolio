@@ -6,6 +6,7 @@ import {
 } from "@/components/lightswind/glowing-cards";
 import { portfolioData } from "@/data/portfolio";
 import type { SkillItem } from "@/types/portfolio";
+import Stack from "@mui/joy/Stack";
 import styles from "./Skills.module.scss";
 
 // Map skill category keys to display names
@@ -72,14 +73,26 @@ export default function Skills() {
                     const isCustomIcon = skill.iconName === null;
 
                     return (
-                      // eslint-disable-next-line @next/next/no-img-element
-                      <img
+                      <Stack
                         key={skill.name}
-                        src={iconSrc}
-                        alt={skill.name}
-                        className={`${styles.skillIcon} ${isCustomIcon ? styles.customIcon : ""}`}
-                        title={skill.name}
-                      />
+                        direction="row"
+                        spacing={1}
+                        sx={{
+                          alignItems: "center",
+                          backgroundColor: "rgba(20, 20, 20, 1)",
+                          border: "1px solid rgba(255, 255, 255, 0.11)",
+                          borderRadius: "8px",
+                          padding: "8px 12px",
+                        }}
+                      >
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={iconSrc}
+                          alt={skill.name}
+                          className={`${styles.skillIcon} ${isCustomIcon ? styles.customIcon : ""}`}
+                        />
+                        <span className={styles.skillName}>{skill.name}</span>
+                      </Stack>
                     );
                   })}
                 </div>
