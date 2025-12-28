@@ -948,6 +948,7 @@ const StyledBentoSection = styled.div<{
   @media (max-width: 599px) {
     .card-responsive {
       grid-template-columns: 1fr;
+      grid-auto-rows: auto;
       width: 95%;
       margin: 0 auto;
     }
