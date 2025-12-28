@@ -48,13 +48,8 @@ export default function Skills() {
           ] as SkillItem[];
           const displayName = categoryDisplayNames[categoryKey];
 
-          // Filter skills with valid iconName (not null)
-          const skillsWithIcons = categorySkills.filter(
-            (skill) => skill.iconName !== null
-          );
-
-          // Skip if no skills with icons
-          if (skillsWithIcons.length === 0) {
+          // Skip if no skills
+          if (categorySkills.length === 0) {
             return null;
           }
 
@@ -67,16 +62,26 @@ export default function Skills() {
               <div className={styles.cardContent}>
                 <h3 className={styles.categoryTitle}>{displayName}</h3>
                 <div className={styles.iconsContainer}>
-                  {skillsWithIcons.map((skill) => (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
-                      key={skill.name}
-                      src={`https://skillicons.dev/icons?i=${skill.iconName}`}
-                      alt={skill.name}
-                      className={styles.skillIcon}
-                      title={skill.name}
-                    />
-                  ))}
+                  {categorySkills.map((skill) => {
+                    // Use skillicons.dev for known icons, custom icons for null
+                    const iconSrc =
+                      skill.iconName !== null
+                        ? `https://skillicons.dev/icons?i=${skill.iconName}`
+                        : `/skill_icons/${skill.name}.png`;
+
+                    const isCustomIcon = skill.iconName === null;
+
+                    return (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        key={skill.name}
+                        src={iconSrc}
+                        alt={skill.name}
+                        className={`${styles.skillIcon} ${isCustomIcon ? styles.customIcon : ""}`}
+                        title={skill.name}
+                      />
+                    );
+                  })}
                 </div>
               </div>
             </GlowingCard>

@@ -93,6 +93,8 @@ export const portfolioData: PortfolioData = {
     machineLearning: [
       { name: "Python", level: 4, iconName: "py" },
       { name: "PyTorch", level: 1, iconName: "pytorch" },
+      { name: "HuggingFace", level: 3, iconName: null },
+      { name: "Comet", level: 5, iconName: null },
     ],
     editor: [
       { name: "VSCode", level: 5, iconName: "vscode" },
