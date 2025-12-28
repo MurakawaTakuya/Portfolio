@@ -29,6 +29,12 @@ export default function RootLayout({
         <main className="min-h-screen bg-black text-white selection:bg-neutral-700 selection:text-white">
           {children}
         </main>
+        <footer className="w-full px-4 py-8 mt-16 border-t border-white/10">
+          <p className="text-center text-sm text-gray-500 m-0">
+            © 2025~{new Date().getFullYear()} Murakawa Takuya. All rights
+            reserved.
+          </p>
+        </footer>
       </body>
     </html>
   );
