@@ -4,6 +4,12 @@ export interface TimelineItem {
   description?: string;
 }
 
+export interface SkillItem {
+  name: string;
+  level: 1 | 2 | 3 | 4 | 5;
+  iconName: string | null;
+}
+
 export interface PortfolioData {
   name: string;
   icon: string;
@@ -19,10 +25,13 @@ export interface PortfolioData {
     backgroundColor?: string;
   }>;
   skills: {
-    frontend: string[];
-    backend: string[];
-    infrastructure: string[];
-    other: string[];
+    frontend: SkillItem[];
+    backend: SkillItem[];
+    infrastructure: SkillItem[];
+    machineLearning: SkillItem[];
+    editor: SkillItem[];
+    os: SkillItem[];
+    other: SkillItem[];
   };
   timeline: {
     career: TimelineItem[];

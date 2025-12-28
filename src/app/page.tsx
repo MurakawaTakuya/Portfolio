@@ -14,7 +14,7 @@ export default function Home() {
         <h1>Links</h1>
         {/* Bento Links Section */}
         <BentoLinks />
-        {/* Skills */}
+        {/* Skills & Experiences */}
         {/* Timeline */}
         <CareerTimeline />
         {/* Projects / Publications */}
