@@ -12,6 +12,7 @@ export type TimelineColor =
 export interface TimelineElement {
   id: number;
   date: string;
+  timestamp: Date;
   title: string;
   description?: string;
   icon?: ReactNode | (() => ReactNode);

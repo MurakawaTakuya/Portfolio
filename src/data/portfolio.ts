@@ -265,42 +265,47 @@ export const portfolioData: PortfolioData = {
     ],
   },
   timeline: {
-    // TODO: 並び替えの比較用のdate型のデータを追加する
     // TODO: これからの目標をどこかに書く(timeline上か、twitter風か)
-    // TODO: 日付の形式(-, /を合わせる)
     // TODO: カテゴリを付けて、タイムラインにアイコンを表示する
     career: [
       {
-        date: "2022-04",
+        date: "2022/4",
+        timestamp: new Date("2022-04-01"),
         title: "名古屋工業大学 入学",
       },
       {
-        date: "2025-03",
+        date: "2025/3",
+        timestamp: new Date("2025-03-01"),
         title: "名古屋工業大学 玉木・丁研究室 配属",
       },
       {
-        date: "2026-03",
+        date: "2026/3",
+        timestamp: new Date("2026-03-31"),
         title: "名古屋工業大学 卒業予定",
       },
       {
-        date: "2026-04",
+        date: "2026/4",
+        timestamp: new Date("2026-04-01"),
         title: "名古屋工業大学大学院 入学予定",
       },
     ],
     internship: [
       {
         date: "2024/6 ~ 2024/7",
+        timestamp: new Date("2024-06-01"),
         title: "Qiita株式会社 / 株式会社エイチームホールディングス",
         description:
           "インターン: フロントエンド (React, TypeScript)・バックエンド (Ruby on Rails) ",
       },
       {
         date: "2024/9",
+        timestamp: new Date("2024-09-01"),
         title: "株式会社アイスタイル",
         description: "バックエンド (PHP, Java, SpringBoot)",
       },
       {
         date: "2025/7 ~ Present",
+        timestamp: new Date("2025-07-01"),
         title: "株式会社イノベーション",
         description: "フロントエンド (React)・バックエンド (PHP, Laravel)",
       },
@@ -308,14 +313,17 @@ export const portfolioData: PortfolioData = {
     parttime: [
       {
         date: "2022/4 ~ 2024/3",
+        timestamp: new Date("2022-04-01"),
         title: "学習塾アルバイト",
       },
       {
         date: "2022/10 ~ 2023/2",
+        timestamp: new Date("2022-10-01"),
         title: "学習塾アルバイト",
       },
       {
         date: "2023/12 ~ 2025/7",
+        timestamp: new Date("2023-12-01"),
         title: "大学技術補佐員",
         description: "熱中症搬送者数予測サイトの開発",
       },
@@ -325,42 +333,48 @@ export const portfolioData: PortfolioData = {
       // TODO: link追加
       {
         date: "2022 ~ 2023(2024)",
+        timestamp: new Date("2022-04-01"),
         title: "工大祭実行委員会 所属",
         description: "広報局所属 Web開発担当",
       },
       {
-        date: "2024/11",
+        date: "2024/7",
+        timestamp: new Date("2024-07-01"),
         title: "ICPC(国際大学対抗プログラミングコンテスト) 2024 国内予選",
         description: "TBW",
       },
       {
-        date: "2024/7",
+        date: "2024/11",
+        timestamp: new Date("2024-11-01"),
         title: "JPHACKS 2024",
         description: "TBW",
       },
       {
         date: "2025/2 ~ 2025/3",
+        timestamp: new Date("2025-02-22"),
         title: "Efrei Paris フランス留学",
         description: "TBW",
       },
       {
         date: "2026 ~ Present",
+        timestamp: new Date("2026-01-01"),
         title: "名古屋CVPR・ML勉強会 運営",
         description: "TBW",
       },
     ],
   },
   qualifications: [
+    //TODO: 表示
     {
-      date: "2020-11",
+      date: "2020/11",
       title: "実用英語技能検定 準一級",
     },
     {
-      date: "2024-04",
+      date: "2024/4",
       title: "応用情報技術者試験",
     },
     {
-      date: "2025-05",
+      date: "2025/5",
       title: "TOEIC 895点",
     },
   ],
@@ -369,11 +383,13 @@ export const portfolioData: PortfolioData = {
     // TODO: posterかoralかもわかるように
     {
       date: "2025/7",
+      timestamp: new Date("2025-07-01"),
       title: "国内学会: 画像の認識・理解シンポジウム (MIRU 2025)",
       description: "TBW",
     },
     {
       date: "2026/1",
+      timestamp: new Date("2026-01-01"),
       title:
         "国際学会: The International Workshop on Advanced Image Technology (IWAIT2026)",
       description: "TBW",

@@ -11,6 +11,7 @@ const CareerTimeline = () => {
     (item, index) => ({
       id: index,
       date: item.date,
+      timestamp: item.timestamp,
       title: item.title,
       description: item.description || "",
     })
@@ -20,6 +21,7 @@ const CareerTimeline = () => {
     portfolioData.timeline.internship.map((item, index) => ({
       id: 100 + index,
       date: item.date,
+      timestamp: item.timestamp,
       title: item.title,
       description: item.description || "",
     }));
@@ -28,6 +30,7 @@ const CareerTimeline = () => {
     (item, index) => ({
       id: 200 + index,
       date: item.date,
+      timestamp: item.timestamp,
       title: item.title,
       description: item.description || "",
     })
@@ -37,6 +40,7 @@ const CareerTimeline = () => {
     portfolioData.timeline.activities.map((item, index) => ({
       id: 300 + index,
       date: item.date,
+      timestamp: item.timestamp,
       title: item.title,
       description: item.description || "",
     }));
@@ -45,11 +49,12 @@ const CareerTimeline = () => {
     portfolioData.researchConferences.map((item, index) => ({
       id: 400 + index,
       date: item.date,
+      timestamp: item.timestamp,
       title: item.title,
       description: item.description || "",
     }));
 
-  // Combine all events and sort by date
+  // Combine all events and sort by timestamp
   const timelineEvents = [
     ...careerEvents,
     ...internshipEvents,
@@ -58,7 +63,7 @@ const CareerTimeline = () => {
     ...researchConferencesEvents,
   ]
     .sort((a, b) => {
-      return a.date.localeCompare(b.date);
+      return a.timestamp.getTime() - b.timestamp.getTime();
     })
     .reverse();
 
