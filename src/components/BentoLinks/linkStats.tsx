@@ -132,5 +132,14 @@ export async function getStatsForLink(name: string): Promise<StatItem[]> {
     return await fetchQiitaStats();
   }
 
+  if (name === "X (Twitter)") {
+    return [
+      {
+        icon: null,
+        value: "@MosiTaku",
+      },
+    ];
+  }
+
   return [];
 }
