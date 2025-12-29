@@ -2,7 +2,11 @@
 "use client";
 
 import type { StatItem } from "@/components/BentoLinks/linkStats";
-import { BENTO_GRID_ROW_HEIGHT, MOBILE_BREAKPOINT } from "@/constants/const";
+import {
+  BENTO_GRID_ROW_HEIGHT,
+  BENTO_MAX_COLUMNS,
+  MOBILE_BREAKPOINT,
+} from "@/constants/const";
 import styled from "@emotion/styled";
 import { gsap } from "gsap";
 import React, { useCallback, useEffect, useRef, useState } from "react";
@@ -506,7 +510,15 @@ const BentoCardGrid: React.FC<{
   glowColor: string;
   borderColor: string;
   gridRowHeight: number;
-}> = ({ children, gridRef, glowColor, borderColor, gridRowHeight }) => (
+  maxColumns: number;
+}> = ({
+  children,
+  gridRef,
+  glowColor,
+  borderColor,
+  gridRowHeight,
+  maxColumns,
+}) => (
   <StyledBentoSection
     className="bento-section grid gap-2 p-0 w-full max-w-[80rem] select-none relative"
     style={{ fontSize: "clamp(1rem, 0.9rem + 0.5vw, 1.5rem)" }}
@@ -514,6 +526,7 @@ const BentoCardGrid: React.FC<{
     $glowColor={glowColor}
     $borderColor={borderColor}
     $gridRowHeight={gridRowHeight}
+    $maxColumns={maxColumns}
   >
     {children}
   </StyledBentoSection>
@@ -572,6 +585,7 @@ const MagicBento: React.FC<BentoProps> = ({
         glowColor={glowColor}
         borderColor={borderColor}
         gridRowHeight={BENTO_GRID_ROW_HEIGHT}
+        maxColumns={BENTO_MAX_COLUMNS}
       >
         <div className={`card-responsive grid gap-3`}>
           {cards.map((card, index) => {
@@ -840,6 +854,7 @@ const StyledBentoSection = styled.div<{
   $glowColor: string;
   $borderColor: string;
   $gridRowHeight: number;
+  $maxColumns: number;
 }>`
   --glow-x: 50%;
   --glow-y: 50%;
@@ -868,7 +883,7 @@ const StyledBentoSection = styled.div<{
 
   @media (min-width: 1024px) {
     .card-responsive {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(${(props) => props.$maxColumns}, 1fr);
     }
   }
 

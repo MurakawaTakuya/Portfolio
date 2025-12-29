@@ -34,11 +34,6 @@
   flex-shrink: 0;
   width: 8rem;
   height: 8rem;
-
-  @media (min-width: 768px) {
-    width: 10rem;
-    height: 10rem;
-  }
 }
 
 .icon {

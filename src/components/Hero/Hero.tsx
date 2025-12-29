@@ -33,7 +33,7 @@ const Hero = () => {
           </h1>
 
           <p className={styles.catchphrase}>
-            <ShinyText disabled={false} speed={2}>
+            <ShinyText disabled={false} speed={3}>
               <span className={styles.catchphraseLine}>
                 Fullstack Development
               </span>
