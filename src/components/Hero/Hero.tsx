@@ -1,6 +1,7 @@
 import { portfolioData } from "@/data/portfolio";
 import BlurText from "../BlurText";
 import ShinyText from "../ShinyText";
+import { ShineBorder } from "../ui/shine-border";
 import styles from "./Hero.module.scss";
 
 const Hero = () => {
@@ -59,6 +60,7 @@ const Hero = () => {
           <div className={styles.strengths}>
             {portfolioData.aboutme.strengths.map((strength) => (
               <span key={strength} className={styles.strengthBadge}>
+                <ShineBorder shineColor="gray" duration={10} />
                 {strength}
               </span>
             ))}
