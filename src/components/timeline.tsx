@@ -105,6 +105,11 @@ interface TimelineItemProps extends Omit<HTMLMotionProps<"li">, "ref"> {
   loading?: boolean;
   /** Error message */
   error?: string;
+  /** Category with name and color */
+  category?: {
+    name: string;
+    color: string;
+  };
 }
 
 const TimelineItem = React.forwardRef<HTMLLIElement, TimelineItemProps>(
@@ -122,6 +127,7 @@ const TimelineItem = React.forwardRef<HTMLLIElement, TimelineItemProps>(
       iconsize,
       loading,
       error,
+      category,
       // Omit unused Framer Motion props
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
       initial,
@@ -239,6 +245,18 @@ const TimelineItem = React.forwardRef<HTMLLIElement, TimelineItemProps>(
 
         {/* Content */}
         <TimelineContent>
+          {category && (
+            <span
+              className="inline-block w-fit px-2 py-0.5 text-xs font-medium rounded-full mb-1"
+              style={{
+                backgroundColor: `${category.color}20`,
+                color: category.color,
+                border: `1px solid ${category.color}40`,
+              }}
+            >
+              {category.name}
+            </span>
+          )}
           <TimelineHeader>
             <TimelineTitle>{title}</TimelineTitle>
           </TimelineHeader>

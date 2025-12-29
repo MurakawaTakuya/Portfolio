@@ -7,6 +7,14 @@ import type { TimelineElement } from "@/types/timeline";
 import styles from "./CareerTimeline.module.scss";
 
 const CareerTimeline = () => {
+  const categories = {
+    career: { name: "学歴", color: "#3b82f6" },
+    internship: { name: "インターン", color: "#10b981" },
+    parttime: { name: "アルバイト", color: "#f59e0b" },
+    activities: { name: "活動", color: "#8b5cf6" },
+    research: { name: "学会", color: "#ec4899" },
+  };
+
   // Transform portfolio timeline data to TimelineElement format
   const careerEvents: TimelineElement[] = portfolioData.timeline.career.map(
     (item, index) => ({
@@ -15,6 +23,7 @@ const CareerTimeline = () => {
       timestamp: item.timestamp,
       title: item.title,
       description: item.description || "",
+      category: categories.career,
     })
   );
 
@@ -25,6 +34,7 @@ const CareerTimeline = () => {
       timestamp: item.timestamp,
       title: item.title,
       description: item.description || "",
+      category: categories.internship,
     }));
 
   const parttimeEvents: TimelineElement[] = portfolioData.timeline.parttime.map(
@@ -34,6 +44,7 @@ const CareerTimeline = () => {
       timestamp: item.timestamp,
       title: item.title,
       description: item.description || "",
+      category: categories.parttime,
     })
   );
 
@@ -44,6 +55,7 @@ const CareerTimeline = () => {
       timestamp: item.timestamp,
       title: item.title,
       description: item.description || "",
+      category: categories.activities,
     }));
 
   const researchConferencesEvents: TimelineElement[] =
@@ -53,6 +65,7 @@ const CareerTimeline = () => {
       timestamp: item.timestamp,
       title: item.title,
       description: item.description || "",
+      category: categories.research,
     }));
 
   // Combine all events and sort by timestamp

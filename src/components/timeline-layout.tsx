@@ -43,6 +43,7 @@ export const TimelineLayout = ({
             date={item.date}
             title={item.title}
             description={item.description}
+            category={item.category}
             icon={
               typeof item.icon === "function"
                 ? item.icon()

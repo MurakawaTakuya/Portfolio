@@ -21,6 +21,10 @@ export interface TimelineElement {
   size?: TimelineSize;
   loading?: boolean;
   error?: string;
+  category?: {
+    name: string;
+    color: string;
+  };
 }
 
 export interface TimelineProps {
