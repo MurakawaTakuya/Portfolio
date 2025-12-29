@@ -47,8 +47,14 @@ const Hero = () => {
 
       {/* Bottom Zone: Introduction (Strengths, Bio) */}
       <div className={styles.introZone}>
+        {/* Bio */}
+        <div className={styles.bioItem}>
+          <span className={styles.infoLabel}>Bio</span>
+          <p className={styles.bio}>{portfolioData.aboutme.bio}</p>
+        </div>
+
         {/* Strengths */}
-        <div className={styles.infoItem}>
+        <div className={styles.strengthsItem}>
           <span className={styles.infoLabel}>Strengths</span>
           <div className={styles.strengths}>
             {portfolioData.aboutme.strengths.map((strength) => (
@@ -57,12 +63,6 @@ const Hero = () => {
               </span>
             ))}
           </div>
-        </div>
-
-        {/* Bio */}
-        <div className={styles.infoItem}>
-          <span className={styles.infoLabel}>Bio</span>
-          <p className={styles.bio}>{portfolioData.aboutme.bio}</p>
         </div>
       </div>
     </section>

@@ -4,9 +4,9 @@ export const portfolioData: PortfolioData = {
   aboutme: {
     name: "Murakawa Takuya",
     icon: "/icon.jpg",
-    bio: "いつもスケジュールはギチギチです",
+    bio: "いつもスケジュールはギチギチです。新しいものを試したり、便利なものを取り入れるのが好きです。",
     catchphrase: "Fullstack Development × Computer Vision Research",
-    strengths: ["キャッチアップ力", "好奇心", "挑戦心", "Grid力"],
+    strengths: ["キャッチアップ力", "適応力", "スピード感", "挑戦心"],
   },
   links: [
     // TODO: 数値系はcount upを使う: https://reactbits.dev/text-animations/count-up
