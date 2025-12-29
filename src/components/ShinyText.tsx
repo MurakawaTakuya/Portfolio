@@ -1,14 +1,14 @@
 import React from "react";
 
 interface ShinyTextProps {
-  text: string;
+  children: React.ReactNode;
   disabled?: boolean;
   speed?: number;
   className?: string;
 }
 
 const ShinyText: React.FC<ShinyTextProps> = ({
-  text,
+  children,
   disabled = false,
   speed = 5,
   className = "",
@@ -17,7 +17,7 @@ const ShinyText: React.FC<ShinyTextProps> = ({
 
   return (
     <span
-      className={`text-[#b5b5b5a4] bg-clip-text inline-block ${disabled ? "" : "animate-shine"} ${className}`}
+      className={`text-[#b5b5b5a4] bg-clip-text ${disabled ? "" : "animate-shine"} ${className}`}
       style={{
         backgroundImage:
           "linear-gradient(120deg, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 60%)",
@@ -26,7 +26,7 @@ const ShinyText: React.FC<ShinyTextProps> = ({
         animationDuration: animationDuration,
       }}
     >
-      {text}
+      {children}
     </span>
   );
 };

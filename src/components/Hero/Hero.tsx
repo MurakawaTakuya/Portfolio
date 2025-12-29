@@ -32,21 +32,15 @@ const Hero = () => {
 
           {/* Catchphrase */}
           <p className={styles.catchphrase}>
-            <span className={styles.catchphraseLine}>
-              <ShinyText
-                text="Fullstack Development"
-                disabled={false}
-                speed={3}
-              />
-            </span>
-            <span className={styles.catchphraseSeparator}>×</span>
-            <span className={styles.catchphraseLine}>
-              <ShinyText
-                text="Computer Vision Research"
-                disabled={false}
-                speed={3}
-              />
-            </span>
+            <ShinyText disabled={false} speed={3}>
+              <span className={styles.catchphraseLine}>
+                Fullstack Development
+              </span>
+              <span className={styles.catchphraseSeparator}>×</span>
+              <span className={styles.catchphraseLine}>
+                Computer Vision Research
+              </span>
+            </ShinyText>
           </p>
 
           {/* Strengths */}
