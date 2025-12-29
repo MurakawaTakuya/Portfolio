@@ -447,7 +447,7 @@ export const portfolioData: PortfolioData = {
             url: "https://github.com/tamaki-lab/M3DDM-Plus",
           },
           {
-            title: "IWAIT Proceedings (4 pages due to page limit)",
+            title: "Proceedings (4 pages due to page limit)",
             url: "TBW",
           },
           {

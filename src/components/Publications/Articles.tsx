@@ -32,10 +32,13 @@ export default function Articles() {
     <section className={styles.category}>
       <h2 className={styles.categoryTitle}>Articles</h2>
       <GlowingCards
+        className={styles.cardsWrapper}
         gap="1.5rem"
         padding="1rem 0"
         responsive={true}
         glowRadius={25}
+        alignItems="flex-start"
+        justifyContent="flex-start"
       >
         {sortedArticles.map((article, index) => (
           <GlowingCard key={index} glowColor="#55c500" className={styles.card}>

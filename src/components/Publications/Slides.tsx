@@ -58,10 +58,13 @@ export default function Slides() {
     <section className={styles.category}>
       <h2 className={styles.categoryTitle}>Slides</h2>
       <GlowingCards
+        className={styles.cardsWrapper}
         gap="1.5rem"
         padding="1rem 0"
         responsive={true}
         glowRadius={25}
+        alignItems="flex-start"
+        justifyContent="flex-start"
       >
         {sortedSlides.map((slide, index) => (
           <GlowingCard key={index} glowColor="#10b981" className={styles.card}>

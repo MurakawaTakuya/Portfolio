@@ -33,10 +33,13 @@ export default function Papers() {
     <section className={styles.category}>
       <h2 className={styles.categoryTitle}>Papers</h2>
       <GlowingCards
+        className={styles.cardsWrapper}
         gap="1.5rem"
         padding="1rem 0"
         responsive={true}
         glowRadius={25}
+        alignItems="flex-start"
+        justifyContent="flex-start"
       >
         {papers
           .slice()

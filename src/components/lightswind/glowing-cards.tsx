@@ -35,6 +35,15 @@ export interface GlowingCardsProps {
   borderRadius?: string;
   /** Enable responsive layout */
   responsive?: boolean;
+  /** Align items in flex container */
+  alignItems?: "flex-start" | "center" | "flex-end" | "stretch";
+  /** Justify content in flex container */
+  justifyContent?:
+    | "flex-start"
+    | "center"
+    | "flex-end"
+    | "space-between"
+    | "space-around";
   /** Custom CSS variables for theming */
   customTheme?: {
     cardBg?: string;
@@ -85,6 +94,8 @@ export const GlowingCards: React.FC<GlowingCardsProps> = ({
   backgroundColor,
   borderRadius = "1rem",
   responsive = true,
+  alignItems = "center",
+  justifyContent = "center",
   customTheme,
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -150,9 +161,13 @@ export const GlowingCards: React.FC<GlowingCardsProps> = ({
       >
         <div
           className={cn(
-            "flex items-center justify-center flex-wrap gap-[var(--gap)]",
+            "flex flex-wrap gap-[var(--gap)]",
             responsive && "flex-col sm:flex-row "
           )}
+          style={{
+            alignItems,
+            justifyContent,
+          }}
         >
           {children}
         </div>
@@ -174,10 +189,14 @@ export const GlowingCards: React.FC<GlowingCardsProps> = ({
           >
             <div
               className={cn(
-                "flex items-center justify-center flex-wrap gap-[var(--gap)] max-w-[var(--max-width)] center mx-auto",
+                "flex flex-wrap gap-[var(--gap)] max-w-[var(--max-width)] center mx-auto",
                 responsive && "flex-col sm:flex-row"
               )}
-              style={{ padding: "var(--padding)" }} // String literal
+              style={{
+                padding: "var(--padding)",
+                alignItems,
+                justifyContent,
+              }}
             >
               {React.Children.map(children, (child, index) => {
                 if (React.isValidElement(child) && child.type === GlowingCard) {

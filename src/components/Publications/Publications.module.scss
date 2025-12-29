@@ -30,9 +30,25 @@
   color: #e0e0e0;
 }
 
+.cardsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
 .card {
-  min-width: 300px;
-  max-width: 500px;
+  flex: 0 0 calc((100% - 3rem) / 3);
+  min-width: 280px;
+
+  @media (max-width: 1000px) {
+    flex: 0 0 calc((100% - 1.5rem) / 2);
+  }
+
+  @media (max-width: 600px) {
+    flex: 0 0 100%;
+  }
 }
 
 .cardContent {
