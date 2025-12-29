@@ -40,7 +40,7 @@ export default function Skills() {
     <section className={styles.skills}>
       <h1 className={styles.sectionTitle}>Skills</h1>
       <GlowingCards
-        gap="1.5rem"
+        gap="1rem"
         padding="1rem 0"
         responsive={true}
         glowRadius={25}

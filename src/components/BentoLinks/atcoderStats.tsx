@@ -1,5 +1,4 @@
 import CountUp from "@/components/CountUp";
-import { Login } from "@mui/icons-material";
 import type { StatItem } from "./linkStats";
 
 // AtCoder API response interface
@@ -36,21 +35,16 @@ export async function fetchAtCoderStats(): Promise<StatItem[]> {
     const contests: AtCoderContest[] = await response.json();
 
     // Calculate stats
-    const participationCount = contests.length;
     const highestRating = Math.max(...contests.map((c) => c.NewRating));
     const currentRating =
       contests.length > 0 ? contests[contests.length - 1].NewRating : 0;
 
     const stats: StatItem[] = [
       {
-        icon: <Login fontSize="small" />,
-        value: <CountUp from={0} to={participationCount} />,
-      },
-      {
         icon: null,
         value: (
           <>
-            Current rating: <CountUp from={0} to={currentRating} />
+            Highest rating: <CountUp from={0} to={highestRating} />
           </>
         ),
       },
@@ -58,7 +52,7 @@ export async function fetchAtCoderStats(): Promise<StatItem[]> {
         icon: null,
         value: (
           <>
-            Highest rating: <CountUp from={0} to={highestRating} />
+            Current rating: <CountUp from={0} to={currentRating} />
           </>
         ),
       },

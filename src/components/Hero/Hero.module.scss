@@ -8,7 +8,7 @@
 
   @media (min-width: 768px) {
     gap: 1rem;
-    padding: 5rem 2rem 2rem;
+    padding: 3rem 2rem 1rem;
   }
 }
 
@@ -48,7 +48,6 @@
 .nameSection {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
   align-items: center;
   text-align: center;
 
@@ -101,6 +100,7 @@
 
   @media (min-width: 768px) {
     display: inline;
+    padding: 0 3px;
     line-height: inherit;
   }
 }
