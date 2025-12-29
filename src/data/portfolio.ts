@@ -469,11 +469,13 @@ export const portfolioData: PortfolioData = {
         title:
           "What, when, and where? Self-Supervised Spatio-Temporal Grounding in Untrimmed Multi-Action Videos from Narrated Instructions",
         url: "https://www.slideshare.net/slideshow/what-when-and-where-self-supervised-spatio-temporal-grounding-in-untrimmed-multi-action-videos-from-narrated-instructions/279146670",
+        presentation_date: new Date("2025-4-22"),
       },
       {
         title:
           "MotionMatcher: Cinematic Motion Customizationof Text-to-Video Diffusion Models via Motion Feature Matching",
         url: "https://www.slideshare.net/slideshow/motionmatcher-cinematic-motion-customizationof-text-to-video-diffusion-models-via-motion-feature-matching/284341530",
+        presentation_date: new Date("2025-11-25"),
       },
     ], // TODO: speakerdeckと一緒に表示する
     projects: [], // GitHub repositories etc.
