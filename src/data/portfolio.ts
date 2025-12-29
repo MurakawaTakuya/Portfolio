@@ -408,6 +408,10 @@ export const portfolioData: PortfolioData = {
             title: "Poster",
             url: "https://sites.google.com/nitech.jp/tamaki-lab/poster",
           },
+          {
+            title: "Paper (Distributed to participants)",
+            url: null,
+          },
         ],
       },
       {

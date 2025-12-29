@@ -10,7 +10,7 @@ import styles from "./Publications.module.scss";
 
 interface PaperLink {
   title: string;
-  url: string;
+  url: string | null;
 }
 
 interface Paper {
@@ -65,13 +65,16 @@ export default function Papers() {
                         size="md"
                         variant="outlined"
                         onClick={() => {
-                          if (link.url !== "TBW") {
+                          if (link.url && link.url !== "TBW") {
                             window.open(link.url, "_blank");
                           }
                         }}
                         sx={{
-                          cursor: link.url !== "TBW" ? "pointer" : "default",
-                          opacity: link.url === "TBW" ? 0.5 : 1,
+                          cursor:
+                            link.url && link.url !== "TBW"
+                              ? "pointer"
+                              : "default",
+                          opacity: !link.url || link.url === "TBW" ? 0.5 : 1,
                         }}
                       >
                         {link.title}
