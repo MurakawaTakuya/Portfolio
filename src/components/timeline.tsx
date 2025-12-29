@@ -216,7 +216,7 @@ const TimelineItem = React.forwardRef<HTMLLIElement, TimelineItemProps>(
 
     const content = (
       <div
-        className="grid grid-cols-[1fr_auto_1fr] gap-4 items-start"
+        className="grid grid-cols-[0.5fr_auto_2fr] gap-4 items-start"
         {...(status === "in-progress" ? { "aria-current": "step" } : {})}
       >
         {/* Date */}
@@ -444,16 +444,66 @@ const TimelineIcon = ({
   );
 };
 
+interface TimelineDescriptionProps extends React.HTMLAttributes<HTMLDivElement> {
+  /** Maximum height before truncation (in pixels) */
+  maxHeight?: number;
+}
+
 const TimelineDescription = React.forwardRef<
-  HTMLParagraphElement,
-  React.HTMLAttributes<HTMLParagraphElement>
->(({ className, ...props }, ref) => (
-  <p
-    ref={ref}
-    className={cn("max-w-sm text-sm text-muted-foreground", className)}
-    {...props}
-  />
-));
+  HTMLDivElement,
+  TimelineDescriptionProps
+>(({ className, children, maxHeight = 60, ...props }, ref) => {
+  const [isExpanded, setIsExpanded] = React.useState(false);
+  const [needsTruncation, setNeedsTruncation] = React.useState(false);
+  const contentRef = React.useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    if (contentRef.current) {
+      setNeedsTruncation(contentRef.current.scrollHeight > maxHeight);
+    }
+  }, [children, maxHeight]);
+
+  if (!children) return null;
+
+  return (
+    <div ref={ref} className={cn("relative", className)} {...props}>
+      <div
+        ref={contentRef}
+        className={cn(
+          "text-sm text-muted-foreground transition-all duration-300 ease-out overflow-hidden",
+          !isExpanded && needsTruncation && "max-h-[60px]"
+        )}
+        style={{
+          maxHeight: isExpanded
+            ? contentRef.current?.scrollHeight
+            : needsTruncation
+              ? maxHeight
+              : undefined,
+        }}
+      >
+        {children}
+      </div>
+      {needsTruncation && !isExpanded && (
+        <div
+          className="absolute bottom-0 left-0 right-0 h-8 pointer-events-none"
+          style={{
+            background:
+              "linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8))",
+          }}
+        />
+      )}
+      {needsTruncation && (
+        <button
+          type="button"
+          onClick={() => setIsExpanded(!isExpanded)}
+          className="mt-2 text-sm text-white/80 hover:text-white transition-colors cursor-pointer"
+        >
+          {isExpanded ? "折りたたむ" : "もっと見る"}
+        </button>
+      )}
+    </div>
+  );
+});
 TimelineDescription.displayName = "TimelineDescription";
 
 const TimelineContent = React.forwardRef<
