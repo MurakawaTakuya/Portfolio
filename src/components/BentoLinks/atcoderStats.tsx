@@ -1,3 +1,4 @@
+import CountUp from "@/components/CountUp";
 import { Login } from "@mui/icons-material";
 import type { StatItem } from "./linkStats";
 
@@ -43,15 +44,23 @@ export async function fetchAtCoderStats(): Promise<StatItem[]> {
     const stats: StatItem[] = [
       {
         icon: <Login fontSize="small" />,
-        value: `${participationCount}`,
+        value: <CountUp from={0} to={participationCount} />,
       },
       {
         icon: null,
-        value: `Current rating: ${currentRating}`,
+        value: (
+          <>
+            Current rating: <CountUp from={0} to={currentRating} />
+          </>
+        ),
       },
       {
         icon: null,
-        value: `Highest rating: ${highestRating}`,
+        value: (
+          <>
+            Highest rating: <CountUp from={0} to={highestRating} />
+          </>
+        ),
       },
     ];
 

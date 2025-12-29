@@ -1,3 +1,4 @@
+import CountUp from "@/components/CountUp";
 import laprasData from "@/data/LAPRAS_API.json";
 import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import DescriptionIcon from "@mui/icons-material/Description";
@@ -34,15 +35,20 @@ function getFallbackQiitaStats(): StatItem[] {
   return [
     {
       icon: <DescriptionIcon fontSize="small" />,
-      value: `${articleCount}`,
+      value: <CountUp from={0} to={articleCount} />,
     },
     {
       icon: <BookmarkBorderIcon fontSize="small" />,
-      value: `${totalStocks}`,
+      value: <CountUp from={0} to={totalStocks} />,
     },
     {
       icon: <RemoveRedEyeIcon fontSize="small" />,
-      value: "185k+",
+      value: (
+        <>
+          <CountUp from={0} to={185} />
+          k+
+        </>
+      ),
     },
   ];
 }
@@ -78,19 +84,24 @@ export async function fetchQiitaStats(): Promise<StatItem[]> {
     const stats: StatItem[] = [
       {
         icon: <DescriptionIcon fontSize="small" />,
-        value: `${articleCount}`,
+        value: <CountUp from={0} to={articleCount} />,
       },
       {
         icon: <FavoriteBorderIcon fontSize="small" />,
-        value: `${totalLikes}`,
+        value: <CountUp from={0} to={totalLikes} />,
       },
       {
         icon: <BookmarkBorderIcon fontSize="small" />,
-        value: `${totalStocks}`,
+        value: <CountUp from={0} to={totalStocks} />,
       },
       {
         icon: <RemoveRedEyeIcon fontSize="small" />,
-        value: "185k+",
+        value: (
+          <>
+            <CountUp from={0} to={185} />
+            k+
+          </>
+        ),
       },
     ];
 

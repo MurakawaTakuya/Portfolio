@@ -23,7 +23,8 @@ const Hero = () => {
           <h1 className={styles.name}>
             <BlurText
               text={portfolioData.name}
-              delay={150}
+              delay={250}
+              stepDuration={0.4}
               animateBy="words"
               direction="top"
               className={styles.name}
@@ -32,7 +33,7 @@ const Hero = () => {
 
           {/* Catchphrase */}
           <p className={styles.catchphrase}>
-            <ShinyText disabled={false} speed={3}>
+            <ShinyText disabled={false} speed={2}>
               <span className={styles.catchphraseLine}>
                 Fullstack Development
               </span>

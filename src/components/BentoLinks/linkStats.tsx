@@ -1,3 +1,4 @@
+import CountUp from "@/components/CountUp";
 import laprasData from "@/data/LAPRAS_API.json";
 import DescriptionIcon from "@mui/icons-material/Description";
 import FestivalIcon from "@mui/icons-material/Festival";
@@ -8,7 +9,7 @@ import { fetchQiitaStats } from "./qiitaStats";
 
 export interface StatItem {
   icon: React.ReactNode | null;
-  value: string;
+  value: React.ReactNode;
 }
 
 // Get stats for specific links (async)
@@ -18,7 +19,11 @@ export async function getStatsForLink(name: string): Promise<StatItem[]> {
     return [
       {
         icon: null,
-        value: `Public Repos: ${repoCount}`,
+        value: (
+          <>
+            Public Repos: <CountUp from={0} to={repoCount} />
+          </>
+        ),
       },
     ];
   }
@@ -41,7 +46,7 @@ export async function getStatsForLink(name: string): Promise<StatItem[]> {
     return [
       {
         icon: <DescriptionIcon fontSize="small" />,
-        value: `${slideCount}`,
+        value: <CountUp from={0} to={slideCount} />,
       },
     ];
   }
@@ -59,15 +64,15 @@ export async function getStatsForLink(name: string): Promise<StatItem[]> {
     return [
       {
         icon: <FestivalIcon fontSize="small" />,
-        value: `${organizedCount}`,
+        value: <CountUp from={0} to={organizedCount} />,
       },
       {
         icon: <RecordVoiceOverIcon fontSize="small" />,
-        value: `${presentedCount}`,
+        value: <CountUp from={0} to={presentedCount} />,
       },
       {
         icon: <HearingIcon fontSize="small" />,
-        value: `${attendedCount}`,
+        value: <CountUp from={0} to={attendedCount} />,
       },
     ];
   }
