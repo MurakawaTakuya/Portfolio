@@ -26,16 +26,16 @@ export const TimelineLayout = ({
   className,
 }: TimelineLayoutProps) => {
   return (
-    // TODO: 画面に入る前で、ページ読み込んだ瞬間からアニメーションが始まってしまう
     <Timeline size={size} className={className}>
       {[...items].reverse().map((item, index) => (
         <motion.div
           key={index}
           initial={animate ? { opacity: 0, y: 20 } : false}
-          animate={animate ? { opacity: 1, y: 0 } : false}
+          whileInView={animate ? { opacity: 1, y: 0 } : undefined}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{
             duration: 0.5,
-            delay: index * 0.1,
+            delay: index * 0.01,
             ease: "easeOut",
           }}
         >
