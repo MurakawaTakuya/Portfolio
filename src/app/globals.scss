@@ -69,18 +69,6 @@ a {
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-  --animate-shine: shine var(--duration) infinite linear;
-  @keyframes shine {
-    0% {
-      background-position: 0% 0%;
-    }
-    50% {
-      background-position: 100% 100%;
-    }
-    to {
-      background-position: 0% 0%;
-    }
-  }
 }
 
 :root {
@@ -161,7 +149,22 @@ a {
   }
 }
 
+// ShinyText用 (横方向のグラデーションアニメーション)
 @keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+
+.animate-shine {
+  animation: shine 5s linear infinite;
+}
+
+// ShineBorder用 (斜め方向のボーダーアニメーション)
+@keyframes shine-border {
   0% {
     background-position: 0% 0%;
   }
@@ -173,6 +176,6 @@ a {
   }
 }
 
-.animate-shine {
-  animation: shine var(--duration, 14s) linear infinite;
+.animate-shine-border {
+  animation: shine-border var(--duration, 14s) linear infinite;
 }
