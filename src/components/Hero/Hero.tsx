@@ -1,5 +1,6 @@
 import { portfolioData } from "@/data/portfolio";
 import BlurText from "../BlurText";
+import ShinyText from "../ShinyText";
 import styles from "./Hero.module.scss";
 
 const Hero = () => {
@@ -32,11 +33,19 @@ const Hero = () => {
           {/* Catchphrase */}
           <p className={styles.catchphrase}>
             <span className={styles.catchphraseLine}>
-              Fullstack Development
+              <ShinyText
+                text="Fullstack Development"
+                disabled={false}
+                speed={3}
+              />
             </span>
             <span className={styles.catchphraseSeparator}>×</span>
             <span className={styles.catchphraseLine}>
-              Computer Vision Research
+              <ShinyText
+                text="Computer Vision Research"
+                disabled={false}
+                speed={3}
+              />
             </span>
           </p>
 

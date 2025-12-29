@@ -146,3 +146,16 @@ a {
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+
+.animate-shine {
+  animation: shine 5s linear infinite;
+}
