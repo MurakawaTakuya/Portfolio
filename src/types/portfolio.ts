@@ -16,6 +16,7 @@ export interface PortfolioData {
   aboutme: {
     name: string;
     icon: string;
+    bio: string;
     catchphrase: string;
     strengths: string[];
   };

@@ -6,7 +6,8 @@ import styles from "./Hero.module.scss";
 const Hero = () => {
   return (
     <section className={styles.hero}>
-      <div className={styles.container}>
+      {/* Top Zone: Icon + Name + Catchphrase */}
+      <div className={styles.topZone}>
         {/* Icon */}
         <div className={styles.iconWrapper}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -17,9 +18,8 @@ const Hero = () => {
           />
         </div>
 
-        {/* Content */}
-        <div className={styles.content}>
-          {/* Name */}
+        {/* Name and Catchphrase */}
+        <div className={styles.nameSection}>
           <h1 className={styles.name}>
             <BlurText
               text={portfolioData.aboutme.name}
@@ -31,7 +31,6 @@ const Hero = () => {
             />
           </h1>
 
-          {/* Catchphrase */}
           <p className={styles.catchphrase}>
             <ShinyText disabled={false} speed={2}>
               <span className={styles.catchphraseLine}>
@@ -43,8 +42,14 @@ const Hero = () => {
               </span>
             </ShinyText>
           </p>
+        </div>
+      </div>
 
-          {/* Strengths */}
+      {/* Bottom Zone: Introduction (Strengths, Bio) */}
+      <div className={styles.introZone}>
+        {/* Strengths */}
+        <div className={styles.infoItem}>
+          <span className={styles.infoLabel}>Strengths</span>
           <div className={styles.strengths}>
             {portfolioData.aboutme.strengths.map((strength) => (
               <span key={strength} className={styles.strengthBadge}>
@@ -52,6 +57,12 @@ const Hero = () => {
               </span>
             ))}
           </div>
+        </div>
+
+        {/* Bio */}
+        <div className={styles.infoItem}>
+          <span className={styles.infoLabel}>Bio</span>
+          <p className={styles.bio}>{portfolioData.aboutme.bio}</p>
         </div>
       </div>
     </section>
