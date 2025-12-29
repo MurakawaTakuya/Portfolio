@@ -58,6 +58,13 @@ export const portfolioData: PortfolioData = {
       iconLink: "/link_icons/lapras.png",
       iconBackgroundColor: "#56C1B6",
     },
+    {
+      url: "https://wakatime.com/@MurakawaTakuya",
+      name: "WakaTime",
+      iconLink: "/link_icons/wakatime.png",
+      iconBackgroundColor: "#ffffffff",
+      backgroundColor: "#151515ff",
+    },
     // {
     //   url: "#",
     //   name: "Note",
@@ -207,6 +214,12 @@ export const portfolioData: PortfolioData = {
         level: 5,
         iconName: null,
         link: "https://antigravity.google/",
+      },
+      {
+        name: "CLion",
+        level: 5,
+        iconName: "clion",
+        link: "https://www.jetbrains.com/clion/promo/",
       },
     ],
     os: [
