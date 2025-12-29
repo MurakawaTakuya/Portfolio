@@ -13,10 +13,12 @@ export interface SkillItem {
 }
 
 export interface PortfolioData {
-  name: string;
-  icon: string;
-  catchphrase: string;
-  strengths: string[];
+  aboutme: {
+    name: string;
+    icon: string;
+    catchphrase: string;
+    strengths: string[];
+  };
   links: Array<{
     url: string;
     name: string;

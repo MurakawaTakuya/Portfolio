@@ -11,8 +11,8 @@ const Hero = () => {
         <div className={styles.iconWrapper}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={portfolioData.icon}
-            alt={portfolioData.name}
+            src={portfolioData.aboutme.icon}
+            alt={portfolioData.aboutme.name}
             className={styles.icon}
           />
         </div>
@@ -22,7 +22,7 @@ const Hero = () => {
           {/* Name */}
           <h1 className={styles.name}>
             <BlurText
-              text={portfolioData.name}
+              text={portfolioData.aboutme.name}
               delay={250}
               stepDuration={0.4}
               animateBy="words"
@@ -46,7 +46,7 @@ const Hero = () => {
 
           {/* Strengths */}
           <div className={styles.strengths}>
-            {portfolioData.strengths.map((strength) => (
+            {portfolioData.aboutme.strengths.map((strength) => (
               <span key={strength} className={styles.strengthBadge}>
                 {strength}
               </span>

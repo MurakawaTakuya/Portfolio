@@ -1,11 +1,13 @@
 import type { PortfolioData } from "@/types/portfolio";
 
 export const portfolioData: PortfolioData = {
-  name: "Murakawa Takuya",
-  icon: "/icon.jpg",
-  // TODO: bio追加
-  catchphrase: "Fullstack Development × Computer Vision Research", // TODO: full stack developmentの中身をrotateしてもいいかも: https://reactbits.dev/text-animations/rotating-text
-  strengths: ["キャッチアップ力", "好奇心", "挑戦心", "Grid力"],
+  aboutme: {
+    name: "Murakawa Takuya",
+    icon: "/icon.jpg",
+    // TODO: bio追加
+    catchphrase: "Fullstack Development × Computer Vision Research",
+    strengths: ["キャッチアップ力", "好奇心", "挑戦心", "Grid力"],
+  },
   links: [
     // TODO: 数値系はcount upを使う: https://reactbits.dev/text-animations/count-up
     {

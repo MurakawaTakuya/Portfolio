@@ -11,10 +11,10 @@ export default function Home() {
       <Hero />
       {/* Bento Links Section */}
       <BentoLinks />
-      {/* Timeline */}
-      <CareerTimeline />
       {/* Skills */}
       <Skills />
+      {/* Timeline */}
+      <CareerTimeline />
       {/* Projects / Publications */}
       <Publications />
       {/* Status */}
