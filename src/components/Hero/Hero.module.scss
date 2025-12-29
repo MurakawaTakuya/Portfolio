@@ -1,0 +1,115 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1rem;
+  user-select: none;
+
+  @media (min-width: 768px) {
+    padding: 5rem 2rem;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 3rem;
+    align-items: flex-start;
+  }
+}
+
+.iconWrapper {
+  position: relative;
+  flex-shrink: 0;
+  width: 8rem;
+  height: 8rem;
+
+  @media (min-width: 768px) {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+.name {
+  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: -0.025em;
+
+  @media (min-width: 768px) {
+    font-size: 3.75rem;
+  }
+}
+
+.catchphrase {
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.75;
+  color: #9ca3af;
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.strengths {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+  }
+}
+
+.strengthBadge {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.875rem;
+  color: #d1d5db;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+  }
+}
