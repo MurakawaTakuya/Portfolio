@@ -282,6 +282,7 @@ export const portfolioData: PortfolioData = {
   timeline: {
     // TODO: これからの目標をどこかに書く(timeline上か、twitter風か)
     // TODO: カテゴリを付けて、タイムラインにアイコンを表示する
+    // TODO: インターンシップや活動などのタグをつける
     career: [
       {
         date: "2022/4",
