@@ -1,5 +1,6 @@
 "use client";
 
+import GradientText from "@/components/GradientText";
 import {
   GlowingCard,
   GlowingCards,
@@ -38,7 +39,16 @@ export default function Skills() {
 
   return (
     <section className={styles.skills}>
-      <h1 className={styles.sectionTitle}>Skills</h1>
+      <h1 className={styles.sectionTitle}>
+        <GradientText
+          colors={["#10b981", "#3b82f6", "#10b981", "#3b82f6", "#10b981"]}
+          animationSpeed={5}
+          showBorder={false}
+          direction="diagonal"
+        >
+          Skills
+        </GradientText>
+      </h1>
       <GlowingCards
         gap="1rem"
         padding="1rem 0"

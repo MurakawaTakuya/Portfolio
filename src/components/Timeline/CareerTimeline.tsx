@@ -1,5 +1,6 @@
 "use client";
 
+import GradientText from "@/components/GradientText";
 import { TimelineLayout } from "@/components/timeline-layout";
 import { portfolioData } from "@/data/portfolio";
 import type { TimelineElement } from "@/types/timeline";
@@ -69,7 +70,16 @@ const CareerTimeline = () => {
 
   return (
     <section className={styles.timeline}>
-      <h1 className={styles.sectionTitle}>Timeline</h1>
+      <h1 className={styles.sectionTitle}>
+        <GradientText
+          colors={["#8b5cf6", "#ec4899", "#8b5cf6", "#ec4899", "#8b5cf6"]}
+          animationSpeed={5}
+          showBorder={false}
+          direction="diagonal"
+        >
+          Timeline
+        </GradientText>
+      </h1>
       <TimelineLayout
         animate
         className="min-h-[600px] w-full max-w-2xl mx-auto p-8"
