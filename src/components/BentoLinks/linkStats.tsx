@@ -6,6 +6,7 @@ import HearingIcon from "@mui/icons-material/Hearing";
 import RecordVoiceOverIcon from "@mui/icons-material/RecordVoiceOver";
 import { fetchAtCoderStats } from "./atcoderStats";
 import { fetchQiitaStats } from "./qiitaStats";
+import { getWakaTimeStats } from "./wakatimeStats";
 
 export interface StatItem {
   icon: React.ReactNode | null;
@@ -79,6 +80,10 @@ export async function getStatsForLink(name: string): Promise<StatItem[]> {
 
   if (name === "AtCoder") {
     return await fetchAtCoderStats();
+  }
+
+  if (name === "WakaTime") {
+    return await getWakaTimeStats();
   }
 
   return [];
