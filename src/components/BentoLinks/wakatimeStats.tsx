@@ -47,7 +47,7 @@ export async function getWakaTimeStats(): Promise<StatItem[]> {
         icon: null,
         value: (
           <>
-            Total Coding: <CountUp from={0} to={totalHours} />h{" "}
+            Coding Time: <CountUp from={0} to={totalHours} />h{" "}
             <CountUp from={0} to={totalMinutes} />m
           </>
         ),

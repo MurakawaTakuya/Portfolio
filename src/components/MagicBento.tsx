@@ -970,7 +970,6 @@ const StyledBentoSection = styled.div<{
 
     .card-responsive .card {
       width: 100%;
-      min-height: 180px;
       grid-column: auto !important;
       grid-row: auto !important;
     }
