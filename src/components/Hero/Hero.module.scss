@@ -60,7 +60,6 @@
 }
 
 .name {
-  margin-bottom: 1rem;
   font-size: 2.25rem;
   font-weight: 700;
   color: white;
@@ -72,13 +71,38 @@
 }
 
 .catchphrase {
-  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 1.25rem;
   line-height: 1.75;
   color: #9ca3af;
 
   @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: baseline;
     font-size: 1.5rem;
+  }
+}
+
+.catchphraseLine {
+  display: block;
+
+  @media (min-width: 768px) {
+    display: inline;
+  }
+}
+
+.catchphraseSeparator {
+  display: block;
+  margin: 0;
+  line-height: 0.8;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    display: inline;
+    line-height: inherit;
   }
 }
 

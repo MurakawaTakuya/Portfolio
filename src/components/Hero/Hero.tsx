@@ -30,7 +30,15 @@ const Hero = () => {
           </h1>
 
           {/* Catchphrase */}
-          <p className={styles.catchphrase}>{portfolioData.catchphrase}</p>
+          <p className={styles.catchphrase}>
+            <span className={styles.catchphraseLine}>
+              Fullstack Development
+            </span>
+            <span className={styles.catchphraseSeparator}>×</span>
+            <span className={styles.catchphraseLine}>
+              Computer Vision Research
+            </span>
+          </p>
 
           {/* Strengths */}
           <div className={styles.strengths}>
