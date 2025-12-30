@@ -57,4 +57,18 @@ export interface PortfolioData {
     slides: unknown[];
     projects: unknown[];
   };
+  projects: Array<{
+    title: string;
+    description: string;
+    links: Array<{
+      title: string;
+      url: string;
+    }>;
+    tags: string[];
+  }>;
+  stories: Array<{
+    title: string;
+    category: "internship" | "research" | "parttime" | "activities" | "project";
+    description: string;
+  }>;
 }

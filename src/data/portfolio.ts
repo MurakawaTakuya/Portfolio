@@ -480,6 +480,22 @@ export const portfolioData: PortfolioData = {
     ],
     projects: [], // GitHub repositories etc.
   },
-  // projectsを追加して、GitHubレポジトリや開発したものに対してどんなことができるのか、何を作ったのかを説明
-  // storyを追加して、開発や研究、インターン等に関して感想や学んだこと、苦労したことを書く
+  // TODO: projectsを追加して、GitHubレポジトリや開発したものに対してどんなことができるのか、何を作ったのかを説明。タグでどんな技術を使ったのか書くといいかも(ts, next.js, firebaseなど)
+  // TODO: storyを追加して、開発や研究、インターン等に関して感想や学んだこと、苦労したことを書く
+  projects: [
+    {
+      title: "",
+      description: "",
+      links: [{ title: "", url: "" }],
+      tags: ["test1", "test2"],
+    },
+  ],
+  stories: [
+    {
+      title: "test1",
+      category: "internship",
+      description:
+        "test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1",
+    },
+  ],
 };
