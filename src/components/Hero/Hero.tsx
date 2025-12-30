@@ -66,6 +66,25 @@ const Hero = () => {
             ))}
           </div>
         </div>
+
+        {/* Qualifications */}
+        <div className={styles.qualificationsItem}>
+          <span className={styles.infoLabel}>Qualifications</span>
+          <div className={styles.qualifications}>
+            {portfolioData.qualifications
+              .slice()
+              .reverse()
+              .map((qualification) => (
+                <span
+                  key={qualification.title}
+                  className={styles.qualificationBadge}
+                >
+                  <ShineBorder shineColor="gray" duration={10} />
+                  {qualification.title}
+                </span>
+              ))}
+          </div>
+        </div>
       </div>
     </section>
   );

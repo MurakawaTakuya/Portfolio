@@ -380,7 +380,6 @@ export const portfolioData: PortfolioData = {
     ],
   },
   qualifications: [
-    //TODO: 表示
     {
       date: "2020/11",
       title: "実用英語技能検定 準一級",
