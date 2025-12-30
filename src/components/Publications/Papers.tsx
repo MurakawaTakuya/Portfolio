@@ -45,7 +45,7 @@ function AbstractSection({
   return (
     <div className={styles.abstractSection}>
       <button className={styles.expandButton} onClick={onToggle}>
-        {isExpanded ? "Abstractを非表示にする" : "Abstractを表示する"}
+        {isExpanded ? "Hide Abstract" : "Show Abstract"}
       </button>
       <div
         className={styles.abstractWrapper}

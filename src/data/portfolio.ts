@@ -315,7 +315,8 @@ export const portfolioData: PortfolioData = {
         date: "2024/9",
         timestamp: new Date("2024-09-01"),
         title: "株式会社アイスタイル",
-        description: "バックエンド (PHP, Laravel, Java, SpringBoot)",
+        description:
+          "バックエンド (PHP, Laravel, Java, SpringBoot)test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1",
       },
       {
         date: "2025/7 ~ Present",
