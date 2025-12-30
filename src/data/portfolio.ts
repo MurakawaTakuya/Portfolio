@@ -315,7 +315,7 @@ export const portfolioData: PortfolioData = {
         date: "2024/9",
         timestamp: new Date("2024-09-01"),
         title: "株式会社アイスタイル",
-        description: "バックエンド (PHP, Java, SpringBoot)",
+        description: "バックエンド (PHP, Laravel, Java, SpringBoot)",
       },
       {
         date: "2025/7 ~ Present",
@@ -354,7 +354,8 @@ export const portfolioData: PortfolioData = {
         date: "2024/7",
         timestamp: new Date("2024-07-01"),
         title: "ICPC(国際大学対抗プログラミングコンテスト) 2024 国内予選",
-        description: "TBW",
+        description: "全体94位, 大学内1位",
+        // TODO: teammateも書きたい
       },
       {
         date: "2024/11",
@@ -382,12 +383,16 @@ export const portfolioData: PortfolioData = {
       title: "実用英語技能検定 準一級",
     },
     {
+      date: "2023/2",
+      title: "普通四輪免許",
+    },
+    {
       date: "2024/4",
       title: "応用情報技術者試験",
     },
     {
       date: "2025/5",
-      title: "TOEIC 895点",
+      title: "TOEIC LR 895点",
     },
   ],
   researchConferences: [
@@ -443,15 +448,15 @@ export const portfolioData: PortfolioData = {
             url: "https://github.com/tamaki-lab/M3DDM-Plus",
           },
           {
+            title: "Poster",
+            url: "TBW",
+          },
+          {
             title: "Proceedings (4 pages due to page limit)",
             url: "TBW",
           },
           {
             title: "arXiv (6 pages, Related Work included)",
-            url: "TBW",
-          },
-          {
-            title: "Poster",
             url: "TBW",
           },
         ],
@@ -475,4 +480,6 @@ export const portfolioData: PortfolioData = {
     ],
     projects: [], // GitHub repositories etc.
   },
+  // projectsを追加して、GitHubレポジトリや開発したものに対してどんなことができるのか、何を作ったのかを説明
+  // storyを追加して、開発や研究、インターン等に関して感想や学んだこと、苦労したことを書く
 };

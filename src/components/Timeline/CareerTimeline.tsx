@@ -11,7 +11,7 @@ const CareerTimeline = () => {
     career: { name: "学歴", color: "#3b82f6" },
     internship: { name: "インターン", color: "#10b981" },
     parttime: { name: "アルバイト", color: "#f59e0b" },
-    activities: { name: "活動", color: "#8b5cf6" },
+    activities: { name: "活動・所属", color: "#8b5cf6" },
     research: { name: "学会", color: "#ec4899" },
   };
 

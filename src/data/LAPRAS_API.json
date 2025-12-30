@@ -82,7 +82,7 @@
   "hatena_articles": [],
   "speaker_deck_slides": [
     {
-      "title": "CVPR2025\u8ad6\u6587\u7d39\u4ecb\uff1aUnboxed",
+      "title": "CVPR2025\u8ad6\u6587\u7d39\u4ecb\uff1a\u300cUnboxed: Geometrically and Temporally Consistent Video Outpainting\u300d",
       "url": "https://speakerdeck.com/murakawatakuya/cvpr2025lun-wen-shao-jie-unboxed",
       "star_count": 0,
       "view_count": 229,
@@ -162,6 +162,28 @@
       ]
     },
     {
+      "id": 926414835,
+      "title": "MurakawaTakuya/Visualize-GeoJSON-with-Three-js",
+      "url": "https://github.com/MurakawaTakuya/Visualize-GeoJSON-with-Three-js",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": true,
+      "description": "Visualize famous places in Japan using Three.js",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/Visualize-GeoJSON-with-Three-js/stargazers",
+      "forks": 0,
+      "contributors_count": 2,
+      "contributors_url": "https://github.com/MurakawaTakuya/Visualize-GeoJSON-with-Three-js/graphs/contributors",
+      "contributions": 69,
+      "contributions_url": "https://github.com/MurakawaTakuya/Visualize-GeoJSON-with-Three-js/commits?author=MurakawaTakuya",
+      "language": "TypeScript",
+      "languages": [
+        { "name": "TypeScript", "bytes": 92526 },
+        { "name": "SCSS", "bytes": 1529 },
+        { "name": "JavaScript", "bytes": 1078 }
+      ]
+    },
+    {
       "id": 758423452,
       "title": "MurakawaTakuya/MurakawaTakuya",
       "url": "https://github.com/MurakawaTakuya/MurakawaTakuya",
@@ -178,28 +200,6 @@
       "contributions_url": "https://github.com/MurakawaTakuya/MurakawaTakuya/commits?author=MurakawaTakuya",
       "language": "",
       "languages": []
-    },
-    {
-      "id": 926414835,
-      "title": "MurakawaTakuya/Visualize-GeoJSON-with-Three-js",
-      "url": "https://github.com/MurakawaTakuya/Visualize-GeoJSON-with-Three-js",
-      "is_oss": false,
-      "is_fork": false,
-      "is_owner": true,
-      "description": "Visualize famous places in Japan using Three.js",
-      "stargazers_count": 0,
-      "stargazers_url": "https://github.com/MurakawaTakuya/Visualize-GeoJSON-with-Three-js/stargazers",
-      "forks": 0,
-      "contributors_count": 1,
-      "contributors_url": "https://github.com/MurakawaTakuya/Visualize-GeoJSON-with-Three-js/graphs/contributors",
-      "contributions": 68,
-      "contributions_url": "https://github.com/MurakawaTakuya/Visualize-GeoJSON-with-Three-js/commits?author=MurakawaTakuya",
-      "language": "TypeScript",
-      "languages": [
-        { "name": "TypeScript", "bytes": 92526 },
-        { "name": "SCSS", "bytes": 1529 },
-        { "name": "JavaScript", "bytes": 1078 }
-      ]
     },
     {
       "id": 1066350377,
@@ -508,6 +508,28 @@
       ]
     },
     {
+      "id": 925174178,
+      "title": "MurakawaTakuya/react-nextjs-environment-setting-template",
+      "url": "https://github.com/MurakawaTakuya/react-nextjs-environment-setting-template",
+      "is_oss": false,
+      "is_fork": false,
+      "is_owner": true,
+      "description": "React/Next.js, TypeScript, Scss, GitHub, VSCode\u306e\u74b0\u5883\u7528\u306e\u30c6\u30f3\u30d7\u30ec\u30fc\u30c8",
+      "stargazers_count": 0,
+      "stargazers_url": "https://github.com/MurakawaTakuya/react-nextjs-environment-setting-template/stargazers",
+      "forks": 0,
+      "contributors_count": 1,
+      "contributors_url": "https://github.com/MurakawaTakuya/react-nextjs-environment-setting-template/graphs/contributors",
+      "contributions": 6,
+      "contributions_url": "https://github.com/MurakawaTakuya/react-nextjs-environment-setting-template/commits?author=MurakawaTakuya",
+      "language": "TypeScript",
+      "languages": [
+        { "name": "TypeScript", "bytes": 3491 },
+        { "name": "SCSS", "bytes": 3359 },
+        { "name": "JavaScript", "bytes": 393 }
+      ]
+    },
+    {
       "id": 934611926,
       "title": "MurakawaTakuya/Be-Your-Outpainter-Test",
       "url": "https://github.com/MurakawaTakuya/Be-Your-Outpainter-Test",
@@ -549,28 +571,6 @@
         { "name": "CSS", "bytes": 1801 },
         { "name": "HTML", "bytes": 366 },
         { "name": "JavaScript", "bytes": 956 }
-      ]
-    },
-    {
-      "id": 925174178,
-      "title": "MurakawaTakuya/react-nextjs-environment-setting-template",
-      "url": "https://github.com/MurakawaTakuya/react-nextjs-environment-setting-template",
-      "is_oss": false,
-      "is_fork": false,
-      "is_owner": true,
-      "description": "React/Next.js, TypeScript, Scss, GitHub, VSCode\u306e\u74b0\u5883\u7528\u306e\u30c6\u30f3\u30d7\u30ec\u30fc\u30c8",
-      "stargazers_count": 0,
-      "stargazers_url": "https://github.com/MurakawaTakuya/react-nextjs-environment-setting-template/stargazers",
-      "forks": 0,
-      "contributors_count": 1,
-      "contributors_url": "https://github.com/MurakawaTakuya/react-nextjs-environment-setting-template/graphs/contributors",
-      "contributions": 4,
-      "contributions_url": "https://github.com/MurakawaTakuya/react-nextjs-environment-setting-template/commits?author=MurakawaTakuya",
-      "language": "TypeScript",
-      "languages": [
-        { "name": "TypeScript", "bytes": 3491 },
-        { "name": "SCSS", "bytes": 3359 },
-        { "name": "JavaScript", "bytes": 393 }
       ]
     },
     {
@@ -942,7 +942,7 @@
       "type": "connpass"
     },
     {
-      "title": "CVPR2025\u8ad6\u6587\u7d39\u4ecb\uff1aUnboxed",
+      "title": "CVPR2025\u8ad6\u6587\u7d39\u4ecb\uff1a\u300cUnboxed: Geometrically and Temporally Consistent Video Outpainting\u300d",
       "url": "https://speakerdeck.com/murakawatakuya/cvpr2025lun-wen-shao-jie-unboxed",
       "date": "2025-08-09T00:00:00",
       "type": "speaker_deck"
