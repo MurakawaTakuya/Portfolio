@@ -128,6 +128,13 @@
   color: #a0a0a0;
 }
 
+.abstractWrapper {
+  overflow: hidden;
+  transition:
+    max-height 0.3s ease-out,
+    opacity 0.3s ease-out;
+}
+
 .expandButton {
   align-self: flex-start;
   padding: 0.25rem 0.75rem;

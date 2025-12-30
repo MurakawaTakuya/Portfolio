@@ -6,7 +6,7 @@ import {
 } from "@/components/lightswind/glowing-cards";
 import { portfolioData } from "@/data/portfolio";
 import Chip from "@mui/joy/Chip";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./Publications.module.scss";
 
 interface PaperLink {
@@ -21,6 +21,45 @@ interface Paper {
   description?: string;
   abstract?: string;
   links?: PaperLink[];
+}
+
+// Animated abstract section component
+function AbstractSection({
+  abstract,
+  isExpanded,
+  onToggle,
+}: {
+  abstract: string;
+  isExpanded: boolean;
+  onToggle: () => void;
+}) {
+  const contentRef = useRef<HTMLDivElement>(null);
+  const [contentHeight, setContentHeight] = useState(0);
+
+  useEffect(() => {
+    if (contentRef.current) {
+      setContentHeight(contentRef.current.scrollHeight);
+    }
+  }, [abstract]);
+
+  return (
+    <div className={styles.abstractSection}>
+      <button className={styles.expandButton} onClick={onToggle}>
+        {isExpanded ? "Abstractを非表示にする" : "Abstractを表示する"}
+      </button>
+      <div
+        className={styles.abstractWrapper}
+        style={{
+          maxHeight: isExpanded ? contentHeight : 0,
+          opacity: isExpanded ? 1 : 0,
+        }}
+      >
+        <div ref={contentRef} className={styles.abstract}>
+          {abstract}
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default function Papers() {
@@ -74,19 +113,11 @@ export default function Papers() {
                   <p className={styles.description}>{paper.description}</p>
                 )}
                 {paper.abstract && (
-                  <div className={styles.abstractSection}>
-                    <button
-                      className={styles.expandButton}
-                      onClick={() => toggleAbstract(index)}
-                    >
-                      {expandedAbstracts.has(index)
-                        ? "Abstractを非表示にする"
-                        : "Abstractを表示する"}
-                    </button>
-                    {expandedAbstracts.has(index) && (
-                      <p className={styles.abstract}>{paper.abstract}</p>
-                    )}
-                  </div>
+                  <AbstractSection
+                    abstract={paper.abstract}
+                    isExpanded={expandedAbstracts.has(index)}
+                    onToggle={() => toggleAbstract(index)}
+                  />
                 )}
                 {paper.links && paper.links.length > 0 && (
                   <div className={styles.links}>
