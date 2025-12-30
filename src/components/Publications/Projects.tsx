@@ -51,7 +51,6 @@ export default function Projects() {
           <GlowingCard key={index} glowColor="#3b82f6" className={styles.card}>
             <div className={styles.cardContent}>
               <h3 className={styles.title}>{project.title}</h3>
-              <p className={styles.description}>{project.description}</p>
 
               {project.tags && project.tags.length > 0 && (
                 <div className={styles.tags}>
@@ -101,6 +100,8 @@ export default function Projects() {
                   ))}
                 </div>
               )}
+
+              <p className={styles.description}>{project.description}</p>
             </div>
           </GlowingCard>
         ))}

@@ -6,6 +6,7 @@ import {
 } from "@/components/lightswind/glowing-cards";
 import { portfolioData } from "@/data/portfolio";
 import Chip from "@mui/joy/Chip";
+import { useState } from "react";
 import styles from "./Publications.module.scss";
 
 interface PaperLink {
@@ -24,6 +25,21 @@ interface Paper {
 
 export default function Papers() {
   const papers = portfolioData.publications.papers as Paper[];
+  const [expandedAbstracts, setExpandedAbstracts] = useState<Set<number>>(
+    new Set()
+  );
+
+  const toggleAbstract = (index: number) => {
+    setExpandedAbstracts((prev) => {
+      const newSet = new Set(prev);
+      if (newSet.has(index)) {
+        newSet.delete(index);
+      } else {
+        newSet.add(index);
+      }
+      return newSet;
+    });
+  };
 
   if (papers.length === 0) {
     return null;
@@ -56,6 +72,21 @@ export default function Papers() {
                 <p className={styles.authors}>{paper.authors}</p>
                 {paper.description && (
                   <p className={styles.description}>{paper.description}</p>
+                )}
+                {paper.abstract && (
+                  <div className={styles.abstractSection}>
+                    <button
+                      className={styles.expandButton}
+                      onClick={() => toggleAbstract(index)}
+                    >
+                      {expandedAbstracts.has(index)
+                        ? "Abstractを非表示にする"
+                        : "Abstractを表示する"}
+                    </button>
+                    {expandedAbstracts.has(index) && (
+                      <p className={styles.abstract}>{paper.abstract}</p>
+                    )}
+                  </div>
                 )}
                 {paper.links && paper.links.length > 0 && (
                   <div className={styles.links}>

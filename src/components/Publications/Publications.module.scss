@@ -114,3 +114,34 @@
   font-size: 0.875rem;
   color: #888;
 }
+
+.abstractSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.abstract {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #a0a0a0;
+}
+
+.expandButton {
+  align-self: flex-start;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #8b5cf6;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid rgba(139, 92, 246, 0.4);
+  border-radius: 4px;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: rgba(139, 92, 246, 0.1);
+    border-color: #8b5cf6;
+  }
+}
