@@ -13,7 +13,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// TODO: description編集
 export const metadata: Metadata = {
   title: "Murakawa Takuya - Portfolio",
   description: "Fullstack Developer & Computer Vision Researcher",

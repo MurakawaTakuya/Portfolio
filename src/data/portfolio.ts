@@ -281,8 +281,6 @@ export const portfolioData: PortfolioData = {
   },
   timeline: {
     // TODO: これからの目標をどこかに書く(timeline上か、twitter風か)
-    // TODO: カテゴリを付けて、タイムラインにアイコンを表示する
-    // TODO: インターンシップや活動などのタグをつける
     career: [
       {
         date: "2022/4",
@@ -345,7 +343,6 @@ export const portfolioData: PortfolioData = {
       },
     ],
     activities: [
-      // TODO: タイトルは所属・活動
       // TODO: link追加
       {
         date: "2022 ~ 2023 (2024)",
@@ -411,7 +408,6 @@ export const portfolioData: PortfolioData = {
     },
   ],
   publications: {
-    // TODO: 論文はポスターがある場合はそれも載せる
     papers: [
       {
         date: "2025/7",
@@ -461,7 +457,6 @@ export const portfolioData: PortfolioData = {
         ],
       },
     ],
-    qiitaArticles: [], // TODO: これはいらないかも
     noteArticles: [], // TODO: これはいらないかも
     slides: [
       // TODO: サムネだけにしてタイトル名消していいかも
@@ -477,7 +472,7 @@ export const portfolioData: PortfolioData = {
         url: "https://www.slideshare.net/slideshow/motionmatcher-cinematic-motion-customizationof-text-to-video-diffusion-models-via-motion-feature-matching/284341530",
         presentation_date: new Date("2025-11-25"),
       },
-    ], // TODO: speakerdeckと一緒に表示する
+    ],
     projects: [], // GitHub repositories etc.
   },
 };

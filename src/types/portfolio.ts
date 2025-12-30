@@ -53,7 +53,6 @@ export interface PortfolioData {
   publications: {
     // TODO: データ構造を定義する
     papers: unknown[];
-    qiitaArticles: unknown[];
     noteArticles: unknown[];
     slides: unknown[];
     projects: unknown[];
