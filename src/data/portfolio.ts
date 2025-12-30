@@ -484,9 +484,10 @@ export const portfolioData: PortfolioData = {
   // TODO: storyを追加して、開発や研究、インターン等に関して感想や学んだこと、苦労したことを書く
   projects: [
     {
-      title: "",
-      description: "",
-      links: [{ title: "", url: "" }],
+      title: "test1",
+      description:
+        "test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1",
+      links: [{ title: "GitHub", url: "https://github.com/MurakawaTakuya" }],
       tags: ["test1", "test2"],
     },
   ],
@@ -496,6 +497,12 @@ export const portfolioData: PortfolioData = {
       category: "internship",
       description:
         "test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1test1",
+    },
+    {
+      title: "test2",
+      category: "research",
+      description:
+        "test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2test2",
     },
   ],
 };

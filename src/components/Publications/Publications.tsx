@@ -3,8 +3,10 @@
 import GradientText from "@/components/GradientText";
 import Articles from "./Articles";
 import Papers from "./Papers";
+import Projects from "./Projects";
 import styles from "./Publications.module.scss";
 import Slides from "./Slides";
+import Stories from "./Stories";
 
 export default function Publications() {
   return (
@@ -21,6 +23,8 @@ export default function Publications() {
       </h1>
       <Papers />
       <Slides />
+      <Projects />
+      <Stories />
       <Articles />
     </section>
   );

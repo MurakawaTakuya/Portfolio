@@ -1,4 +1,5 @@
 // https://www.shadcn.io/template/timdehof-shadcn-timeline
+// TODO: カテゴリごとに分けて表示できるようにしてもいいかも
 "use client";
 
 import type { TimelineElement } from "@/types/timeline";
