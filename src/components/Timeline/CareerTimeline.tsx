@@ -95,7 +95,7 @@ const CareerTimeline = () => {
       </h1>
       <TimelineLayout
         animate
-        className="min-h-[600px] w-full max-w-2xl mx-auto p-8"
+        className="min-h-[600px] w-full max-w-2xl mx-auto"
         connectorColor="primary"
         iconColor="primary"
         items={timelineEvents}

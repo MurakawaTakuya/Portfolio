@@ -348,7 +348,7 @@ export const portfolioData: PortfolioData = {
       // TODO: タイトルは所属・活動
       // TODO: link追加
       {
-        date: "2022 ~ 2023(2024)",
+        date: "2022 ~ 2023 (2024)",
         timestamp: new Date("2022-04-01"),
         title: "工大祭実行委員会 所属",
         description: "広報局所属 Web開発担当",
