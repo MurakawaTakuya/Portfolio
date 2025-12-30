@@ -103,7 +103,7 @@ export default function Papers() {
             <GlowingCard
               key={index}
               glowColor="#8b5cf6"
-              className={styles.card}
+              className={styles.cardWide}
             >
               <div className={styles.cardContent}>
                 <span className={styles.date}>{paper.date}</span>

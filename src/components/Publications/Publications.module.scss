@@ -50,6 +50,15 @@
   }
 }
 
+.cardWide {
+  flex: 0 0 calc((100% - 1.5rem) / 2);
+  min-width: 280px;
+
+  @media (max-width: 900px) {
+    flex: 0 0 100%;
+  }
+}
+
 .cardContent {
   display: flex;
   flex-direction: column;

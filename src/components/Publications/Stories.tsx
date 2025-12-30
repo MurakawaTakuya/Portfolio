@@ -1,3 +1,4 @@
+// これはpublicationsとは別かも
 "use client";
 
 import {
@@ -79,7 +80,7 @@ export default function Stories() {
             <GlowingCard
               key={index}
               glowColor={colors.color}
-              className={styles.card}
+              className={styles.cardWide}
             >
               <div className={styles.cardContent}>
                 <div
