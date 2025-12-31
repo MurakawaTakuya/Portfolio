@@ -1,4 +1,5 @@
 import { CssVarsProvider } from "@mui/joy";
+import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
@@ -28,6 +29,7 @@ export default function RootLayout({
     <html lang="ja" className="dark">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <SpeedInsights />
+        <Analytics />
         <CssVarsProvider defaultMode="dark">
           <main className="min-h-screen bg-black text-white selection:bg-neutral-700 selection:text-white">
             {children}
