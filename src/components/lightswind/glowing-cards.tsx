@@ -8,6 +8,7 @@ export interface GlowingCardProps {
   className?: string;
   glowColor?: string;
   hoverEffect?: boolean;
+  style?: React.CSSProperties;
 }
 
 export interface GlowingCardsProps {
@@ -57,6 +58,7 @@ export const GlowingCard: React.FC<GlowingCardProps> = ({
   children,
   className,
   glowColor = "#3b82f6",
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   hoverEffect = true,
   ...props
 }) => {
@@ -87,6 +89,7 @@ export const GlowingCards: React.FC<GlowingCardsProps> = ({
   glowRadius = 25,
   glowOpacity = 1,
   animationDuration = 400,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   enableHover = true,
   gap = "2.5rem",
   maxWidth = "75rem",
@@ -100,6 +103,7 @@ export const GlowingCards: React.FC<GlowingCardsProps> = ({
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const overlayRef = useRef<HTMLDivElement>(null);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [showOverlay, setShowOverlay] = useState(false);
 
@@ -198,10 +202,13 @@ export const GlowingCards: React.FC<GlowingCardsProps> = ({
                 justifyContent,
               }}
             >
-              {React.Children.map(children, (child, index) => {
-                if (React.isValidElement(child) && child.type === GlowingCard) {
+              {React.Children.map(children, (child) => {
+                if (
+                  React.isValidElement<GlowingCardProps>(child) &&
+                  child.type === GlowingCard
+                ) {
                   const cardGlowColor = child.props.glowColor || "#3b82f6";
-                  return React.cloneElement(child as React.ReactElement<any>, {
+                  return React.cloneElement(child, {
                     className: cn(
                       child.props.className,
                       "bg-opacity-15 dark:bg-opacity-15",

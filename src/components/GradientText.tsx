@@ -4,7 +4,13 @@ import {
   useMotionValue,
   useTransform,
 } from "motion/react";
-import { ReactNode, useCallback, useEffect, useRef, useState } from "react";
+import React, {
+  ReactNode,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 
 interface GradientTextProps {
   children: ReactNode;
@@ -26,7 +32,7 @@ export default function GradientText({
   direction = "horizontal",
   pauseOnHover = false,
   yoyo = true,
-}: GradientTextProps): JSX.Element {
+}: GradientTextProps): React.ReactElement {
   const [isPaused, setIsPaused] = useState(false);
   const progress = useMotionValue(0);
   const elapsedRef = useRef(0);
@@ -69,7 +75,7 @@ export default function GradientText({
   useEffect(() => {
     elapsedRef.current = 0;
     progress.set(0);
-  }, [animationSpeed, yoyo]);
+  }, [animationSpeed, yoyo, progress]);
 
   const backgroundPosition = useTransform(progress, (p) => {
     if (direction === "horizontal") {
