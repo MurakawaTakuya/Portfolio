@@ -20,48 +20,46 @@ interface PortfolioLink {
 }
 
 export default function BentoLinks() {
-  const [linkCards, setLinkCards] = useState<BentoCardProps[]>([]);
+  // Create initial cards without stats - this runs immediately during render
+  const initialCards: BentoCardProps[] = portfolioData.links.map((link) => {
+    const pLink = link as PortfolioLink;
+    const baseColor = pLink.iconBackgroundColor || "#000000";
+    const backgroundColor =
+      pLink.backgroundColor || mixWithBlack(baseColor, BENTO_BG_INTENSITY);
+
+    return {
+      color: backgroundColor,
+      icon: (
+        <div
+          className={styles.iconContainer}
+          style={{
+            backgroundColor: pLink.iconBackgroundColor || "#d1d5db",
+          }}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={pLink.iconLink}
+            alt={pLink.name}
+            className={styles.icon}
+            style={{
+              width: `${BENTO_ICON_SIZE}rem`,
+              height: `${BENTO_ICON_SIZE}rem`,
+            }}
+          />
+        </div>
+      ),
+      title: pLink.name,
+      stats: [], // Start with empty stats
+      href: pLink.url,
+      width: pLink.width,
+      height: pLink.height,
+    };
+  });
+
+  const [linkCards, setLinkCards] = useState<BentoCardProps[]>(initialCards);
 
   useEffect(() => {
-    // Create initial cards without stats
-    const initialCards: BentoCardProps[] = portfolioData.links.map((link) => {
-      const pLink = link as PortfolioLink;
-      const baseColor = pLink.iconBackgroundColor || "#000000";
-      const backgroundColor =
-        pLink.backgroundColor || mixWithBlack(baseColor, BENTO_BG_INTENSITY);
-
-      return {
-        color: backgroundColor,
-        icon: (
-          <div
-            className={styles.iconContainer}
-            style={{
-              backgroundColor: pLink.iconBackgroundColor || "#d1d5db",
-            }}
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={pLink.iconLink}
-              alt={pLink.name}
-              className={styles.icon}
-              style={{
-                width: `${BENTO_ICON_SIZE}rem`,
-                height: `${BENTO_ICON_SIZE}rem`,
-              }}
-            />
-          </div>
-        ),
-        title: pLink.name,
-        stats: [], // Start with empty stats
-        href: pLink.url,
-        width: pLink.width,
-        height: pLink.height,
-      };
-    });
-
-    setLinkCards(initialCards);
-
-    // Fetch stats asynchronously
+    // Fetch stats asynchronously and update cards when ready
     Promise.all(
       portfolioData.links.map(async (link, index) => {
         const pLink = link as PortfolioLink;
