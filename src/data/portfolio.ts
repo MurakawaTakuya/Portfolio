@@ -484,7 +484,7 @@ export const portfolioData: PortfolioData = {
   projects: [
     {
       title: "M3DDM+",
-      description: "description TBW",
+      description: "description TBW TBW TBW TBW TBW TBW TBW TBW TBW TBW TBW",
       links: [
         {
           title: "GitHub",
@@ -579,17 +579,22 @@ export const portfolioData: PortfolioData = {
     },
     {
       title: "名古屋CVPR・ML勉強会 運営",
-      category: "activities",
+      category: "activity",
       description: "description TBW",
     },
     {
       title: "Efrei Paris フランス留学",
-      category: "activities",
+      category: "activity",
       description: "description TBW",
     },
     {
       title: "ICPC(国際大学対抗プログラミングコンテスト) 2024 国内予選",
-      category: "activities",
+      category: "activity",
+      description: "description TBW",
+    },
+    {
+      title: "熱中症搬送者数予測サイト",
+      category: "parttime",
       description: "description TBW",
     },
     {
@@ -605,11 +610,6 @@ export const portfolioData: PortfolioData = {
     {
       title: "第61回工大祭 2023",
       category: "project",
-      description: "description TBW",
-    },
-    {
-      title: "熱中症搬送者数予測サイト",
-      category: "parttime",
       description: "description TBW",
     },
     {

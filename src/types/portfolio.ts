@@ -67,7 +67,7 @@ export interface PortfolioData {
   }>;
   stories: Array<{
     title: string;
-    category: "internship" | "research" | "parttime" | "activities" | "project";
+    category: "internship" | "research" | "parttime" | "activity" | "project";
     description: string;
   }>;
 }

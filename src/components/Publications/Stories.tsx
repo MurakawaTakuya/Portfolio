@@ -34,7 +34,7 @@ const getCategoryColor = (category: string) => {
         borderColor: "rgba(74, 222, 128, 0.5)",
         bg: "rgba(74, 222, 128, 0.1)",
       };
-    case "activities":
+    case "activity":
       return {
         color: "#a78bfa",
         borderColor: "rgba(167, 139, 250, 0.5)",
@@ -89,6 +89,7 @@ export default function Stories() {
                     justifyContent: "space-between",
                     alignItems: "center",
                     marginBottom: "0.5rem",
+                    gap: "0.5rem",
                   }}
                 >
                   <h3 className={styles.title} style={{ margin: 0 }}>
