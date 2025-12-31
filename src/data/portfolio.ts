@@ -280,7 +280,6 @@ export const portfolioData: PortfolioData = {
     ],
   },
   timeline: {
-    // TODO: これからの目標をどこかに書く(timeline上か、twitter風か)
     career: [
       {
         date: "2022/4",
@@ -373,7 +372,50 @@ export const portfolioData: PortfolioData = {
         date: "2026 ~ Present",
         timestamp: new Date("2026-01-01"),
         title: "名古屋CVPR・ML勉強会 運営",
-        description: "TBW",
+      },
+    ],
+
+    researchConferences: [
+      // TODO: 出した論文名も書いて、ボタンクリックでpublicationsにスクロール
+      // TODO: posterかoralかもわかるように
+      {
+        date: "2025/7",
+        timestamp: new Date("2025-07-01"),
+        title: "国内学会: 画像の認識・理解シンポジウム (MIRU 2025)",
+        description: "M3DDMによるvideo outpainting結果の改善方法の検討",
+      },
+      {
+        date: "2026/1",
+        timestamp: new Date("2026-01-01"),
+        title:
+          "国際学会: The International Workshop on Advanced Image Technology (IWAIT2026)",
+        description:
+          "M3DDM+: an improved video outpainting by a modified masking strategy",
+      },
+    ],
+    goals: [
+      {
+        date: "2026",
+        timestamp: new Date("2026-12-31"),
+        title: "卒研",
+        description: "研究で納得のいく結果を出す。学会で発表・議論する。",
+      },
+      {
+        date: "2026",
+        timestamp: new Date("2026-12-31"),
+        title: "資格取得",
+        description: "AWS CLF, SAA",
+      },
+      {
+        date: "2026",
+        timestamp: new Date("2026-12-31"),
+        title: "Qiita",
+        description: "記事を3本以上投稿する",
+      },
+      {
+        date: "2026",
+        timestamp: new Date("2026-12-31"),
+        title: "将来の進路を決める",
       },
     ],
   },
@@ -393,23 +435,6 @@ export const portfolioData: PortfolioData = {
     {
       date: "2025/5",
       title: "TOEIC LR 895点",
-    },
-  ],
-  researchConferences: [
-    // TODO: 出した論文名も書いて、ボタンクリックでpublicationsにスクロール
-    // TODO: posterかoralかもわかるように
-    {
-      date: "2025/7",
-      timestamp: new Date("2025-07-01"),
-      title: "国内学会: 画像の認識・理解シンポジウム (MIRU 2025)",
-      description: "TBW",
-    },
-    {
-      date: "2026/1",
-      timestamp: new Date("2026-01-01"),
-      title:
-        "国際学会: The International Workshop on Advanced Image Technology (IWAIT2026)",
-      description: "TBW",
     },
   ],
   publications: {

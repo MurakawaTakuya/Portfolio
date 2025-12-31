@@ -44,12 +44,13 @@ export interface PortfolioData {
     internship: TimelineItem[];
     parttime: TimelineItem[];
     activities: TimelineItem[];
+    researchConferences: TimelineItem[];
+    goals: TimelineItem[];
   };
   qualifications: Array<{
     date: string;
     title: string;
   }>;
-  researchConferences: TimelineItem[];
   publications: {
     // TODO: データ構造を定義する
     papers: unknown[];
