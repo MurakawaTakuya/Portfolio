@@ -22,10 +22,10 @@ export default function Publications() {
         </GradientText>
       </h1>
       <Papers />
-      <Slides />
       <Projects />
-      <Stories />
       <Articles />
+      <Slides />
+      <Stories />
     </section>
   );
 }

@@ -48,11 +48,7 @@ export default function Projects() {
         justifyContent="flex-start"
       >
         {displayProjects.map((project, index) => (
-          <GlowingCard
-            key={index}
-            glowColor="#3b82f6"
-            className={styles.cardWide}
-          >
+          <GlowingCard key={index} glowColor="#3b82f6" className={styles.card}>
             <div className={styles.cardContent}>
               <h3 className={styles.title}>{project.title}</h3>
 

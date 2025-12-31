@@ -315,8 +315,7 @@ export const portfolioData: PortfolioData = {
         date: "2024/9",
         timestamp: new Date("2024-09-01"),
         title: "株式会社アイスタイル",
-        description:
-          "バックエンド (PHP, Laravel, Java, SpringBoot)test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1",
+        description: "バックエンド (PHP, Laravel, Java, SpringBoot)",
       },
       {
         date: "2025/7 ~ Present",
@@ -419,7 +418,7 @@ export const portfolioData: PortfolioData = {
         date: "2025/7",
         title: "M3DDMによるvideo outpainting結果の改善方法の検討",
         authors: "村川卓也, 丁寧, 玉木徹",
-        description: "MIRU TBW",
+        description: "MIRU 2025. TBW",
         links: [
           {
             title: "Poster",
@@ -434,19 +433,19 @@ export const portfolioData: PortfolioData = {
       {
         date: "2026/1",
         title:
-          "M3DDM+: an improved video outpainging by a modified masking strategy",
+          "M3DDM+: an improved video outpainting by a modified masking strategy",
         authors: "Takuya Murakawa, Takumi Fukuzawa, Ding Ning, Toru Tamaki",
-        description: "IWAIT TBW",
+        description: "IWAIT 2026. TBW",
         abstract:
-          "M3DDM provides a computationally efficient framework for video outpainting via latent diffusion modeling. However, it exhibits significant quality degradation --- manifested as spatial blur and temporal inconsistency --- under challenging scenarios characterized by limited camera motion or large outpainting regions, where inter-frame information is limited. We identify the cause as a training-inference mismatch in the masking strategy: M3DDM's training applies random mask directions and widths across frames, whereas inference requires consistent directional outpainting throughout the video. To address this, we propose M3DDM+, which applies uniform mask direction and width across all frames during training, followed by fine-tuning of the pretrained M3DDM model. Experiments demonstrate that M3DDM+ substantially improves visual fidelity and temporal coherence in information-limited scenarios while maintaining computational efficiency. The code is available at https://github.com/tamaki-lab/M3DDM-Plus.", // TODO: 一部だけ見えるようにして、展開で全部表示
+          "M3DDM provides a computationally efficient framework for video outpainting via latent diffusion modeling. However, it exhibits significant quality degradation --- manifested as spatial blur and temporal inconsistency --- under challenging scenarios characterized by limited camera motion or large outpainting regions, where inter-frame information is limited. We identify the cause as a training-inference mismatch in the masking strategy: M3DDM's training applies random mask directions and widths across frames, whereas inference requires consistent directional outpainting throughout the video. To address this, we propose M3DDM+, which applies uniform mask direction and width across all frames during training, followed by fine-tuning of the pretrained M3DDM model. Experiments demonstrate that M3DDM+ substantially improves visual fidelity and temporal coherence in information-limited scenarios while maintaining computational efficiency. The code is available at https://github.com/tamaki-lab/M3DDM-Plus.",
         links: [
           {
             title: "Project Page",
-            url: "https://github.com/tamaki-lab/M3DDM-Plus",
+            url: "TBW",
           },
           {
             title: "GitHub",
-            url: "https://github.com/tamaki-lab/M3DDM-Plus",
+            url: "TBW",
           },
           {
             title: "Poster",
@@ -479,31 +478,149 @@ export const portfolioData: PortfolioData = {
         presentation_date: new Date("2025-11-25"),
       },
     ],
-    projects: [], // GitHub repositories etc.
   },
   // TODO: projectsを追加して、GitHubレポジトリや開発したものに対してどんなことができるのか、何を作ったのかを説明。タグでどんな技術を使ったのか書くといいかも(ts, next.js, firebaseなど)
   // TODO: storyを追加して、開発や研究、インターン等に関して感想や学んだこと、苦労したことを書く
   projects: [
     {
-      title: "test1",
-      description:
-        "test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1",
-      links: [{ title: "GitHub", url: "https://github.com/MurakawaTakuya" }],
+      title: "M3DDM+",
+      description: "description TBW",
+      links: [
+        {
+          title: "GitHub",
+          url: "TBW",
+        },
+        { title: "Website", url: "TBW" },
+      ],
+      tags: ["test1", "test2"],
+    },
+    {
+      title: "第62回工大祭 2024",
+      description: "description TBW",
+      links: [
+        {
+          title: "GitHub",
+          url: "https://github.com/Nitech-Festival-Executive-Committee/62nd",
+        },
+        { title: "Website", url: "https://62nd.koudaisai.com/" },
+      ],
+      tags: ["test1", "test2"],
+    },
+    {
+      title: "第61回工大祭 2023",
+      description: "description TBW",
+      links: [
+        {
+          title: "GitHub",
+          url: "https://github.com/Nitech-Festival-Executive-Committee/61st",
+        },
+        { title: "Website", url: "https://www.koudaisai.com/61st/" },
+      ],
+      tags: ["test1", "test2"],
+    },
+    {
+      title: "熱中症搬送者数予測サイト",
+      description: "description TBW",
+      links: [{ title: "Website", url: "https://heatstroke.jp/" }],
+      tags: ["test1", "test2"],
+    },
+    {
+      title: " TODO REAL",
+      description: "description TBW",
+      links: [
+        {
+          title: "GitHub",
+          url: "https://github.com/MurakawaTakuya/todo-real",
+        },
+        {
+          title: "Website",
+          url: "https://todo-real-c28fa.web.app/",
+        },
+      ],
+      tags: ["test1", "test2"],
+    },
+    {
+      title: " Visualize-GeoJSON-with-Three-js",
+      description: "description TBW",
+      links: [
+        {
+          title: "GitHub",
+          url: "https://github.com/MurakawaTakuya/Visualize-GeoJSON-with-Three-js",
+        },
+        {
+          title: "Website",
+          url: "https://visualize-geo-json-with-three-js.vercel.app/",
+        },
+      ],
+      tags: ["test1", "test2"],
+    },
+    {
+      title: "JPHACKS 2024",
+      description: "description TBW",
+      links: [{ title: "GitHub", url: "https://github.com/jphacks/ng_2408" }],
       tags: ["test1", "test2"],
     },
   ],
   stories: [
     {
-      title: "test1",
+      title: "Qiita株式会社 / 株式会社エイチームホールディングス",
       category: "internship",
-      description:
-        "test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1 test1",
+      description: "description TBW",
     },
     {
-      title: "test2",
+      title: "株式会社アイスタイル",
+      category: "internship",
+      description: "description TBW",
+    },
+    {
+      title: "株式会社イノベーション",
+      category: "internship",
+      description: "description TBW",
+    },
+    {
+      title: "名古屋CVPR・ML勉強会 運営",
+      category: "activities",
+      description: "description TBW",
+    },
+    {
+      title: "Efrei Paris フランス留学",
+      category: "activities",
+      description: "description TBW",
+    },
+    {
+      title: "ICPC(国際大学対抗プログラミングコンテスト) 2024 国内予選",
+      category: "activities",
+      description: "description TBW",
+    },
+    {
+      title: "M3DDM+",
       category: "research",
-      description:
-        "test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2 test2",
+      description: "description TBW",
+    },
+    {
+      title: "第62回工大祭 2024",
+      category: "project",
+      description: "description TBW",
+    },
+    {
+      title: "第61回工大祭 2023",
+      category: "project",
+      description: "description TBW",
+    },
+    {
+      title: "熱中症搬送者数予測サイト",
+      category: "parttime",
+      description: "description TBW",
+    },
+    {
+      title: " TODO REAL",
+      category: "project",
+      description: "description TBW",
+    },
+    {
+      title: "JPHACKS 2024",
+      category: "project",
+      description: "description TBW",
     },
   ],
 };
