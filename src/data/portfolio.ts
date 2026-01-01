@@ -503,6 +503,24 @@ export const portfolioData: PortfolioData = {
         presentation_date: new Date("2025-11-25"),
       },
     ],
+    articles: [
+      {
+        title: "ショートカットを使いこなそう",
+        link: "https://soapy-mercury-4e6.notion.site/1cb0509768968032b324e61405f2520b",
+        description:
+          "OS, VSCode等で開発スピードを爆速にするためのショートカット集(大量)",
+      },
+      {
+        title: "Notionの知っておくべき機能",
+        link: "https://platinum-spectrum-9d7.notion.site/Notion-2af6a9cc586980eb84ddea600acb5945",
+        description: "Notionを使い始める人が知っておくべき機能集",
+      },
+      {
+        title: "Video Outpainting手法まとめ",
+        link: "https://platinum-spectrum-9d7.notion.site/Video-Outpainting-2b16a9cc58698043b62fee842f39e33e",
+        description: "Video Outpainting従来手法の詳細まとめ",
+      },
+    ],
   },
   // TODO: projectsを追加して、GitHubレポジトリや開発したものに対してどんなことができるのか、何を作ったのかを説明。タグでどんな技術を使ったのか書くといいかも(ts, next.js, firebaseなど)
   // TODO: storyを追加して、開発や研究、インターン等に関して感想や学んだこと、苦労したことを書く

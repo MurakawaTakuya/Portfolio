@@ -4,6 +4,7 @@ import {
   GlowingCard,
   GlowingCards,
 } from "@/components/lightswind/glowing-cards";
+import { portfolioData } from "@/data/portfolio";
 import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import Chip from "@mui/joy/Chip";
@@ -20,6 +21,8 @@ interface QiitaArticle {
   updated_at: string;
   tags: Array<{ name: string; versions: string[] }>;
 }
+
+const customArticles = portfolioData.publications.articles;
 
 // TODO: 閲覧数も表示する
 export default function Articles() {
@@ -59,10 +62,6 @@ export default function Articles() {
     );
   }
 
-  if (articles.length === 0) {
-    return null;
-  }
-
   return (
     <section className={styles.category}>
       <h2 className={styles.categoryTitle}>Articles</h2>
@@ -75,6 +74,7 @@ export default function Articles() {
         alignItems="flex-start"
         justifyContent="flex-start"
       >
+        {/* Qiita Articles */}
         {articles.map((article) => (
           <GlowingCard
             key={article.id}
@@ -125,6 +125,27 @@ export default function Articles() {
                     </Chip>
                   ))}
                 </div>
+              </div>
+            </a>
+          </GlowingCard>
+        ))}
+
+        {/* Custom Articles from portfolio.ts */}
+        {customArticles.map((article, index) => (
+          <GlowingCard
+            key={`custom-${index}`}
+            glowColor="#6366f1"
+            className={styles.card}
+          >
+            <a
+              href={article.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.cardLink}
+            >
+              <div className={styles.cardContent}>
+                <h3 className={styles.title}>{article.title}</h3>
+                <p className={styles.description}>{article.description}</p>
               </div>
             </a>
           </GlowingCard>

@@ -56,6 +56,11 @@ export interface PortfolioData {
     papers: unknown[];
     noteArticles: unknown[];
     slides: unknown[];
+    articles: Array<{
+      title: string;
+      link: string;
+      description: string;
+    }>;
   };
   projects: Array<{
     title: string;
