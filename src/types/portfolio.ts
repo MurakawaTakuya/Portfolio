@@ -58,6 +58,7 @@ export interface PortfolioData {
     slides: unknown[];
     articles: Array<{
       title: string;
+      site: string;
       link: string;
       description: string;
     }>;

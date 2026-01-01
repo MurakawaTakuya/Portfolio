@@ -24,6 +24,41 @@ interface QiitaArticle {
 
 const customArticles = portfolioData.publications.articles;
 
+const getSiteColor = (site: string) => {
+  switch (site.toLowerCase()) {
+    case "qiita":
+      return {
+        color: "#55c500",
+        borderColor: "rgba(85, 197, 0, 0.5)",
+        bg: "rgba(85, 197, 0, 0.1)",
+      };
+    case "notion":
+      return {
+        color: "#ffffff",
+        borderColor: "rgba(255, 255, 255, 0.5)",
+        bg: "rgba(255, 255, 255, 0.1)",
+      };
+    case "zenn":
+      return {
+        color: "#3ea8ff",
+        borderColor: "rgba(62, 168, 255, 0.5)",
+        bg: "rgba(62, 168, 255, 0.1)",
+      };
+    case "note":
+      return {
+        color: "#41c9b4",
+        borderColor: "rgba(65, 201, 180, 0.5)",
+        bg: "rgba(65, 201, 180, 0.1)",
+      };
+    default:
+      return {
+        color: "#a78bfa",
+        borderColor: "rgba(167, 139, 250, 0.5)",
+        bg: "rgba(167, 139, 250, 0.1)",
+      };
+  }
+};
+
 // TODO: 閲覧数も表示する
 export default function Articles() {
   const [articles, setArticles] = useState<QiitaArticle[]>([]);
@@ -62,6 +97,8 @@ export default function Articles() {
     );
   }
 
+  const qiitaColors = getSiteColor("qiita");
+
   return (
     <section className={styles.category}>
       <h2 className={styles.categoryTitle}>Articles</h2>
@@ -88,7 +125,23 @@ export default function Articles() {
               className={styles.cardLink}
             >
               <div className={styles.cardContent}>
-                <h3 className={styles.title}>{article.title}</h3>
+                <div className={styles.titleWithTag}>
+                  <h3 className={styles.title}>{article.title}</h3>
+                  <span
+                    style={{
+                      fontSize: "0.75rem",
+                      color: qiitaColors.color,
+                      border: `1px solid ${qiitaColors.borderColor}`,
+                      backgroundColor: qiitaColors.bg,
+                      padding: "2px 8px",
+                      borderRadius: "12px",
+                      whiteSpace: "nowrap",
+                      flexShrink: 0,
+                    }}
+                  >
+                    Qiita
+                  </span>
+                </div>
                 <div className={styles.articleStats}>
                   <span className={styles.statItem}>
                     <FavoriteBorderIcon sx={{ fontSize: 16, color: "#888" }} />
@@ -131,25 +184,44 @@ export default function Articles() {
         ))}
 
         {/* Custom Articles from portfolio.ts */}
-        {customArticles.map((article, index) => (
-          <GlowingCard
-            key={`custom-${index}`}
-            glowColor="#6366f1"
-            className={styles.card}
-          >
-            <a
-              href={article.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.cardLink}
+        {customArticles.map((article, index) => {
+          const siteColors = getSiteColor(article.site);
+          return (
+            <GlowingCard
+              key={`custom-${index}`}
+              glowColor={siteColors.color}
+              className={styles.card}
             >
-              <div className={styles.cardContent}>
-                <h3 className={styles.title}>{article.title}</h3>
-                <p className={styles.description}>{article.description}</p>
-              </div>
-            </a>
-          </GlowingCard>
-        ))}
+              <a
+                href={article.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.cardLink}
+              >
+                <div className={styles.cardContent}>
+                  <div className={styles.titleWithTag}>
+                    <h3 className={styles.title}>{article.title}</h3>
+                    <span
+                      style={{
+                        fontSize: "0.75rem",
+                        color: siteColors.color,
+                        border: `1px solid ${siteColors.borderColor}`,
+                        backgroundColor: siteColors.bg,
+                        padding: "2px 8px",
+                        borderRadius: "12px",
+                        whiteSpace: "nowrap",
+                        flexShrink: 0,
+                      }}
+                    >
+                      {article.site}
+                    </span>
+                  </div>
+                  <p className={styles.description}>{article.description}</p>
+                </div>
+              </a>
+            </GlowingCard>
+          );
+        })}
       </GlowingCards>
     </section>
   );

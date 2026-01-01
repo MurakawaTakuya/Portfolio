@@ -507,16 +507,19 @@ export const portfolioData: PortfolioData = {
       {
         title: "ショートカットを使いこなそう",
         link: "https://soapy-mercury-4e6.notion.site/1cb0509768968032b324e61405f2520b",
+        site: "Notion",
         description:
           "OS, VSCode等で開発スピードを爆速にするためのショートカット集(大量)",
       },
       {
         title: "Notionの知っておくべき機能",
+        site: "Notion",
         link: "https://platinum-spectrum-9d7.notion.site/Notion-2af6a9cc586980eb84ddea600acb5945",
         description: "Notionを使い始める人が知っておくべき機能集",
       },
       {
         title: "Video Outpainting手法まとめ",
+        site: "Notion",
         link: "https://platinum-spectrum-9d7.notion.site/Video-Outpainting-2b16a9cc58698043b62fee842f39e33e",
         description: "Video Outpainting従来手法の詳細まとめ",
       },
