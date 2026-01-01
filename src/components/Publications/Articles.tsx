@@ -22,6 +22,18 @@ interface QiitaArticle {
   tags: Array<{ name: string; versions: string[] }>;
 }
 
+// 統一されたArticle型
+interface Article {
+  id: string;
+  title: string;
+  url: string;
+  site: string;
+  description?: string;
+  likes_count?: number;
+  stocks_count?: number;
+  tags?: Array<{ name: string; versions: string[] }>;
+}
+
 const customArticles = portfolioData.publications.articles;
 
 const getSiteColor = (site: string) => {
@@ -59,13 +71,23 @@ const getSiteColor = (site: string) => {
   }
 };
 
-// TODO: 閲覧数も表示する
+// TODO: qiitaの閲覧数も表示する
 export default function Articles() {
-  const [articles, setArticles] = useState<QiitaArticle[]>([]);
+  const [allArticles, setAllArticles] = useState<Article[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchArticles() {
+      const customArticlesMapped: Article[] = customArticles.map(
+        (article, index) => ({
+          id: `custom-${index}`,
+          title: article.title,
+          url: article.link,
+          site: article.site,
+          description: article.description,
+        })
+      );
+
       try {
         const response = await fetch(
           "https://qiita.com/api/v2/users/Murakawa_Takuya/items?per_page=100"
@@ -74,13 +96,25 @@ export default function Articles() {
           throw new Error(`Qiita API error: ${response.status}`);
         }
         const data: QiitaArticle[] = await response.json();
-        // Sort by likes_count descending (most likes first)
-        const sortedArticles = data.sort((a, b) => {
-          return b.likes_count - a.likes_count;
-        });
-        setArticles(sortedArticles);
+
+        // Qiita記事を統一フォーマットに変換してソート
+        const qiitaArticles: Article[] = data
+          .map((article) => ({
+            id: article.id,
+            title: article.title,
+            url: article.url,
+            site: "Qiita",
+            likes_count: article.likes_count,
+            stocks_count: article.stocks_count,
+            tags: article.tags,
+          }))
+          .sort((a, b) => (b.likes_count || 0) - (a.likes_count || 0));
+
+        setAllArticles([...qiitaArticles, ...customArticlesMapped]);
       } catch (error) {
         console.error("Failed to fetch Qiita articles:", error);
+        // Qiitaがエラーでもカスタム記事は表示
+        setAllArticles(customArticlesMapped);
       } finally {
         setLoading(false);
       }
@@ -97,8 +131,6 @@ export default function Articles() {
     );
   }
 
-  const qiitaColors = getSiteColor("qiita");
-
   return (
     <section className={styles.category}>
       <h2 className={styles.categoryTitle}>Articles</h2>
@@ -111,95 +143,29 @@ export default function Articles() {
         alignItems="flex-start"
         justifyContent="flex-start"
       >
-        {/* Qiita Articles */}
-        {articles.map((article) => (
-          <GlowingCard
-            key={article.id}
-            glowColor="#55c500"
-            className={styles.card}
-          >
-            <a
-              href={article.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.cardLink}
-            >
-              <div className={styles.cardContent}>
-                <div className={styles.titleWithTag}>
-                  <h3 className={styles.title}>{article.title}</h3>
-                  <span
-                    style={{
-                      fontSize: "0.75rem",
-                      color: qiitaColors.color,
-                      border: `1px solid ${qiitaColors.borderColor}`,
-                      backgroundColor: qiitaColors.bg,
-                      padding: "2px 8px",
-                      borderRadius: "12px",
-                      whiteSpace: "nowrap",
-                      flexShrink: 0,
-                    }}
-                  >
-                    Qiita
-                  </span>
-                </div>
-                <div className={styles.articleStats}>
-                  <span className={styles.statItem}>
-                    <FavoriteBorderIcon sx={{ fontSize: 16, color: "#888" }} />
-                    {article.likes_count}
-                  </span>
-                  <span className={styles.statItem}>
-                    <BookmarkBorderIcon sx={{ fontSize: 16, color: "#888" }} />
-                    {article.stocks_count}
-                  </span>
-                </div>
-                <div className={styles.tags}>
-                  {article.tags.map((tag, tagIndex) => (
-                    <Chip
-                      key={tagIndex}
-                      size="sm"
-                      variant="soft"
-                      color="neutral"
-                      sx={{
-                        padding: "2px 8px",
-                        fontSize: "0.75rem",
-                        color: "#d1d5db",
-                        backgroundColor: "rgba(255, 255, 255, 0.05)",
-                        border: "1px solid rgba(255, 255, 255, 0.1)",
-                        backdropFilter: "blur(4px)",
-                        transition: "all 0.3s ease",
-                        "&:hover": {
-                          color: "white",
-                          backgroundColor: "rgba(255, 255, 255, 0.1)",
-                          borderColor: "rgba(255, 255, 255, 0.2)",
-                        },
-                      }}
-                    >
-                      {tag.name}
-                    </Chip>
-                  ))}
-                </div>
-              </div>
-            </a>
-          </GlowingCard>
-        ))}
-
-        {/* Custom Articles from portfolio.ts */}
-        {customArticles.map((article, index) => {
+        {allArticles.map((article) => {
           const siteColors = getSiteColor(article.site);
           return (
             <GlowingCard
-              key={`custom-${index}`}
+              key={article.id}
               glowColor={siteColors.color}
               className={styles.card}
             >
               <a
-                href={article.link}
+                href={article.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.cardLink}
               >
                 <div className={styles.cardContent}>
-                  <div className={styles.titleWithTag}>
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "flex-start",
+                      gap: "0.5rem",
+                    }}
+                  >
                     <h3 className={styles.title}>{article.title}</h3>
                     <span
                       style={{
@@ -216,7 +182,59 @@ export default function Articles() {
                       {article.site}
                     </span>
                   </div>
-                  <p className={styles.description}>{article.description}</p>
+
+                  {/* Qiita記事の場合はいいね・ストック数を表示 */}
+                  {article.likes_count !== undefined && (
+                    <div className={styles.articleStats}>
+                      <span className={styles.statItem}>
+                        <FavoriteBorderIcon
+                          sx={{ fontSize: 16, color: "#888" }}
+                        />
+                        {article.likes_count}
+                      </span>
+                      <span className={styles.statItem}>
+                        <BookmarkBorderIcon
+                          sx={{ fontSize: 16, color: "#888" }}
+                        />
+                        {article.stocks_count}
+                      </span>
+                    </div>
+                  )}
+
+                  {/* カスタム記事の場合は説明を表示 */}
+                  {article.description && (
+                    <p className={styles.description}>{article.description}</p>
+                  )}
+
+                  {/* Qiita記事の場合はタグを表示 */}
+                  {article.tags && article.tags.length > 0 && (
+                    <div className={styles.tags}>
+                      {article.tags.map((tag, tagIndex) => (
+                        <Chip
+                          key={tagIndex}
+                          size="sm"
+                          variant="soft"
+                          color="neutral"
+                          sx={{
+                            padding: "2px 8px",
+                            fontSize: "0.75rem",
+                            color: "#d1d5db",
+                            backgroundColor: "rgba(255, 255, 255, 0.05)",
+                            border: "1px solid rgba(255, 255, 255, 0.1)",
+                            backdropFilter: "blur(4px)",
+                            transition: "all 0.3s ease",
+                            "&:hover": {
+                              color: "white",
+                              backgroundColor: "rgba(255, 255, 255, 0.1)",
+                              borderColor: "rgba(255, 255, 255, 0.2)",
+                            },
+                          }}
+                        >
+                          {tag.name}
+                        </Chip>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </a>
             </GlowingCard>
