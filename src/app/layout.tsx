@@ -18,6 +18,26 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Murakawa Takuya - Portfolio",
   description: "Fullstack Developer & Computer Vision Researcher",
+  openGraph: {
+    title: "Murakawa Takuya - Portfolio",
+    description: "Fullstack Developer & Computer Vision Researcher",
+    images: [
+      {
+        url: "/icon.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Murakawa Takuya",
+      },
+    ],
+    type: "website",
+    locale: "ja_JP",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Murakawa Takuya - Portfolio",
+    description: "Fullstack Developer & Computer Vision Researcher",
+    images: ["/icon.jpg"],
+  },
 };
 
 export default function RootLayout({
